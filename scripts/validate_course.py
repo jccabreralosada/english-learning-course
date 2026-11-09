@@ -71,11 +71,14 @@ def check_curriculum():
 
 
 def resolve_local(path, target):
-    target = unquote(urlsplit(target.strip().split(" ", 1)[0]).path)
-    if not target or target.startswith(("#", "mailto:", "tel:")):
+    raw = target.strip().split(" ", 1)[0]
+    if not raw or raw.startswith(("#", "//")):
         return None
-    parsed = urlsplit(target.strip())
-    if parsed.scheme or target.startswith("//"):
+    parsed = urlsplit(raw)
+    if parsed.scheme or parsed.netloc:
+        return None
+    target = unquote(parsed.path)
+    if not target:
         return None
     if target.startswith("/"):
         return DOCS / target.lstrip("/")
