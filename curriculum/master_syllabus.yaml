@@ -1,0 +1,763 @@
+schema_version: 1.0.0
+document_status: draft_for_review
+purpose: Source-grounded editorial outline, not an official CEFR accreditation or a reproduction of the books.
+program_goal: Integrated progress toward strong C1 ability across grammar, vocabulary, writing, listening, speaking,
+  pronunciation.
+editorial_policy:
+  source_sequence: Preserve English File fourth edition level/unit/lesson sequence; add prerequisite links and remediation
+    where needed.
+  cefr: Add CEFR descriptors to each learning outcome after review; never infer equivalence solely from textbook
+    level name.
+  source_integrity: Topics in levels are derived from provided TOCs; supplementary objectives must carry origin=program_extension.
+  copyright: Publish entirely original explanations, exercises, illustrations; do not publish textbook scans or
+    copyrighted excerpts.
+assessment:
+  skills:
+  - grammar
+  - vocabulary
+  - writing
+  - listening
+  - speaking
+  - pronunciation
+  importance: equal at program level
+  target_score: 90
+  states:
+  - not_started
+  - learning
+  - in_consolidation
+  - mastered
+  - needs_reinforcement
+  note: Exact scoring/rubrics are described in assessment_framework.md.
+levels:
+- id: elementary
+  name: Elementary
+  sequence: 1
+  source: English File Elementary 4th edition – two supplied contents images
+  coverage: complete_visible_index
+  units:
+  - number: 1
+    grammar:
+    - be (affirmative), subject pronouns
+    - be (negative and questions)
+    - possessive adjectives
+    vocabulary:
+    - days of the week
+    - numbers 0–100
+    - countries
+    - classroom language
+    status: source_index_confirmed
+    source_note: ''
+  - number: 2
+    grammar:
+    - singular/plural nouns
+    - adjectives and degree modifiers
+    - imperatives and let’s
+    vocabulary:
+    - things; in/on/under
+    - colours
+    - feelings
+    status: source_index_confirmed
+    source_note: ''
+  - number: 3
+    grammar:
+    - present simple affirmative/negative
+    - present simple questions
+    - word order in questions
+    vocabulary:
+    - daily verb phrases
+    - jobs
+    - question words
+    status: source_index_confirmed
+    source_note: ''
+  - number: 4
+    grammar:
+    - possessive ’s and whose
+    - prepositions of time and place
+    - position of frequency adverbs
+    vocabulary:
+    - family
+    - daily routine
+    - months
+    - frequency expressions
+    status: source_index_confirmed
+    source_note: ''
+  - number: 5
+    grammar:
+    - can / can’t
+    - present continuous
+    - present simple vs present continuous
+    vocabulary:
+    - verb phrases
+    - noise
+    - weather and seasons
+    status: source_index_confirmed
+    source_note: ''
+  - number: 6
+    grammar:
+    - object pronouns
+    - like + verb-ing
+    - review of be and do
+    vocabulary:
+    - story vocabulary
+    - dates and ordinal numbers
+    - music
+    status: source_index_confirmed
+    source_note: ''
+  - number: 7
+    grammar:
+    - 'past simple: be (was/were)'
+    - past simple regular verbs
+    - past simple irregular verbs
+    vocabulary:
+    - word formation
+    - past time expressions
+    - go, have, get
+    status: source_index_confirmed
+    source_note: ''
+  - number: 8
+    grammar:
+    - past simple regular and irregular verbs
+    - there is/are; some/any + plural nouns
+    - there was / there were
+    vocabulary:
+    - irregular verbs
+    - house
+    - prepositions of place and movement
+    status: source_index_confirmed
+    source_note: ''
+  - number: 9
+    grammar:
+    - countable/uncountable nouns; a/an, some/any
+    - 'quantifiers: how much/many, a lot of, etc.'
+    - comparative adjectives
+    vocabulary:
+    - food and drink
+    - food containers
+    - high numbers
+    status: source_index_confirmed
+    source_note: ''
+  - number: 10
+    grammar:
+    - superlative adjectives
+    - 'be going to: plans'
+    - 'be going to: predictions'
+    vocabulary:
+    - places and buildings
+    - city holidays
+    - verb phrases
+    status: source_index_confirmed
+    source_note: ''
+  - number: 11
+    grammar:
+    - adverbs of manner and modifiers
+    - verb + to-infinitive
+    - 'articles: the or no article'
+    vocabulary:
+    - common adverbs
+    - verbs followed by to-infinitive
+    - phones and internet
+    status: source_index_confirmed
+    source_note: ''
+  - number: 12
+    grammar:
+    - present perfect
+    - present perfect vs past simple
+    - question formation review
+    vocabulary:
+    - past participles
+    - irregular verbs
+    status: source_index_confirmed
+    source_note: ''
+  lessons_per_unit:
+  - A
+  - B
+  - C
+  checkpoints:
+  - after units 2, 4, 6, 8, 10, 12
+  practical_english:
+  - after units 1, 3, 5, 7, 9, 11
+- id: pre_intermediate
+  name: Pre-intermediate
+  sequence: 2
+  source: English File Pre-intermediate 4th edition – partial contents images; Grammar/Vocabulary Bank 14-page scan
+  coverage: partial_visible_index
+  units:
+  - number: 1
+    grammar:
+    - word order in questions
+    - present simple
+    - present continuous
+    vocabulary:
+    - common verb phrases
+    - describing people
+    - clothes; prepositions of place
+    status: source_index_confirmed
+    source_note: ''
+  - number: 2
+    grammar:
+    - past simple regular and irregular verbs
+    - past continuous
+    - time sequencers and connectors
+    vocabulary:
+    - holidays
+    - time/place prepositions
+    - verb phrases
+    status: source_index_confirmed
+    source_note: ''
+  - number: 3
+    grammar:
+    - be going to
+    - present continuous for arrangements
+    - defining relative clauses
+    vocabulary:
+    - airports
+    - verb + preposition
+    - paraphrasing
+    status: source_index_confirmed
+    source_note: ''
+  - number: 4
+    grammar: []
+    vocabulary: []
+    status: index_not_visible
+    source_note: Fourth unit not shown in supplied index images.
+  - number: 5
+    grammar: []
+    vocabulary: []
+    status: index_not_visible
+    source_note: Fifth unit not shown in supplied index images.
+  - number: 6
+    grammar: []
+    vocabulary: []
+    status: index_not_visible
+    source_note: Sixth unit not shown in supplied index images.
+  - number: 7
+    grammar:
+    - uses of to-infinitive
+    - uses of gerund (-ing)
+    - have to / don’t have to / must / mustn’t
+    vocabulary:
+    - verb + infinitive
+    - verb + gerund
+    - adjective + preposition
+    status: source_index_confirmed
+    source_note: ''
+  - number: 8
+    grammar:
+    - should
+    - first conditional
+    - possessive pronouns
+    vocabulary:
+    - get
+    - confusing verbs
+    - adverbs of manner
+    status: source_index_confirmed
+    source_note: ''
+  - number: 9
+    grammar:
+    - second conditional
+    - present perfect with for/since
+    - present perfect vs past simple (review)
+    vocabulary:
+    - animals and insects
+    - fear expressions
+    - biographies
+    status: source_index_confirmed
+    source_note: ''
+  - number: 10
+    grammar:
+    - expressing movement
+    vocabulary:
+    - sports and movement
+    status: partial_index_visible
+    source_note: Only first lesson shown.
+  notes: Visible TOC jumps from unit 3 to unit 7 and cuts unit 10; do not infer the remaining units.
+  lessons_per_unit:
+  - A
+  - B
+  - C
+- id: intermediate
+  name: Intermediate
+  sequence: 3
+  source: English File Intermediate 4th edition – full uploaded e-book (169 PDF pages)
+  coverage: complete_visible_index_and_full_book
+  units:
+  - number: 1
+    grammar:
+    - present simple vs continuous; action/non-action verbs
+    - 'future forms: present continuous, be going to, will'
+    vocabulary:
+    - food and cooking
+    - family and personality adjectives
+    status: source_index_confirmed
+    source_note: ''
+  - number: 2
+    grammar:
+    - present perfect vs past simple
+    - present perfect for/since; present perfect continuous
+    vocabulary:
+    - money
+    - strong adjectives
+    status: source_index_confirmed
+    source_note: ''
+  - number: 3
+    grammar:
+    - comparatives and superlatives
+    - articles a/an, the, zero article
+    vocabulary:
+    - transport
+    - 'collocations: verbs/adjectives + prepositions'
+    status: source_index_confirmed
+    source_note: ''
+  - number: 4
+    grammar:
+    - 'obligation and prohibition: have to, must, should'
+    - 'ability and possibility: can, could, be able to'
+    vocabulary:
+    - phone language
+    - -ed/-ing adjectives
+    status: source_index_confirmed
+    source_note: ''
+  - number: 5
+    grammar:
+    - past simple, continuous, perfect
+    - past and present habits and states
+    vocabulary:
+    - sport
+    - relationships
+    status: source_index_confirmed
+    source_note: ''
+  - number: 6
+    grammar:
+    - passive in all tenses
+    - 'deduction modals: might, can’t, must'
+    vocabulary:
+    - cinema
+    - body
+    status: source_index_confirmed
+    source_note: ''
+  - number: 7
+    grammar:
+    - first conditional and future time clauses
+    - second conditional; choosing between conditionals
+    vocabulary:
+    - education
+    - houses
+    status: source_index_confirmed
+    source_note: ''
+  - number: 8
+    grammar:
+    - gerund vs infinitive
+    - 'reported speech: statements and questions'
+    vocabulary:
+    - work
+    - shopping; noun formation
+    status: source_index_confirmed
+    source_note: ''
+  - number: 9
+    grammar:
+    - third conditional
+    - quantifiers
+    vocabulary:
+    - adjective/adverb formation
+    - electronic devices
+    status: source_index_confirmed
+    source_note: ''
+  - number: 10
+    grammar:
+    - defining and non-defining relative clauses
+    - question tags
+    vocabulary:
+    - compound nouns
+    - crime
+    status: source_index_confirmed
+    source_note: ''
+  lessons_per_unit:
+  - A
+  - B
+  checkpoints:
+  - after units 2, 4, 6, 8, 10
+  practical_english:
+  - after units 1, 3, 5, 7, 9
+- id: intermediate_plus
+  name: Intermediate Plus
+  sequence: 4
+  source: English File Intermediate Plus 4th edition – two index images
+  coverage: complete_visible_index
+  units:
+  - number: 1
+    grammar:
+    - pronouns
+    - adjectives
+    vocabulary:
+    - names
+    - adjective suffixes
+    status: source_index_confirmed
+    source_note: ''
+  - number: 2
+    grammar:
+    - present tenses
+    - possessives
+    vocabulary:
+    - packing
+    - shops and services
+    status: source_index_confirmed
+    source_note: ''
+  - number: 3
+    grammar:
+    - past simple, continuous, used to
+    - prepositions
+    vocabulary:
+    - stages of life
+    - photography
+    status: source_index_confirmed
+    source_note: ''
+  - number: 4
+    grammar:
+    - 'future forms: will / shall / be going to'
+    - first and second conditionals
+    vocabulary:
+    - rubbish and recycling
+    - study and work
+    status: source_index_confirmed
+    source_note: ''
+  - number: 5
+    grammar:
+    - present perfect simple
+    - present perfect continuous
+    vocabulary:
+    - television
+    - the country
+    status: source_index_confirmed
+    source_note: ''
+  - number: 6
+    grammar:
+    - obligation, necessity, prohibition and advice
+    - can / could / be able to
+    vocabulary:
+    - restaurants
+    - DIY and repairs
+    status: source_index_confirmed
+    source_note: ''
+  - number: 7
+    grammar:
+    - phrasal verbs
+    - verb patterns
+    vocabulary:
+    - cash machines
+    - live entertainment
+    status: source_index_confirmed
+    source_note: ''
+  - number: 8
+    grammar:
+    - have something done
+    - passive voice; defining and non-defining relative clauses
+    vocabulary:
+    - looking after yourself
+    - wars and buildings
+    status: source_index_confirmed
+    source_note: ''
+  - number: 9
+    grammar:
+    - reported speech
+    - third conditional; other uses of past perfect; adverbs
+    vocabulary:
+    - word building
+    - weddings
+    status: source_index_confirmed
+    source_note: ''
+  - number: 10
+    grammar:
+    - be/do/have as auxiliary and main verbs
+    - verb forms review
+    vocabulary:
+    - British and American English
+    - exams
+    status: source_index_confirmed
+    source_note: ''
+  lessons_per_unit:
+  - A
+  - B
+- id: upper_intermediate
+  name: Upper-intermediate
+  sequence: 5
+  source: English File Upper-intermediate 4th edition – two index images
+  coverage: complete_visible_index
+  units:
+  - number: 1
+    grammar:
+    - question formation
+    - auxiliaries; the...the... + comparatives
+    vocabulary:
+    - meaning from context
+    - compound adjectives; modifiers
+    status: source_index_confirmed
+    source_note: ''
+  - number: 2
+    grammar:
+    - present perfect simple and continuous
+    - adjectives used as nouns; adjective order
+    vocabulary:
+    - illnesses and injuries
+    - clothes and fashion
+    status: source_index_confirmed
+    source_note: ''
+  - number: 3
+    grammar:
+    - narrative tenses; past perfect continuous; so/such...that
+    - position of adverbs and adverbial phrases
+    vocabulary:
+    - air travel
+    - adverbs and adverbial phrases
+    status: source_index_confirmed
+    source_note: ''
+  - number: 4
+    grammar:
+    - future perfect and future continuous
+    - zero and first conditionals; future time clauses
+    vocabulary:
+    - weather/environment
+    - expressions with take
+    status: source_index_confirmed
+    source_note: ''
+  - number: 5
+    grammar:
+    - unreal conditionals
+    - wish for present/future and past regrets
+    vocabulary:
+    - feelings
+    - expressing feelings
+    status: source_index_confirmed
+    source_note: ''
+  - number: 6
+    grammar:
+    - used to, be used to, get used to
+    - gerunds and infinitives
+    vocabulary:
+    - sleep
+    - music
+    status: source_index_confirmed
+    source_note: ''
+  - number: 7
+    grammar:
+    - 'past modals: must have, would rather'
+    - verbs of the senses
+    vocabulary:
+    - confusing verbs
+    - body
+    status: source_index_confirmed
+    source_note: ''
+  - number: 8
+    grammar:
+    - passive forms; have something done; reporting passive
+    - reporting verbs
+    vocabulary:
+    - crime and punishment
+    - media
+    status: source_index_confirmed
+    source_note: ''
+  - number: 9
+    grammar:
+    - clauses of contrast and purpose
+    - uncountable and plural nouns
+    vocabulary:
+    - advertising/business
+    - prefixes and suffixes
+    status: source_index_confirmed
+    source_note: ''
+  - number: 10
+    grammar:
+    - 'quantifiers: all, every, both, etc.'
+    - articles
+    vocabulary:
+    - science
+    - word pairs/collocations
+    status: source_index_confirmed
+    source_note: ''
+  lessons_per_unit:
+  - A
+  - B
+- id: advanced
+  name: Advanced
+  sequence: 6
+  source: English File Advanced 4th edition – two-page contents image
+  coverage: complete_visible_index
+  units:
+  - number: 1
+    grammar:
+    - 'have: lexical and grammatical uses'
+    - 'discourse markers: linkers'
+    vocabulary:
+    - personality
+    - work
+    status: source_index_confirmed
+    source_note: ''
+  - number: 2
+    grammar:
+    - 'past: habitual events and specific incidents'
+    - pronouns
+    vocabulary:
+    - abstract nouns
+    - lexical areas
+    status: source_index_confirmed
+    source_note: ''
+  - number: 3
+    grammar:
+    - get
+    - 'discourse markers: adverbs/adverbials'
+    vocabulary:
+    - phrases with get
+    - conflict
+    status: source_index_confirmed
+    source_note: ''
+  - number: 4
+    grammar:
+    - inversion for emphasis
+    - speculation and deduction
+    vocabulary:
+    - books and films
+    - sounds and voice
+    status: source_index_confirmed
+    source_note: ''
+  - number: 5
+    grammar:
+    - distancing
+    - unreal uses of past tenses
+    vocabulary:
+    - expressions with time
+    - money
+    status: source_index_confirmed
+    source_note: ''
+  - number: 6
+    grammar:
+    - verb + object + infinitive/gerund
+    - conditional sentences
+    vocabulary:
+    - compound adjectives
+    - phones and technology
+    status: source_index_confirmed
+    source_note: ''
+  - number: 7
+    grammar:
+    - permission, obligation and necessity
+    - perception and sensation
+    vocabulary:
+    - prefixes
+    - art and colour idioms
+    status: source_index_confirmed
+    source_note: ''
+  - number: 8
+    grammar:
+    - advanced gerunds and infinitives
+    - future plans and arrangements
+    vocabulary:
+    - health and medicine
+    - travel
+    status: source_index_confirmed
+    source_note: ''
+  - number: 9
+    grammar:
+    - ellipsis
+    - compound and possessive nouns
+    vocabulary:
+    - animals
+    - preparing food
+    status: source_index_confirmed
+    source_note: ''
+  - number: 10
+    grammar:
+    - relative clauses
+    - cleft sentences for emphasis
+    vocabulary:
+    - word-building
+    - confusing words
+    status: source_index_confirmed
+    source_note: ''
+  lessons_per_unit:
+  - A
+  - B
+- id: advanced_plus
+  name: Advanced Plus
+  sequence: 7
+  source: English File Advanced Plus 4th edition – contents and 16-page sample
+  coverage: complete_visible_index_and_sample
+  units:
+  - number: 1
+    grammar:
+    - 'modal verbs: will, would, should'
+    - noun phrases
+    vocabulary:
+    - vague language
+    - phrasal nouns
+    status: source_index_confirmed
+    source_note: ''
+  - number: 2
+    grammar:
+    - 'modal verbs: can/could/be able to, may/might'
+    - participle clauses
+    vocabulary:
+    - prefixes and suffixes
+    - ways of moving
+    status: source_index_confirmed
+    source_note: ''
+  - number: 3
+    grammar:
+    - 'determiners: articles and quantifiers'
+    - word order
+    vocabulary:
+    - research language
+    - idioms from Shakespeare
+    status: source_index_confirmed
+    source_note: ''
+  - number: 4
+    grammar:
+    - cause and effect
+    - 'aspect: perfect/continuous tenses'
+    vocabulary:
+    - binomials
+    - acronyms and initialisms
+    status: source_index_confirmed
+    source_note: ''
+  - number: 5
+    grammar:
+    - prepositions and sentence patterns
+    - advanced comparison and contrast
+    vocabulary:
+    - nuanced emotions
+    - individuals and populations
+    status: source_index_confirmed
+    source_note: ''
+  - number: 6
+    grammar:
+    - position of adverbs
+    - singular/plural agreement
+    vocabulary:
+    - adverb collocations
+    - numbers and measurements
+    status: source_index_confirmed
+    source_note: ''
+  - number: 7
+    grammar:
+    - complex passive forms
+    - special uses of tenses
+    vocabulary:
+    - punishment
+    - connotation
+    status: source_index_confirmed
+    source_note: ''
+  - number: 8
+    grammar:
+    - expressing conditionality
+    - adjective order
+    vocabulary:
+    - eating and drinking
+    - ways of seeing
+    status: source_index_confirmed
+    source_note: ''
+  lessons_per_unit:
+  - A
+  - B
+open_items:
+- Confirm any missing Pre-intermediate TOC pages (units 4–6; remainder 10 onward).
+- Confirm whether Advanced/Advanced Plus supplementary content is exhaustive beyond supplied indexes.
+- Map measurable outcomes to CEFR descriptors for each lesson, rather than assigning unverified fixed level labels.
+- Create unit-specific speaking/listening activities when developing actual lesson; not from TOC alone.
