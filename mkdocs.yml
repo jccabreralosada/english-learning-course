@@ -1,0 +1,48 @@
+site_name: English Learning Program
+site_description: Original English learning materials from Elementary to Advanced Plus
+site_url: https://jccabreralosada.github.io/english-learning-course/
+repo_url: https://github.com/jccabreralosada/english-learning-course
+repo_name: jccabreralosada/english-learning-course
+docs_dir: docs
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+    - scheme: slate
+      primary: indigo
+      accent: teal
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+nav:
+  - Home: index.md
+  - Curriculum:
+      - Overview: curriculum/index.md
+  - Levels:
+      - Elementary: elementary/index.md
+      - Pre-intermediate: pre_intermediate/index.md
+      - Intermediate: intermediate/index.md
+      - Intermediate Plus: intermediate_plus/index.md
+      - Upper-intermediate: upper_intermediate/index.md
+      - Advanced: advanced/index.md
+      - Advanced Plus: advanced_plus/index.md
+  - Reference:
+      - Overview: reference/index.md
