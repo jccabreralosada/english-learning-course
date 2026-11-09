@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "English Course Development lesson metadata",
+  "description": "Validated lesson-level planning record embedded in master_syllabus.yaml; empty source topics are allowed only pending original index verification.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "source_lesson", "source_verification", "grammar", "vocabulary", "prerequisites", "cefr", "objectives", "oral_activities", "editorial_status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z_]+\\.unit_[0-9]{2}\\.lesson_[a-z]$"},
+    "source_lesson": {"type": "string", "pattern": "^[0-9]+[A-Z]$"},
+    "source_verification": {"enum": ["pending_original_index", "source_index_confirmed"]},
+    "grammar": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/topic"}},
+    "vocabulary": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/topic"}},
+    "prerequisites": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z_]+\\.unit_[0-9]{2}\\.lesson_[a-z]$"}},
+    "cefr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_band", "alignment", "descriptor_reference"],
+      "properties": {
+        "target_band": {"enum": ["A1", "A2", "B1", "B2", "C1", "C2", null]},
+        "alignment": {"enum": ["provisional_program_orientation", "descriptor_verified", "not_mapped"]},
+        "descriptor_reference": {"type": ["string", "null"]}
+      }
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "origin", "verification"],
+        "properties": {
+          "text": {"type": "string", "minLength": 12},
+          "origin": {"enum": ["program_extension", "source_index_confirmed"]},
+          "verification": {"enum": ["pending_lesson_scope", "verified"]}
+        }
+      }
+    },
+    "oral_activities": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["skill", "outcome", "origin"],
+        "properties": {
+          "skill": {"enum": ["listening", "speaking", "pronunciation"]},
+          "outcome": {"type": "string", "minLength": 12},
+          "origin": {"enum": ["program_extension", "source_index_confirmed"]}
+        }
+      }
+    },
+    "editorial_status": {"enum": ["planning_pending_source", "source_verified", "draft", "in_review", "approved", "published"]}
+  },
+  "$defs": {
+    "topic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "origin"],
+      "properties": {
+        "name": {"type": "string", "minLength": 2},
+        "origin": {"enum": ["source_index_confirmed", "program_extension"]}
+      }
+    }
+  }
+}
