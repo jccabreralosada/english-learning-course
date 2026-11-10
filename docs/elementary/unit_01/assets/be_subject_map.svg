@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" role="img" aria-labelledby="title desc">
-<title id="title">Affirmative be: match subject pronouns with am, is, or are</title>
-<desc id="desc">Three connected cards show I takes am; he, she and it take is; and you, we and they take are. Each has an original sample sentence.</desc>
-<rect width="920" height="340" rx="22" fill="#f4f7fc"/>
-<text x="34" y="45" fill="#22354f" font-family="Arial,sans-serif" font-size="23" font-weight="bold">SUBJECT + BE: three patterns</text>
-<text x="34" y="72" fill="#52667d" font-family="Arial,sans-serif" font-size="14">Choose the form of be from the subject, not from the word after it.</text>
-<g font-family="Arial,sans-serif">
-<rect x="28" y="96" width="272" height="203" rx="16" fill="#ffffff" stroke="#9bb9e3" stroke-width="2"/>
-<rect x="28" y="96" width="272" height="48" rx="16" fill="#dbeafe"/><rect x="28" y="127" width="272" height="17" fill="#dbeafe"/>
-<text x="44" y="127" font-size="20" font-weight="bold" fill="#1b497f">I → am</text>
-<text x="46" y="177" font-size="18" fill="#22354f">I am Alex.</text><text x="46" y="209" font-size="18" fill="#22354f">I'm ready.</text>
-<text x="46" y="259" font-size="14" fill="#52667d">Only I uses am.</text>
-<rect x="324" y="96" width="272" height="203" rx="16" fill="#ffffff" stroke="#9cdbc8" stroke-width="2"/>
-<rect x="324" y="96" width="272" height="48" rx="16" fill="#d5f5e9"/><rect x="324" y="127" width="272" height="17" fill="#d5f5e9"/>
-<text x="340" y="127" font-size="20" font-weight="bold" fill="#0d6650">he / she / it → is</text>
-<text x="342" y="177" font-size="18" fill="#22354f">She is a student.</text><text x="342" y="209" font-size="18" fill="#22354f">It's Monday.</text>
-<text x="342" y="259" font-size="14" fill="#52667d">One person or thing.</text>
-<rect x="620" y="96" width="272" height="203" rx="16" fill="#ffffff" stroke="#dac5ed" stroke-width="2"/>
-<rect x="620" y="96" width="272" height="48" rx="16" fill="#efe0fb"/><rect x="620" y="127" width="272" height="17" fill="#efe0fb"/>
-<text x="636" y="127" font-size="20" font-weight="bold" fill="#6a387c">you / we / they → are</text>
-<text x="638" y="177" font-size="18" fill="#22354f">You are welcome.</text><text x="638" y="209" font-size="18" fill="#22354f">They're classmates.</text>
-<text x="638" y="259" font-size="14" fill="#52667d">You: one or several people.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 660" role="img" aria-labelledby="title desc">
+<title id="title">Choose affirmative be from the subject</title>
+<desc id="desc">Three vertically stacked cards. I matches am, with I am here. He, she and it match is, with She is ready. You, we and they match are, with We are in class.</desc>
+<rect width="660" height="660" rx="22" fill="#f6f8fc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="32" y="48" font-size="26" font-weight="bold" fill="#172b4d">SUBJECT + BE</text>
+<text x="32" y="78" font-size="18" fill="#344e68">Find the subject. Then choose the correct form.</text>
+<rect x="26" y="104" width="608" height="152" rx="16" fill="#ffffff" stroke="#3169a5" stroke-width="3"/>
+<rect x="27" y="105" width="606" height="52" rx="14" fill="#dceaff"/>
+<text x="45" y="140" font-size="25" font-weight="bold" fill="#163e77">I  →  am</text>
+<text x="45" y="197" font-size="24" fill="#172b4d">I am here.</text>
+<text x="45" y="230" font-size="18" fill="#344e68">Only I uses am.</text>
+<rect x="26" y="272" width="608" height="152" rx="16" fill="#ffffff" stroke="#1c7964" stroke-width="3"/>
+<rect x="27" y="273" width="606" height="52" rx="14" fill="#d9f4e9"/>
+<text x="45" y="308" font-size="25" font-weight="bold" fill="#0e634e">he / she / it  →  is</text>
+<text x="45" y="365" font-size="24" fill="#172b4d">She is ready.</text>
+<text x="45" y="398" font-size="18" fill="#344e68">One person, thing, or situation.</text>
+<rect x="26" y="440" width="608" height="152" rx="16" fill="#ffffff" stroke="#8351a5" stroke-width="3"/>
+<rect x="27" y="441" width="606" height="52" rx="14" fill="#f0e4fc"/>
+<text x="45" y="476" font-size="25" font-weight="bold" fill="#663388">you / we / they  →  are</text>
+<text x="45" y="533" font-size="24" fill="#172b4d">We are in class.</text>
+<text x="45" y="566" font-size="18" fill="#344e68">You can mean one person or several.</text>
+<text x="32" y="634" font-size="15" fill="#344e68">Original teaching diagram · full text alternative below in the lesson.</text>
 </g>
-<text x="34" y="326" font-family="Arial,sans-serif" font-size="12" fill="#52667d">Original instructional diagram · English Course Development</text>
 </svg>
