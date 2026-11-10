@@ -34,6 +34,13 @@ levels:
   sequence: 1
   source: English File Elementary 4th edition – two supplied contents images
   coverage: complete_visible_index
+  index_provenance:
+    type: user_supplied_index
+    source_assets:
+    - {asset: "elementary_1.png", asset_sha256: "feb79ca86e82fd60e5d5eca9723f1b6db9fece12e00d7b58702c43d3b41d7b65", source_page: 2}
+    - {asset: "elementary_2.png", asset_sha256: "9eee12479e1df508214f9f2c49a74869f5eeb9ff5dd772f2f65321a552b90373", source_page: 3}
+    source_content_storage: project_only_not_public_repository
+    confirmation: direct_visual_review
   units:
   - number: 1
     grammar:
