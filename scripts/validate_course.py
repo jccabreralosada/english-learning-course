@@ -124,6 +124,14 @@ def validate_curriculum():
             fail("Complete Pre-intermediate index must contain all twelve units")
         if sum(len(u.get("source_lessons", [])) for u in pre["units"]) != 36:
             fail("Complete Pre-intermediate index must enumerate 36 source lessons")
+        sections = pre.get("source_sections", [])
+        if len(sections) != 12:
+            fail("Complete Pre-intermediate index must enumerate six Practical English and six Revise and Check sections")
+        else:
+            for i, section in enumerate(sections, 1):
+                expected_type = "practical_english" if i % 2 else "revise_and_check"
+                if section.get("after_unit") != i or section.get("type") != expected_type:
+                    fail(f"Pre-intermediate source section after unit {i} is out of sequence")
         if pre.get("index_provenance", {}).get("source_content_storage") != "project_only_not_public_repository":
             fail("Original Pre-intermediate source images must remain private")
     if elementary:
