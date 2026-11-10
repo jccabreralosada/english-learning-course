@@ -46,19 +46,27 @@ levels:
     - countries
     - classroom language
     status: source_index_confirmed
-    source_note: "Source topic list retained. Per-lesson mapping cross-checked against an external Fourth Edition sample contents index; user-provided original images remain unavailable for direct comparison."
-    lesson_mapping_status: external_index_confirmed_original_pending
+    source_note: "Original supplied Elementary Fourth Edition contents image directly checked on 2026-11-10; 1A–1C titles, grammar, vocabulary and pronunciation confirmed. Program outcomes are independent additions."
+    lesson_mapping_status: original_index_confirmed
+    source_followup:
+      type: practical_english
+      episode: 1
+      page: 12
+      topic: "checking in"
+      vocabulary: "in a hotel"
+      origin: source_index_confirmed
     lessons:
     - id: elementary.unit_01.lesson_a
       source_lesson: "1A"
       title: "Welcome to the class"
-      source_verification: external_index_confirmed
+      source_verification: source_index_confirmed
       source_references:
-      - type: published_sample_index
-        title: "English File Elementary Fourth Edition contents sample"
-        url: "https://assets1.theenglishfarm.com/sites/default/files/english_file_elementary_sample_pages.pdf"
-        scope: "Unit 1A contents table"
-        verified_against_user_image: false
+      - type: user_supplied_index
+        title: "English File Elementary Fourth Edition original contents (project source)"
+        asset: "elementary_1.png"
+        asset_sha256: "feb79ca86e82fd60e5d5eca9723f1b6db9fece12e00d7b58702c43d3b41d7b65"
+        scope: "Contents page 2, Unit 1A; lesson begins on textbook page 6"
+        verified_against_user_image: true
       grammar:
       - name: "be (affirmative)"
         origin: source_index_confirmed
@@ -68,6 +76,11 @@ levels:
       - name: "days of the week"
         origin: source_index_confirmed
       - name: "numbers 0–20"
+        origin: source_index_confirmed
+      source_pronunciation:
+      - name: "vowel sounds"
+        origin: source_index_confirmed
+      - name: "word stress"
         origin: source_index_confirmed
       prerequisites: []
       skills: ["grammar","vocabulary","writing","listening","speaking","pronunciation"]
@@ -105,13 +118,14 @@ levels:
     - id: elementary.unit_01.lesson_b
       source_lesson: "1B"
       title: "One world"
-      source_verification: external_index_confirmed
+      source_verification: source_index_confirmed
       source_references:
-      - type: published_sample_index
-        title: "English File Elementary Fourth Edition contents sample"
-        url: "https://assets1.theenglishfarm.com/sites/default/files/english_file_elementary_sample_pages.pdf"
-        scope: "Unit 1B contents table"
-        verified_against_user_image: false
+      - type: user_supplied_index
+        title: "English File Elementary Fourth Edition original contents (project source)"
+        asset: "elementary_1.png"
+        asset_sha256: "feb79ca86e82fd60e5d5eca9723f1b6db9fece12e00d7b58702c43d3b41d7b65"
+        scope: "Contents page 2, Unit 1B; lesson begins on textbook page 8"
+        verified_against_user_image: true
       grammar:
       - name: "be (negative and questions)"
         origin: source_index_confirmed
@@ -119,6 +133,11 @@ levels:
       - name: "countries"
         origin: source_index_confirmed
       - name: "numbers 21–100"
+        origin: source_index_confirmed
+      source_pronunciation:
+      - name: "consonant sounds"
+        origin: source_index_confirmed
+      - name: "word stress"
         origin: source_index_confirmed
       prerequisites: ["elementary.unit_01.lesson_a"]
       skills: ["grammar","vocabulary","writing","listening","speaking","pronunciation"]
@@ -156,18 +175,26 @@ levels:
     - id: elementary.unit_01.lesson_c
       source_lesson: "1C"
       title: "What's your email?"
-      source_verification: external_index_confirmed
+      source_verification: source_index_confirmed
       source_references:
-      - type: published_sample_index
-        title: "English File Elementary Fourth Edition contents sample"
-        url: "https://assets1.theenglishfarm.com/sites/default/files/english_file_elementary_sample_pages.pdf"
-        scope: "Unit 1C contents table"
-        verified_against_user_image: false
+      - type: user_supplied_index
+        title: "English File Elementary Fourth Edition original contents (project source)"
+        asset: "elementary_1.png"
+        asset_sha256: "feb79ca86e82fd60e5d5eca9723f1b6db9fece12e00d7b58702c43d3b41d7b65"
+        scope: "Contents page 2, Unit 1C; lesson begins on textbook page 10"
+        verified_against_user_image: true
       grammar:
       - name: "possessive adjectives"
         origin: source_index_confirmed
       vocabulary:
       - name: "classroom language"
+        origin: source_index_confirmed
+      source_pronunciation:
+      - name: "vowel sounds"
+        origin: source_index_confirmed
+      - name: "the alphabet"
+        origin: source_index_confirmed
+      - name: "sentence stress"
         origin: source_index_confirmed
       prerequisites: ["elementary.unit_01.lesson_a","elementary.unit_01.lesson_b"]
       skills: ["grammar","vocabulary","writing","listening","speaking","pronunciation"]
@@ -338,7 +365,9 @@ levels:
   coverage: complete_contents_index_available
   index_provenance:
     type: user_supplied_index
-    source_assets: ["image.png", "image(1).png"]
+    source_assets:
+    - {asset: "image.png", asset_sha256: "c3fa18b2a937a2f6140df63aff1ee8d29070d5fa63fdadc3bdd5f243547a1be9", source_page: 2}
+    - {asset: "image(1).png", asset_sha256: "493cd51c7a96ebecdd86019ea00176d616b8e11d5fd6613965a30eeef4d21831", source_page: 3}
     source_scope: "Original fourth-edition contents pages 2 and 3, units 1–12; uploaded to private ChatGPT project, not public GitHub"
     source_content_storage: "project_only_not_public_repository"
     confirmation: direct_visual_review
