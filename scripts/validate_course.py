@@ -52,6 +52,18 @@ def validate_curriculum():
         if len({u["number"] for u in units}) != len(units):
             fail(f"{level['id']}: duplicate unit numbers")
         for unit in units:
+            source_lessons = unit.get("source_lessons", [])
+            if source_lessons:
+                expected_source_lessons = {f"{unit['number']}{letter}" for letter in letters}
+                actual_source_lessons = [item.get("source_lesson") for item in source_lessons]
+                if set(actual_source_lessons) != expected_source_lessons or len(actual_source_lessons) != len(expected_source_lessons):
+                    fail(f"{level['id']} Unit {unit['number']}: source index lesson labels incomplete or duplicated")
+                for item in source_lessons:
+                    if any(not isinstance(item.get(k), str) or not item[k].strip()
+                           for k in ("title", "grammar", "vocabulary", "pronunciation")):
+                        fail(f"{level['id']} Unit {unit['number']}: incomplete source index topic fields")
+                    if item.get("source") != "user_supplied_index":
+                        fail(f"{level['id']} Unit {unit['number']}: unexpected primary source label")
             for record in unit.get("lessons", []):
                 lid = record.get("id", "<missing>")
                 if lid in ids:
@@ -106,6 +118,14 @@ def validate_curriculum():
         fail("Elementary must retain 12 ordered units")
     if not elementary or elementary.get("lessons_per_unit") != ["A", "B", "C"]:
         fail("Elementary must retain three A/B/C lessons per unit")
+    pre = next((l for l in levels if l["id"] == "pre_intermediate"), None)
+    if pre and pre.get("coverage") == "complete_contents_index_available":
+        if [u["number"] for u in pre["units"]] != list(range(1, 13)):
+            fail("Complete Pre-intermediate index must contain all twelve units")
+        if sum(len(u.get("source_lessons", [])) for u in pre["units"]) != 36:
+            fail("Complete Pre-intermediate index must enumerate 36 source lessons")
+        if pre.get("index_provenance", {}).get("source_content_storage") != "project_only_not_public_repository":
+            fail("Original Pre-intermediate source images must remain private")
     if elementary:
         first = next((u for u in elementary["units"] if u["number"] == 1), {})
         if {r.get("id") for r in first.get("lessons", [])} != {
