@@ -46,86 +46,161 @@ levels:
     - countries
     - classroom language
     status: source_index_confirmed
-    source_note: 'Unit-level topics retained from the previous indexed outline; lesson-level assignments require direct TOC verification.'
-    lesson_mapping_status: pending_original_index
+    source_note: "Source topic list retained. Per-lesson mapping cross-checked against an external Fourth Edition sample contents index; user-provided original images remain unavailable for direct comparison."
+    lesson_mapping_status: external_index_confirmed_original_pending
     lessons:
     - id: elementary.unit_01.lesson_a
-      source_lesson: '1A'
-      source_verification: pending_original_index
-      grammar: []
-      vocabulary: []
+      source_lesson: "1A"
+      title: "Welcome to the class"
+      source_verification: external_index_confirmed
+      source_references:
+      - type: published_sample_index
+        title: "English File Elementary Fourth Edition contents sample"
+        url: "https://assets1.theenglishfarm.com/sites/default/files/english_file_elementary_sample_pages.pdf"
+        scope: "Unit 1A contents table"
+        verified_against_user_image: false
+      grammar:
+      - name: "be (affirmative)"
+        origin: source_index_confirmed
+      - name: "subject pronouns"
+        origin: source_index_confirmed
+      vocabulary:
+      - name: "days of the week"
+        origin: source_index_confirmed
+      - name: "numbers 0–20"
+        origin: source_index_confirmed
       prerequisites: []
+      skills: ["grammar","vocabulary","writing","listening","speaking","pronunciation"]
       cefr:
         target_band: A1
         alignment: provisional_program_orientation
         descriptor_reference: null
       objectives:
-      - text: 'Produce short self-introductions using language selected from verified Unit 1 content.'
+      - skill: grammar
+        text: "Produce short affirmative sentences with be and suitable subject pronouns in a guided introduction."
         origin: program_extension
-        verification: pending_lesson_scope
+        verification: provisional
+      - skill: vocabulary
+        text: "Identify and use the days of the week and numbers from 0 to 20 in simple classroom contexts."
+        origin: program_extension
+        verification: provisional
+      - skill: writing
+        text: "Write three brief introductory sentences with be and subject pronouns."
+        origin: program_extension
+        verification: provisional
       oral_activities:
       - skill: speaking
-        outcome: 'Give a short self-introduction in an interactive session.'
+        outcome: "Introduce yourself and another person in a short guided exchange."
         origin: program_extension
       - skill: listening
-        outcome: 'Identify basic personal information in a short, clearly delivered exchange.'
+        outcome: "Identify names and short affirmative introductions delivered clearly."
         origin: program_extension
       - skill: pronunciation
-        outcome: 'Practise intelligible delivery of the selected introductory phrases.'
+        outcome: "Say short introductory sentences intelligibly with clear word stress."
         origin: program_extension
+      writing_outcome: "Write three original affirmative sentences introducing people."
+      review_tags: ["be_affirmative","subject_pronouns","days_of_week","numbers_0_20"]
+      content_version: "0.0.0"
       editorial_status: planning_pending_source
     - id: elementary.unit_01.lesson_b
-      source_lesson: '1B'
-      source_verification: pending_original_index
-      grammar: []
-      vocabulary: []
-      prerequisites:
-      - elementary.unit_01.lesson_a
+      source_lesson: "1B"
+      title: "One world"
+      source_verification: external_index_confirmed
+      source_references:
+      - type: published_sample_index
+        title: "English File Elementary Fourth Edition contents sample"
+        url: "https://assets1.theenglishfarm.com/sites/default/files/english_file_elementary_sample_pages.pdf"
+        scope: "Unit 1B contents table"
+        verified_against_user_image: false
+      grammar:
+      - name: "be (negative and questions)"
+        origin: source_index_confirmed
+      vocabulary:
+      - name: "countries"
+        origin: source_index_confirmed
+      - name: "numbers 21–100"
+        origin: source_index_confirmed
+      prerequisites: ["elementary.unit_01.lesson_a"]
+      skills: ["grammar","vocabulary","writing","listening","speaking","pronunciation"]
       cefr:
         target_band: A1
         alignment: provisional_program_orientation
         descriptor_reference: null
       objectives:
-      - text: 'Use verified Unit 1 language to exchange simple personal information in guided questions and responses.'
+      - skill: grammar
+        text: "Form simple negative statements and yes/no questions with be about origin or identity."
         origin: program_extension
-        verification: pending_lesson_scope
+        verification: provisional
+      - skill: vocabulary
+        text: "Use common country names and numbers from 21 to 100 in short classroom exchanges."
+        origin: program_extension
+        verification: provisional
+      - skill: writing
+        text: "Write a brief question-and-answer exchange using be and a country name."
+        origin: program_extension
+        verification: provisional
       oral_activities:
       - skill: speaking
-        outcome: 'Take turns in a brief guided information exchange.'
+        outcome: "Ask and answer simple questions about where people are from."
         origin: program_extension
       - skill: listening
-        outcome: 'Recognize key details in simple questions and answers.'
+        outcome: "Recognize positive and negative answers to simple be questions."
         origin: program_extension
       - skill: pronunciation
-        outcome: 'Repeat and repair short question-and-answer turns intelligibly.'
+        outcome: "Deliver short questions and answers intelligibly with suitable sentence stress."
         origin: program_extension
+      writing_outcome: "Write three original questions and answers about people's countries."
+      review_tags: ["be_negative","be_questions","countries","numbers_21_100"]
+      content_version: "0.0.0"
       editorial_status: planning_pending_source
     - id: elementary.unit_01.lesson_c
-      source_lesson: '1C'
-      source_verification: pending_original_index
-      grammar: []
-      vocabulary: []
-      prerequisites:
-      - elementary.unit_01.lesson_a
-      - elementary.unit_01.lesson_b
+      source_lesson: "1C"
+      title: "What's your email?"
+      source_verification: external_index_confirmed
+      source_references:
+      - type: published_sample_index
+        title: "English File Elementary Fourth Edition contents sample"
+        url: "https://assets1.theenglishfarm.com/sites/default/files/english_file_elementary_sample_pages.pdf"
+        scope: "Unit 1C contents table"
+        verified_against_user_image: false
+      grammar:
+      - name: "possessive adjectives"
+        origin: source_index_confirmed
+      vocabulary:
+      - name: "classroom language"
+        origin: source_index_confirmed
+      prerequisites: ["elementary.unit_01.lesson_a","elementary.unit_01.lesson_b"]
+      skills: ["grammar","vocabulary","writing","listening","speaking","pronunciation"]
       cefr:
         target_band: A1
         alignment: provisional_program_orientation
         descriptor_reference: null
       objectives:
-      - text: 'Combine verified Unit 1 structures in a short, original written and spoken exchange.'
+      - skill: grammar
+        text: "Choose suitable possessive adjectives in short phrases identifying people and their belongings."
         origin: program_extension
-        verification: pending_lesson_scope
+        verification: provisional
+      - skill: vocabulary
+        text: "Recognize and use everyday classroom instructions and basic contact-information words."
+        origin: program_extension
+        verification: provisional
+      - skill: writing
+        text: "Write a short original exchange with possessive adjectives and simple classroom language."
+        origin: program_extension
+        verification: provisional
       oral_activities:
       - skill: speaking
-        outcome: 'Participate in a short introductory role-play.'
+        outcome: "Use short classroom requests and give basic contact information in a guided dialogue."
         origin: program_extension
       - skill: listening
-        outcome: 'Identify familiar information in an introductory dialogue.'
+        outcome: "Identify familiar classroom instructions and simple contact details."
         origin: program_extension
       - skill: pronunciation
-        outcome: 'Make simple introductory statements understandable to a listener.'
+        outcome: "Make letters and short classroom phrases intelligible when spelling simple information."
         origin: program_extension
+      writing_outcome: "Write a short original classroom dialogue using possessive adjectives."
+      review_tags: ["possessive_adjectives","classroom_language","spelling"]
+      content_version: "0.0.0"
       editorial_status: planning_pending_source
   - number: 2
     grammar:
