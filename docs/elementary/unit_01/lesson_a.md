@@ -24,7 +24,7 @@ review_tags:
 This is an **original self-study lesson**, aligned with the topic sequence of *English File Elementary, Fourth Edition*. The book's index identifies **affirmative _be_ + subject pronouns**, **days of the week**, **numbers 0–20**, and **vowel sounds / word stress** for 1A. The explanations, contexts, practice and diagram below are created for our program; they are **not** reproduced from the book.
 
 !!! info "Your route through this lesson"
-    **Grammar → Vocabulary → Everyday English → Practice → Writing → Tutor activities → Quick reference.** Listening, Speaking and Pronunciation practice takes place interactively with English Learning Program; the public exercises below are **ungraded**.
+    **Grammar (four short steps with checks) → Vocabulary → Everyday English → Practice → Guided/Controlled/Independent Writing → Tutor activities → Quick reference.** Listening, Speaking and Pronunciation practice takes place interactively with English Learning Program; the public exercises below are **ungraded**.
 
 ## 1. Learning outcomes
 
@@ -331,43 +331,44 @@ Rewrite the **whole sentence** correctly. Each one contains **one** grammar mist
 14. *It are Wednesday.*
 15. *She is a engineer.*
 
-### Stage D — Apply the grammar in context (16–20)
+### Stage D — Use grammar in new contexts (16–20)
 
-16. Rewrite using a contraction: **I am in class.**
-17. Rewrite using a contraction: **They are classmates.**
-18. Replace **Nora** with the suitable subject pronoun: **Nora is a student.**
-19. Replace **Nora and I** with the suitable subject pronoun: **Nora and I are ready.**
-20. Complete the introduction with the correct **pronoun + form of be**: “This is my friend Lina. ___ ___ a student.”
+For **16–20**, read each new situation carefully. Each task combines at least two ideas from this lesson. **Do not use negatives or questions.** Follow the specific instruction for each item.
+
+16. **A new student arrives.** Complete the two-sentence introduction with the correct **subject + full form of *be***: "Hello. ___ ___ Maya. I am a student." (You are Maya.)
+17. **Two classmates are in Room 8.** Replace *Omar and Lina* with a pronoun and **rewrite the whole sentence using a contraction**: "Omar and Lina are in Room eight."
+18. **A calendar notice.** Correct **both** mistakes in this line and write the complete sentence: "*it are monday.*"
+19. **A technology club introduction.** Arrange the words and choose **a/an**: *(engineer / an / is / Sofia)*. Write one complete sentence.
+20. **A small group introduces itself.** Complete **both** statements using the correct form of *be*. Then contract the **second** statement: "I ___ Alex. Maya and I ___ students."
 
 ??? note "Answer key and explanations — open after attempting the exercises"
 
-    | # | Answer | Why it works |
+    | # | Expected answer | Why it works |
     |---:|---|---|
-    | 1 | **am** | **I** always takes **am** in present affirmative *be*. |
+    | 1 | **am** | **I** takes **am**. |
     | 2 | **is** | **He** takes **is**. |
-    | 3 | **are** | **You** takes **are**, for one or more people. |
+    | 3 | **are** | **You** takes **are**, even when one person is addressed. |
     | 4 | **are** | **They** takes **are**. |
-    | 5 | **She is a teacher.** | **She + is**; the singular job needs **a**. |
-    | 6 | **We are ready.** | **We + are**; *ready* is an adjective. |
-    | 7 | **It is Thursday.** | Use **it** for the day; capitalize **Thursday**. |
-    | 8 | **I am a beginner.** | **I + am**; the singular noun takes **a**. |
-    | 9 | **You are in my group.** | **You + are** and a place phrase. |
-    | 10 | **Leo and Sara are classmates.** | Two people form a plural subject, so use **are**. |
-    | 11 | **He is at school.** | **He** needs **is**, not **are**. |
-    | 12 | **I am a student.** | Add the required subject **I**. Other suitable subjects are possible only if more context is provided; here the implied self-introduction is **I**. |
-    | 13 | **They are happy.** | **They** takes **are**; *happy* does not change. |
-    | 14 | **It is Wednesday.** | **It** takes **is**, and the day stays capitalized. |
-    | 15 | **She is an engineer.** | **Engineer** begins with a vowel sound, so **an** is natural. |
-    | 16 | **I'm in class.** | **I am → I'm**; the apostrophe marks the omitted letter. |
-    | 17 | **They're classmates.** | **They are → they're**, not *their*. |
-    | 18 | **She is a student.** | Here **Nora** is a female person, so **she** is the expected pronoun. |
-    | 19 | **We are ready.** | **Nora and I** includes the speaker and another person: **we**. |
-    | 20 | **She is** | **Lina** is introduced as a female person; **she + is**. **She's** is a natural contracted alternative if the task permits one written word. |
+    | 5 | **She is a teacher.** | **She + is**; the singular job has **a**. |
+    | 6 | **We are ready.** | **We + are**; adjectives do not change for plural subjects. |
+    | 7 | **It is Thursday.** | **It + is** for a day; capitalize the day. |
+    | 8 | **I am a beginner.** | **I + am**, with **a** before the singular job/role noun. |
+    | 9 | **You are in my group.** | **You + are**, followed by a place phrase. |
+    | 10 | **Leo and Sara are classmates.** | Two people = a plural subject, so **are**. |
+    | 11 | **He is at school.** | **He** cannot take **are** here. |
+    | 12 | **I am a student.** | In a self-introduction, a subject (**I**) is required. |
+    | 13 | **They are happy.** | The plural subject needs **are**. |
+    | 14 | **It is Wednesday.** | **It + is**; **Wednesday** is a capitalized day. |
+    | 15 | **She is an engineer.** | **An** comes before the vowel sound at the start of *engineer*. |
+    | 16 | **I am Maya.** | The speaker introduces herself, so the subject is **I** and its full form is **am**. |
+    | 17 | **They're in Room eight.** | The two named people become **they**; **they are → they're**. |
+    | 18 | **It is Monday.** | **It** takes **is**; the sentence and the day begin with capital letters. |
+    | 19 | **Sofia is an engineer.** | Name first, then **is**; **an** goes before *engineer*. |
+    | 20 | **I am Alex. We're students.** | **I → am**; **Maya and I → we → are → we're**. |
 
-    **Accepted alternatives:** For items **5–9**, contractions are natural in speech and ordinary writing (*She's a teacher*, *We're ready*, *It's Thursday*, *I'm a beginner*, *You're in my group*). The instructions request full forms only to practise the underlying pattern. For **10**, *Leo and Sara are classmates* is the target; **They're classmates** communicates the idea but does not retain the names requested. For **20**, *She's a student* is equally grammatical but uses the contraction rather than the two blanks.
+    **Accepted alternatives and task boundaries:** In 5–9, contractions (for example, *She's a teacher*) are natural, but the **full form is requested** for construction practice. In 10, *They're classmates* is grammatically possible but does not follow the instruction to use the given words. In 16, *I'm Maya* is a natural sentence, but the prompt requests the full form. In 17, *They are in Room eight* is correct English but does not satisfy the **contraction** instruction. In 18, *It's Monday* is correct English, but the target is a direct correction without requiring a contraction; both can be accepted if punctuation and capitalization are correct. In 19, *Sofia's an engineer* is natural but the prompt asks you to arrange the **given words**. In 20, *I am Alex. We are students* is correct English, but the second sentence must be contracted.
 
-    **Diagnostic note:** When an answer is wrong, identify whether the problem concerns **the pronoun**, **the form of *be***, or **an article**. Then create a new original sentence rather than memorizing the correction.
-
+    **Reflect:** Did your error concern (1) the subject, (2) **am/is/are**, (3) a contraction, (4) word order, (5) **a/an**, or (6) capitalization? Write one fresh example to practise that specific point.
 
 ## 8. Vocabulary practice — ungraded
 
@@ -397,37 +398,111 @@ These do **not** count toward the 20 grammar exercises.
     **C:** Example: *Our lesson is on Wednesday. Room seven is ready.* Any correctly spelled day and any number appropriate to the context are valid; use a capital letter for the day.
 
 
-## 9. Writing — use what you know
+## 9. Writing — from support to independence
 
-### Short application
+Writing is a **separate skill** and these tasks are **not graded assessments**. Follow the three stages in order: first complete, then adapt, then create. You only need the vocabulary and affirmative grammar already introduced.
 
-Write **four original sentences**. Use:
+### Stage 1 — Guided writing (complete)
 
-1. Your name with **I am** or **I'm**.
-2. One role or description (*student*, *teacher*, *ready*, etc.).
-3. A sentence about another person with **he**, **she** or **they**.
-4. A sentence using a day or a number from **0–20**.
+**Understand:** The subject goes first, then the correct form of *be*.
 
-**Original model (do not copy):** *I'm Kai. I'm a student. She is my classmate, Zoe. It's Tuesday.*
+**Example:** *I ___ in class.* → **I am in class.**
 
-### Optional extension
+Complete each line with **am**, **is** or **are**.
 
-Write a **six-line introductory dialogue** for two new classmates. Include a greeting, two names, one sentence about a third person, a day of the week and a farewell. You may use the fixed expressions in section 6.
+- **A.** I ___ a student.
+- **B.** She ___ ready.
+- **C.** We ___ classmates.
 
-**Self-check:** Are all sentences affirmative? Is **I** capitalized? Does every subject match **am/is/are**? Do singular jobs use **a/an** where needed? Are days capitalized? Are contractions written with apostrophes?
+??? note "Check Stage 1"
+
+    **A. am** (**I**); **B. is** (**she**); **C. are** (**we**). Keep the capital letter and period.
+
+**Continue when:** you can select the form without looking at a table.
+
+### Stage 2 — Controlled writing (adapt)
+
+**Understand:** Change information in a model, keeping the pattern correct.
+
+**Example:** *He is a student.* → change *he* to *they* → **They are students.** The subject, verb and plural noun change together.
+
+Now rewrite the entire sentence as requested:
+
+- **A.** *She is a student.* → change **she** to **we**, and change the singular noun to a plural.
+- **B.** *It is Monday.* → change the day to **Friday** and use a contraction.
+- **C.** *They are ready.* → use the full form after changing **they** to **I**.
+
+??? note "Check Stage 2"
+
+    **A. We are students.** The subject is plural, so **are** and **students** fit.  
+    **B. It's Friday.** **It is** becomes **it's**; capitalize the day.  
+    **C. I am ready.** Changing the subject to **I** changes the verb to **am**.
+
+**Continue when:** you can make the requested change without leaving the old verb behind.
+
+### Stage 3 — Independent writing (create)
+
+Write **four original affirmative sentences** about an imaginary class or a familiar everyday situation. Use **only** what you know:
+
+1. Introduce yourself with *I am* or *I'm*.
+2. Say something true or imaginary about a classmate using *he*, *she* or *they*.
+3. Say something about a group with *we* or *they*.
+4. Include a day of the week **or** a number between **0 and 20**.
+
+**Original model (use different information):** *I'm Eli. She's a student. We are classmates. It's Tuesday.*
+
+**Optional extension:** Create a short **six-line** dialogue between two classmates using greetings from section 6, at least two affirmative sentences with *be* and a day or number. Expressions like *Nice to meet you* are **fixed phrases for recognition and use**, not grammar you must analyse today.
+
+??? note "Self-check and valid writing examples"
+
+    Check all five points:
+    
+    1. Every statement has a subject.
+    2. Each subject takes **am**, **is** or **are** correctly.
+    3. **I** and the days of the week are capitalized.
+    4. Singular job or role nouns take **a/an** when needed.
+    5. Each sentence ends with a period; contractions contain an apostrophe.
+
+    **Many different answers are correct.** One possible set: *I'm Sam. He is a student. We are in class. It's Thursday.* Names, days and numbers can vary. These are self-check examples, not official assessment answers.
 
 ## 10. Tutor handoff — Listening, Speaking and Pronunciation
 
-These are **prompts for a later interactive session** with English Learning Program, not recordings or tests embedded in the public site. The tutor should speak **slowly and clearly at first**, then adapt.
+This section is a **handoff for English Learning Program**, not a recorded or graded activity on this public page. Each activity has a concrete outcome, an accessible first step and a next step if comprehension improves.
 
-| Skill | Observable outcome | Original suggested task |
-|---|---|---|
-| **Listening** | Recognize a name, role and day in short spoken statements. | Tutor reads four simple introductions, one at a time; learner identifies the name and day without seeing a transcript initially. |
-| **Speaking** | Introduce self and another person using suitable *be* forms. | Tutor and learner meet as classmates; learner produces 3–4 affirmative turns and then reformulates one answer using a contraction. |
-| **Pronunciation** | Make subject–verb chunks intelligible and notice basic word stress. | Tutor models *I'm ready*, *She's a student*, *We're here*; learner repeats and notices the stressed information words. |
-| **Pronunciation: source focus** | Notice selected vowel sounds and word stress in familiar words. | Tutor contrasts common vowel sounds through simple familiar words, then practices stress in *Monday*, *Tuesday* and *student*, without requiring IPA memorization. |
+### Listening — hear short introductions
 
-**Tutor instructions:** Do not score these publicly. Ask brief comprehension questions, support repetition and slower playback, and correct a small number of high-value issues after a meaningful response. Distinguish intelligibility from accent imitation. Formal assessments and individual progress belong in the private learning project.
+**Outcome:** Identify a **name**, an affirmative *be* statement and a familiar **day or number** in a short spoken message.
+
+**Tutor sequence:**
+
+1. Read an original two-sentence message slowly, such as: *I'm Nina. It's Friday.* Do **not** display the transcript initially.
+2. Ask the learner to say the name and day. Accept the information before correcting minor spelling.
+3. Read two additional messages featuring **he/she/they** and numbers **0–20**. Use a little more natural speed only when meaning is clear.
+4. If the learner struggles, **repeat → slow down → rephrase with familiar vocabulary → offer concise Spanish support**, then retry a new message.
+
+### Speaking — introduce people
+
+**Outcome:** Produce at least **three intelligible affirmative turns** with the correct subject–verb pairing.
+
+**Tutor sequence:**
+
+1. Model *I'm Nina. I'm a student.* The learner creates a new introduction.
+2. Show or describe two imaginary classmates. The learner introduces them using **he**, **she** or **they** and **is/are**.
+3. Ask for the same meaning with **one full form and one contraction**: *She is ready* → *She's ready*.
+4. Practise the mini-dialogue expressions from section 6 as fixed chunks, without requiring questions or negatives.
+
+### Pronunciation — vowels and word stress
+
+**Outcome:** Make familiar short phrases understandable and notice **vowel contrasts** and **stressed syllables** without IPA memorization.
+
+**Tutor sequence:**
+
+1. Model two or three familiar words with simple contrasting vowels (for example, *sit* and *seat* as **listening-only** examples). Check whether the learner hears a difference; do not require technical phonetic labels.
+2. Model the stress in *MONday*, *TUESday* and *STUdent*. Ask the learner to repeat naturally and identify which syllable sounds stronger.
+3. Practise short affirmative sentences, such as *I'm READY* and *She's a STUdent*, paying attention to intelligibility, not accent imitation.
+4. Start slow, then approach natural rhythm gradually. If speech recognition reports uncertainty, do not treat that alone as evidence of a pronunciation error.
+
+**Across all three skills:** Use new utterances, not official test prompts. Give targeted feedback during **practice**; do not generate scores or pretend a formal assessment was completed. Private progress and assessment evidence belong only in English Learning Program.
 
 ## 11. Quick reference
 
