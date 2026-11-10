@@ -1,65 +1,363 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "English Course Development lesson metadata",
-  "description": "Validated lesson-level planning record embedded in master_syllabus.yaml; empty source topics are allowed only pending original index verification.",
+  "title": "English Course lesson metadata",
+  "description": "Reusable lesson-level syllabus metadata, with verified source provenance and separate editorial/learning states",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "source_lesson", "source_verification", "grammar", "vocabulary", "prerequisites", "cefr", "objectives", "oral_activities", "editorial_status"],
+  "required": [
+    "id",
+    "source_lesson",
+    "title",
+    "source_verification",
+    "source_references",
+    "grammar",
+    "vocabulary",
+    "prerequisites",
+    "skills",
+    "cefr",
+    "objectives",
+    "oral_activities",
+    "writing_outcome",
+    "review_tags",
+    "content_version",
+    "editorial_status"
+  ],
   "properties": {
-    "id": {"type": "string", "pattern": "^[a-z_]+\\.unit_[0-9]{2}\\.lesson_[a-z]$"},
-    "source_lesson": {"type": "string", "pattern": "^[0-9]+[A-Z]$"},
-    "source_verification": {"enum": ["pending_original_index", "source_index_confirmed"]},
-    "grammar": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/topic"}},
-    "vocabulary": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/topic"}},
-    "prerequisites": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z_]+\\.unit_[0-9]{2}\\.lesson_[a-z]$"}},
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z_]+\\.unit_[0-9]{2}\\.lesson_[a-z]$"
+    },
+    "source_lesson": {
+      "type": "string",
+      "pattern": "^[0-9]+[A-Z]$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "source_verification": {
+      "enum": [
+        "pending_original_index",
+        "external_index_confirmed",
+        "source_index_confirmed"
+      ]
+    },
+    "source_references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sourceReference"
+      }
+    },
+    "grammar": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/topic"
+      },
+      "uniqueItems": true
+    },
+    "vocabulary": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/topic"
+      },
+      "uniqueItems": true
+    },
+    "prerequisites": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z_]+\\.unit_[0-9]{2}\\.lesson_[a-z]$"
+      }
+    },
+    "skills": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 6,
+      "items": {
+        "enum": [
+          "grammar",
+          "vocabulary",
+          "writing",
+          "listening",
+          "speaking",
+          "pronunciation"
+        ]
+      }
+    },
     "cefr": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["target_band", "alignment", "descriptor_reference"],
+      "required": [
+        "target_band",
+        "alignment",
+        "descriptor_reference"
+      ],
       "properties": {
-        "target_band": {"enum": ["A1", "A2", "B1", "B2", "C1", "C2", null]},
-        "alignment": {"enum": ["provisional_program_orientation", "descriptor_verified", "not_mapped"]},
-        "descriptor_reference": {"type": ["string", "null"]}
+        "target_band": {
+          "enum": [
+            "A1",
+            "A2",
+            "B1",
+            "B2",
+            "C1",
+            "C2",
+            null
+          ]
+        },
+        "alignment": {
+          "enum": [
+            "provisional_program_orientation",
+            "descriptor_verified",
+            "not_mapped"
+          ]
+        },
+        "descriptor_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "objectives": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 3,
+      "maxItems": 12,
       "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["text", "origin", "verification"],
-        "properties": {
-          "text": {"type": "string", "minLength": 12},
-          "origin": {"enum": ["program_extension", "source_index_confirmed"]},
-          "verification": {"enum": ["pending_lesson_scope", "verified"]}
-        }
+        "$ref": "#/$defs/objective"
       }
     },
     "oral_activities": {
       "type": "array",
       "minItems": 3,
       "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["skill", "outcome", "origin"],
+        "$ref": "#/$defs/oralActivity"
+      }
+    },
+    "writing_outcome": {
+      "type": "string",
+      "minLength": 12
+    },
+    "review_tags": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      }
+    },
+    "content_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "editorial_status": {
+      "enum": [
+        "planning_pending_source",
+        "source_verified",
+        "draft",
+        "in_review",
+        "approved",
+        "published"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
         "properties": {
-          "skill": {"enum": ["listening", "speaking", "pronunciation"]},
-          "outcome": {"type": "string", "minLength": 12},
-          "origin": {"enum": ["program_extension", "source_index_confirmed"]}
+          "source_verification": {
+            "const": "pending_original_index"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "grammar": {
+            "maxItems": 0
+          },
+          "vocabulary": {
+            "maxItems": 0
+          },
+          "editorial_status": {
+            "const": "planning_pending_source"
+          }
         }
       }
     },
-    "editorial_status": {"enum": ["planning_pending_source", "source_verified", "draft", "in_review", "approved", "published"]}
-  },
+    {
+      "if": {
+        "properties": {
+          "source_verification": {
+            "enum": [
+              "external_index_confirmed",
+              "source_index_confirmed"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "grammar": {
+            "minItems": 1
+          },
+          "vocabulary": {
+            "minItems": 1
+          },
+          "source_references": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "cefr": {
+            "properties": {
+              "alignment": {
+                "const": "descriptor_verified"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "cefr": {
+            "properties": {
+              "descriptor_reference": {
+                "type": "string",
+                "minLength": 8
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
   "$defs": {
+    "sourceReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "title",
+        "url",
+        "scope",
+        "verified_against_user_image"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "published_sample_index",
+            "user_supplied_index",
+            "other_authoritative_index"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 8
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://"
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 4
+        },
+        "verified_against_user_image": {
+          "type": "boolean"
+        }
+      }
+    },
     "topic": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["name", "origin"],
+      "required": [
+        "name",
+        "origin"
+      ],
       "properties": {
-        "name": {"type": "string", "minLength": 2},
-        "origin": {"enum": ["source_index_confirmed", "program_extension"]}
+        "name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "origin": {
+          "enum": [
+            "source_index_confirmed",
+            "program_extension",
+            "pending_source"
+          ]
+        }
+      }
+    },
+    "objective": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "skill",
+        "text",
+        "origin",
+        "verification"
+      ],
+      "properties": {
+        "skill": {
+          "enum": [
+            "grammar",
+            "vocabulary",
+            "writing",
+            "listening",
+            "speaking",
+            "pronunciation"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 20
+        },
+        "origin": {
+          "enum": [
+            "program_extension",
+            "source_index_confirmed"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "provisional",
+            "verified"
+          ]
+        }
+      }
+    },
+    "oralActivity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "skill",
+        "outcome",
+        "origin"
+      ],
+      "properties": {
+        "skill": {
+          "enum": [
+            "speaking",
+            "listening",
+            "pronunciation"
+          ]
+        },
+        "outcome": {
+          "type": "string",
+          "minLength": 15
+        },
+        "origin": {
+          "enum": [
+            "program_extension",
+            "source_index_confirmed"
+          ]
+        }
       }
     }
   }
