@@ -422,7 +422,7 @@ levels:
     - "paraphrasing"
     source_lessons:
     - source_lesson: "3A"
-      title: "TripSide"
+      title: "TripAside"
       grammar: "be going to (plans and predictions)"
       vocabulary: "airports"
       pronunciation: "the letter g"
@@ -739,6 +739,19 @@ levels:
       pronunciation: "question words"
       source: user_supplied_index
       source_page: 3
+  source_sections:
+  - {after_unit: 1, type: practical_english, episode: 1, topic: "calling reception", page: 12}
+  - {after_unit: 2, type: revise_and_check, scope: "1&2", page: 20}
+  - {after_unit: 3, type: practical_english, episode: 2, topic: "at the restaurant", page: 28}
+  - {after_unit: 4, type: revise_and_check, scope: "3&4", page: 36}
+  - {after_unit: 5, type: practical_english, episode: 3, topic: "taking something back to a shop", page: 44}
+  - {after_unit: 6, type: revise_and_check, scope: "5&6", page: 52}
+  - {after_unit: 7, type: practical_english, episode: 4, topic: "going to a pharmacy", page: 60}
+  - {after_unit: 8, type: revise_and_check, scope: "7&8", page: 68}
+  - {after_unit: 9, type: practical_english, episode: 5, topic: "asking how to get there", page: 76}
+  - {after_unit: 10, type: revise_and_check, scope: "9&10", page: 84}
+  - {after_unit: 11, type: practical_english, episode: 6, topic: "on the phone", page: 92}
+  - {after_unit: 12, type: revise_and_check, scope: "11&12", page: 100}
   notes: "The supplied original Fourth Edition contents images now cover all twelve units. Some small pronunciation symbols are recorded as pending exact transcription rather than guessed. Indexed topics only; original Oxford pages are not stored in the public repository."
   lessons_per_unit:
   - A
