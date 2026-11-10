@@ -108,7 +108,7 @@ Voice mode speed and lexical density adapt to comprehension; no assumption that 
 
 ## 6. Editorial operating sequence
 
-1. Read source index, declared gaps and curriculum; identify next lesson.
+1. Read current approved curriculum and its identified primary project source index; verify the original asset and any declared gaps before drafting. Use external references only for missing or supplementary context.
 2. Draft original content and task answer keys using pedagogical guidelines.
 3. Prepare original purposeful images with alt text and instructional purpose.
 4. Validate grammar, alternatives, reading level, register and source traceability.
@@ -146,9 +146,16 @@ Voice mode speed and lexical density adapt to comprehension; no assumption that 
 - **Preparation PR:** PR #1 (`chore/course-foundations-v1`) is a draft with no merge. The files in this branch are not yet published via `main`.
 - **Quality checks:** the proposed `.github/workflows/quality.yml` runs automated metadata, source-provenance, navigation, local-link, image-alt, test-suite, and strict MkDocs checks in PRs and permitted branches. The quality workflow **does not deploy**.
 - **Release control:** human editorial approval of the exact head commit and successful required checks precede setting the PR ready for review, squash merging, and verification of the resulting `main` checks. Never commit or merge directly to `main` from editorial automation. Check Pages only on changes to the site publishing workflow's configured paths; curriculum-only changes need not republish.
-- **Source integrity:** Elementary Unit 1 topics have been matched to an externally available Fourth Edition contents sample; original user-provided index image comparison is still pending. Source records include this limitation. A passing build does not settle source provenance or user approval.
+- **Source integrity (verified 2026-11-10):** Elementary 1A–1C have been checked directly against the original supplied Fourth Edition index image; primary references are private project asset names, index locations, and SHA-256 hashes. The external index is no longer primary. Pre-intermediate now has 12 indexed units, 36 A/B/C source lessons and their Practical English / Revise and Check sequence, drawn from the original complete contents images. All source scans remain outside the public repository. A passing build does not constitute educational approval.
 - **CEFR:** introductory objectives are provisionally oriented to A1; individual descriptor mappings and all-level calibration remain unverified.
 - **Private progress repository:** statuses and permissions must be verified separately in the English Learning Program project. No private data is read or published by this PR.
+
+### Source provenance and privacy contract
+
+- Store original Oxford images/PDFs privately in the ChatGPT project, never under public repository paths.
+- Store **only** bibliographic metadata, project attachment filenames, source locations and SHA-256 digests in the public curriculum. The digests identify reference copies; CI cannot inspect private image bytes and therefore checks metadata format rather than claiming live file verification.
+- `source_index_confirmed` marks publisher-indexed topics; `program_extension` marks independent outcomes, prompts and activities. A CEFR band remains provisional until matched with an authoritative descriptor.
+- The per-lesson metadata schema permits an `asset` + `asset_sha256` private reference or an external `url`, never requiring a publicly accessible commercial scan.
 
 ## 10. Remaining decisions
 
