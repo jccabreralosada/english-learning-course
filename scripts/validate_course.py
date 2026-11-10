@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Validate curriculum metadata, MkDocs navigation, local links and image alt text."""
+"""Check lesson metadata, curriculum, navigation and local Markdown references.
+
+Structural guardrail only: a passing run is NOT publisher-source review,
+CEFR accreditation, accessibility audit, or user approval.
+"""
 import json
 import re
 import sys
@@ -12,126 +16,163 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 SKILLS = {"grammar", "vocabulary", "writing", "listening", "speaking", "pronunciation"}
-LINK = re.compile(r"(?<!!)\[[^\]]*\]\(([^)]+)\)")
-IMAGE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
-HTML_IMAGE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
-ALT = re.compile(r"\balt\s*=\s*['\"][^'\"]+['\"]", re.IGNORECASE)
+LINKS = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)]+)\)")
+IMAGES = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
+HTML_IMAGES = re.compile(r"<img\b[^>]*>", re.I)
+HTML_ALT = re.compile(r"\balt\s*=\s*['\"][^'\"]+['\"]", re.I)
 ERRORS = []
 
 
-def error(message):
+def fail(message):
     ERRORS.append(message)
 
 
-def check_curriculum():
-    with (ROOT / "curriculum/master_syllabus.yaml").open(encoding="utf-8") as fh:
-        syllabus = yaml.safe_load(fh)
-    with (ROOT / "curriculum/lesson_metadata.schema.json").open(encoding="utf-8") as fh:
-        schema = json.load(fh)
+def load_yaml(file):
+    with file.open(encoding="utf-8") as handle:
+        return yaml.safe_load(handle)
+
+
+def validate_curriculum():
+    syllabus = load_yaml(ROOT / "curriculum/master_syllabus.yaml")
+    schema = json.loads((ROOT / "curriculum/lesson_metadata.schema.json").read_text(encoding="utf-8"))
     Draft202012Validator.check_schema(schema)
     validator = Draft202012Validator(schema)
     levels = syllabus.get("levels", [])
-    if len(levels) != 7 or len({level["id"] for level in levels}) != 7:
-        error("Expected seven distinct editorial levels")
+    if len(levels) != 7 or len({x["id"] for x in levels}) != 7:
+        fail("Expected seven distinct editorial levels")
     if set(syllabus.get("assessment", {}).get("skills", [])) != SKILLS:
-        error("The six-skill set has changed")
-    elementary = next((x for x in levels if x.get("id") == "elementary"), None)
-    if elementary is None or [u["number"] for u in elementary["units"]] != list(range(1, 13)):
-        error("Elementary must retain its twelve ordered units")
-        return
-    if elementary.get("lessons_per_unit") != ["A", "B", "C"]:
-        error("Elementary must declare A/B/C lessons")
-    first = elementary["units"][0]
-    records = first.get("lessons", [])
-    expected = {f"elementary.unit_01.lesson_{letter.lower()}" for letter in "ABC"}
-    if {r.get("id") for r in records} != expected or len(records) != 3:
-        error("Unit 1 must have exactly the distinct 1A, 1B and 1C records")
-    for item in records:
-        for issue in validator.iter_errors(item):
-            error(f"{item.get('id', '?')}: {issue.message}")
-        if item.get("source_verification") == "pending_original_index":
-            if item.get("grammar") or item.get("vocabulary"):
-                error(f"{item['id']}: no specific topics before original TOC verification")
-            if item.get("editorial_status") not in {"planning_pending_source"}:
-                error(f"{item['id']}: cannot advance editorial status without source check")
-        if item.get("source_verification") == "source_index_confirmed" and not (item.get("grammar") and item.get("vocabulary")):
-            error(f"{item['id']}: confirmed lesson needs assigned source topics")
-        cefr = item.get("cefr", {})
-        if cefr.get("alignment") == "descriptor_verified" and not cefr.get("descriptor_reference"):
-            error(f"{item['id']}: verified CEFR mapping needs descriptor reference")
-        if cefr.get("alignment") != "descriptor_verified" and cefr.get("descriptor_reference"):
-            error(f"{item['id']}: provisional CEFR mapping cannot cite an unverified descriptor")
-        oral = {x.get("skill") for x in item.get("oral_activities", [])}
-        if oral != {"speaking", "listening", "pronunciation"}:
-            error(f"{item['id']}: missing oral skill handoff")
-        for prerequisite in item.get("prerequisites", []):
-            if prerequisite not in expected:
-                error(f"{item['id']}: unknown Unit 1 prerequisite: {prerequisite}")
-    print("Curriculum and lesson metadata checked")
+        fail("Six equally important skills must be present")
+    ids = set()
+    records = []
+    for level in levels:
+        letters = level.get("lessons_per_unit", [])
+        if not letters or len(set(letters)) != len(letters):
+            fail(f"{level['id']}: missing or duplicated lesson letters")
+        units = level.get("units", [])
+        if len({u["number"] for u in units}) != len(units):
+            fail(f"{level['id']}: duplicate unit numbers")
+        for unit in units:
+            for record in unit.get("lessons", []):
+                lid = record.get("id", "<missing>")
+                if lid in ids:
+                    fail(f"Duplicate lesson ID: {lid}")
+                ids.add(lid)
+                records.append((level, unit, record))
+                for issue in validator.iter_errors(record):
+                    fail(f"{lid}: {issue.json_path}: {issue.message}")
+                source = record.get("source_lesson", "")
+                expected = f"{level['id']}.unit_{unit['number']:02}.lesson_{source[-1:].lower()}"
+                if lid != expected or source != f"{unit['number']}{source[-1:]}":
+                    fail(f"{lid}: source_lesson does not match level/unit/letter")
+                if source[-1:] not in letters:
+                    fail(f"{lid}: unexpected lesson letter")
+                if set(record.get("skills", [])) != SKILLS:
+                    fail(f"{lid}: six skills must be declared")
+                if {a.get("skill") for a in record.get("oral_activities", [])} != {"listening", "speaking", "pronunciation"}:
+                    fail(f"{lid}: oral handoff must include three skills")
+                if not {"grammar", "vocabulary", "writing"}.issubset({a.get("skill") for a in record.get("objectives", [])}):
+                    fail(f"{lid}: missing core written lesson objectives")
+                alignment = record.get("cefr", {}).get("alignment")
+                descriptor = record.get("cefr", {}).get("descriptor_reference")
+                if (alignment == "descriptor_verified") != bool(descriptor):
+                    fail(f"{lid}: verified CEFR alignment requires a reference; provisional alignment must not claim one")
+                status = record.get("editorial_status")
+                verification = record.get("source_verification")
+                if verification == "pending_original_index" and (record.get("grammar") or record.get("vocabulary")):
+                    fail(f"{lid}: source topics cannot be assigned without evidence")
+                if status in {"approved", "published"} and verification == "pending_original_index":
+                    fail(f"{lid}: cannot publish unverified source lesson")
+                if verification in {"external_index_confirmed", "source_index_confirmed"}:
+                    if not record.get("source_references"):
+                        fail(f"{lid}: confirmed source needs provenance")
+                    for item in record.get("grammar", []) + record.get("vocabulary", []):
+                        if item.get("origin") == "pending_source":
+                            fail(f"{lid}: pending topic in confirmed source mapping")
+    for level, unit, record in records:
+        lid = record["id"]
+        for dep in record.get("prerequisites", []):
+            if dep not in ids:
+                # Older lessons are not necessarily itemized yet; allow references
+                # to declared unit/lesson combinations, not arbitrary IDs.
+                m = re.fullmatch(r"([a-z_]+)\.unit_(\d{2})\.lesson_([a-z])", dep)
+                lookup = next((x for x in levels if x["id"] == (m.group(1) if m else None)), None)
+                if not (m and lookup and int(m.group(2)) in {u["number"] for u in lookup["units"]} and m.group(3).upper() in lookup["lessons_per_unit"]):
+                    fail(f"{lid}: invalid prerequisite: {dep}")
+                continue
+            if dep == lid:
+                fail(f"{lid}: cannot depend on itself")
+    elementary = next((l for l in levels if l["id"] == "elementary"), None)
+    if not elementary or [u["number"] for u in elementary["units"]] != list(range(1, 13)):
+        fail("Elementary must retain 12 ordered units")
+    if not elementary or elementary.get("lessons_per_unit") != ["A", "B", "C"]:
+        fail("Elementary must retain three A/B/C lessons per unit")
+    if elementary:
+        first = next((u for u in elementary["units"] if u["number"] == 1), {})
+        if {r.get("id") for r in first.get("lessons", [])} != {
+            "elementary.unit_01.lesson_a", "elementary.unit_01.lesson_b", "elementary.unit_01.lesson_c"
+        }:
+            fail("Elementary Unit 1 must have 1A/1B/1C")
+    print(f"Checked {len(levels)} editorial levels and {len(records)} individual lesson records")
 
 
-def resolve_local(path, target):
-    raw = target.strip().split(" ", 1)[0]
-    if not raw or raw.startswith(("#", "//")):
+def local_target(md_path, raw):
+    raw = raw.strip().split(" ", 1)[0].strip("<>")
+    if not raw or raw.startswith("#") or raw.startswith("//"):
         return None
-    parsed = urlsplit(raw)
-    if parsed.scheme or parsed.netloc:
+    url = urlsplit(raw)
+    if url.scheme or url.netloc:
         return None
-    target = unquote(parsed.path)
-    if not target:
+    relative = unquote(url.path)
+    if not relative:
         return None
-    if target.startswith("/"):
-        return DOCS / target.lstrip("/")
-    return path.parent / target
+    return (DOCS / relative.lstrip("/")) if relative.startswith("/") else (md_path.parent / relative)
 
 
 def check_docs():
-    with (ROOT / "mkdocs.yml").open(encoding="utf-8") as fh:
-        config = yaml.safe_load(fh)
+    config = load_yaml(ROOT / "mkdocs.yml")
     if config.get("docs_dir") != "docs":
-        error("Unexpected MkDocs docs_dir")
-    nav_paths = []
-
-    def walk(obj):
-        if isinstance(obj, list):
-            for x in obj:
-                walk(x)
-        elif isinstance(obj, dict):
-            for x in obj.values():
-                walk(x)
-        elif isinstance(obj, str):
-            nav_paths.append(obj)
-
-    walk(config.get("nav", []))
-    for relative in nav_paths:
-        if not (DOCS / relative).is_file():
-            error(f"Navigation target missing: {relative}")
-    for path in DOCS.rglob("*.md"):
-        content = path.read_text(encoding="utf-8")
-        for match in LINK.finditer(content):
-            candidate = resolve_local(path, match.group(1))
-            if candidate and not (candidate.is_file() or (candidate.is_dir() and (candidate / "index.md").is_file())):
-                error(f"{path.relative_to(ROOT)}: broken link {match.group(1)}")
-        for match in IMAGE.finditer(content):
+        fail("Invalid docs_dir")
+    nav = []
+    def gather(value):
+        if isinstance(value, list):
+            for child in value:
+                gather(child)
+        elif isinstance(value, dict):
+            for child in value.values():
+                gather(child)
+        elif isinstance(value, str):
+            nav.append(value)
+    gather(config.get("nav", []))
+    for target in nav:
+        if not (DOCS / target).is_file():
+            fail(f"Missing MkDocs navigation target: {target}")
+    pages = list(DOCS.rglob("*.md"))
+    for page in pages:
+        content = page.read_text(encoding="utf-8")
+        for match in LINKS.finditer(content):
+            target = local_target(page, match.group(2))
+            if target and not (target.is_file() or (target.is_dir() and (target / "index.md").is_file())):
+                fail(f"{page.relative_to(ROOT)}: broken local link {match.group(2)}")
+        for match in IMAGES.finditer(content):
             if not match.group(1).strip():
-                error(f"{path.relative_to(ROOT)}: image missing descriptive alt text")
-            candidate = resolve_local(path, match.group(2))
-            if candidate and not candidate.is_file():
-                error(f"{path.relative_to(ROOT)}: missing image {match.group(2)}")
-        for match in HTML_IMAGE.finditer(content):
-            if not ALT.search(match.group()):
-                error(f"{path.relative_to(ROOT)}: HTML image missing alt")
-    print(f"MkDocs navigation and {len(list(DOCS.rglob('*.md')))} Markdown files checked")
+                fail(f"{page.relative_to(ROOT)}: image missing alt")
+            target = local_target(page, match.group(2))
+            if target and not target.is_file():
+                fail(f"{page.relative_to(ROOT)}: image missing {match.group(2)}")
+        for match in HTML_IMAGES.finditer(content):
+            if not HTML_ALT.search(match.group(0)):
+                fail(f"{page.relative_to(ROOT)}: HTML image missing descriptive alt")
+    print(f"Checked navigation and {len(pages)} Markdown documents")
 
 
 if __name__ == "__main__":
     try:
-        check_curriculum()
+        validate_curriculum()
         check_docs()
-    except (KeyError, TypeError, ValueError, yaml.YAMLError, OSError, json.JSONDecodeError) as exc:
-        error(f"Validation aborted: {exc}")
-    for failure in ERRORS:
-        print(f"ERROR: {failure}", file=sys.stderr)
+    except (OSError, ValueError, KeyError, TypeError, yaml.YAMLError, json.JSONDecodeError) as exc:
+        fail(f"Uncaught validation error: {exc}")
+    for item in ERRORS:
+        print(f"ERROR: {item}", file=sys.stderr)
     if ERRORS:
         sys.exit(1)
-    print("All course checks passed")
+    print("All course structure checks passed")
