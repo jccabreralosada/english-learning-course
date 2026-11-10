@@ -246,6 +246,12 @@ An affirmative statement becomes meaningful when we add information after the ve
 !!! note "Two useful chunks"
     **on Monday** = el lunes; **on Mondays** = los lunes / cada lunes. The plural often suggests a recurring event. This contrast is for recognition only, not a full lesson about routines or Present Simple.
 
+**Quick check:** What comes after **Wednesday**? Which is correct: *friday* or *Friday*?
+
+??? note "Check the days"
+
+    **Thursday** follows Wednesday. **Friday** starts with a capital letter because every day name is capitalized in English.
+
 ## 5. Vocabulary — numbers 0–20
 
 | Number | Word | Number | Word | Number | Word |
@@ -269,8 +275,14 @@ An affirmative statement becomes meaningful when we add information after the ve
 - *Room **six** is ready.*
 - *It is **seven** o'clock.* (Recognize this time phrase; formal time-telling comes later.)
 - *The class is in Room **twelve**.*
-- *There are **twenty** chairs.* (*There are* is a useful classroom chunk, not a structure to master in 1A.)
-- *My code is **one-zero-five**.* (Optional technology example: say the digits separately when reading a code. This is not a request to share a real password or confidential code.)
+- *The students are in Room **twenty**.*
+- *The code is **one-zero-five**.* (Optional technology example: read the digits separately. Use a fictional code, not a real password or confidential number.)
+
+**Quick check:** Write **12** and **18** in words. Which spelling is correct: *fiveteen* or *fifteen*?
+
+??? note "Check the numbers"
+
+    **Twelve**, **eighteen**, **fifteen**. Memorize the irregular spellings; numbers 21–100 are introduced later in 1B.
 
 ## 6. Everyday English — a first meeting
 
