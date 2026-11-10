@@ -1,14 +1,15 @@
 # Editorial lesson template (proposal — not a published lesson)
 
-**Status:** Draft for user review. This file is a reusable editorial specification, not Elementary 1A content.
+**Status:** Draft for user review. This is an editorial specification, not Elementary 1A content. Use the blank page structure in `governance/lesson_page_skeleton.md` and metadata rules in `curriculum/lesson_metadata.schema.json`.
 
 ## Identity and source
 - Stable ID: `<level>.unit_<NN>.lesson_<letter>`
-- Book crosswalk: edition, unit, A/B/C, verified index reference
+- Book crosswalk: edition, unit, A/B/C, source URL/location and whether the original user-provided index was directly verified
 - Origin per topic: `source_index_confirmed`, `program_extension` or `pending_source`
 - Editorial status and content revision
 - Prerequisite IDs and review tags
-- CEFR: provisional band or exact descriptor citation only when verified
+- CEFR: provisional band or exact descriptor citation only when verified; this is not certification
+- Six skills, three to six measurable learning outcomes, `writing_outcome`, oral activities, content version and stable review tags
 
 ## Learning outcomes
 Write three to six learner-observable outcomes, each beginning with an action verb such as *identify*, *ask*, *respond*, *write*, *distinguish*, or *use*. Specify the context and expected performance. Do not confuse a lesson objective with a certified CEFR level.
@@ -37,7 +38,7 @@ Write three to six learner-observable outcomes, each beginning with an action ve
 - Do not display source scans, textbook graphics, learner grades, chats or recordings.
 
 ## Gate before publication
-- [ ] Source lesson mapping confirmed; uncertain topics never presented as book facts.
+- [ ] Source lesson mapping checked against accessible cited index; record if original user-provided image remains pending, and never misrepresent the evidence.
 - [ ] Lesson metadata passes schema and links follow the stable IDs.
 - [ ] Bilingual anchor and natural examples reviewed.
 - [ ] Exercises and explanations checked for ambiguity.
