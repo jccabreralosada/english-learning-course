@@ -37,7 +37,9 @@ nav:
   - Curriculum:
       - Overview: curriculum/index.md
   - Levels:
-      - Elementary: elementary/index.md
+      - Elementary:
+          - Overview: elementary/index.md
+          - Unit 1 — Welcome to the class: elementary/unit_01/lesson_a.md
       - Pre-intermediate: pre_intermediate/index.md
       - Intermediate: intermediate/index.md
       - Intermediate Plus: intermediate_plus/index.md
