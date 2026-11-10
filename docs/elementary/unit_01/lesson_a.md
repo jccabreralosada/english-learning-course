@@ -19,7 +19,7 @@ review_tags:
 
 # Elementary 1A — Welcome to the class
 
-**Lesson ID:** \`elementary.unit_01.lesson_a\` · **A1 orientation (provisional)** · **Editorial draft — not approved**
+**Lesson ID:** `elementary.unit_01.lesson_a` · **A1 orientation (provisional)** · **Editorial draft — not approved**
 
 This is an **original self-study lesson**, aligned with the topic sequence of *English File Elementary, Fourth Edition*. The book's index identifies **affirmative _be_ + subject pronouns**, **days of the week**, **numbers 0–20**, and **vowel sounds / word stress** for 1A. The explanations, contexts, practice and diagram below are created for our program; they are **not** reproduced from the book.
 
@@ -92,11 +92,11 @@ By the end, you should be able to:
 
 **Pattern:** **subject + am/is/are + information + .**
 
-\`I + am + in class.\` → **I am in class.**
+`I + am + in class.` → **I am in class.**
 
-\`She + is + a teacher.\` → **She is a teacher.**
+`She + is + a teacher.` → **She is a teacher.**
 
-\`We + are + ready.\` → **We are ready.**
+`We + are + ready.` → **We are ready.**
 
 **Why these forms?** *Be* is irregular: we do **not** add *-s* to a regular form for *he* and *she*. We select one of the three forms from the table. Learning the subject–verb pair as a chunk makes everyday sentences easier.
 
@@ -265,7 +265,7 @@ Use the words given to write **one correct affirmative sentence**. Use the full 
 Rewrite the **whole sentence** correctly. Each one contains **one** grammar mistake.
 
 11. *He are at school.*
-12. *Am a student.*
+12. *Am a student.* (You are introducing yourself.)
 13. *They is happy.*
 14. *It are Wednesday.*
 15. *She is a engineer.*
@@ -278,37 +278,35 @@ Rewrite the **whole sentence** correctly. Each one contains **one** grammar mist
 19. Replace **Nora and I** with the suitable subject pronoun: **Nora and I are ready.**
 20. Complete the introduction with the correct **pronoun + form of be**: “This is my friend Lina. ___ ___ a student.”
 
-<details>
-<summary>Answer key and explanations — open after attempting the exercises</summary>
+??? note "Answer key and explanations — open after attempting the exercises"
 
-| # | Answer | Why it works |
-|---:|---|---|
-| 1 | **am** | **I** always takes **am** in present affirmative *be*. |
-| 2 | **is** | **He** takes **is**. |
-| 3 | **are** | **You** takes **are**, for one or more people. |
-| 4 | **are** | **They** takes **are**. |
-| 5 | **She is a teacher.** | **She + is**; the singular job needs **a**. |
-| 6 | **We are ready.** | **We + are**; *ready* is an adjective. |
-| 7 | **It is Thursday.** | Use **it** for the day; capitalize **Thursday**. |
-| 8 | **I am a beginner.** | **I + am**; the singular noun takes **a**. |
-| 9 | **You are in my group.** | **You + are** and a place phrase. |
-| 10 | **Leo and Sara are classmates.** | Two people form a plural subject, so use **are**. |
-| 11 | **He is at school.** | **He** needs **is**, not **are**. |
-| 12 | **I am a student.** | Add the required subject **I**. Other suitable subjects are possible only if more context is provided; here the implied self-introduction is **I**. |
-| 13 | **They are happy.** | **They** takes **are**; *happy* does not change. |
-| 14 | **It is Wednesday.** | **It** takes **is**, and the day stays capitalized. |
-| 15 | **She is an engineer.** | **Engineer** begins with a vowel sound, so **an** is natural. |
-| 16 | **I'm in class.** | **I am → I'm**; the apostrophe marks the omitted letter. |
-| 17 | **They're classmates.** | **They are → they're**, not *their*. |
-| 18 | **She is a student.** | Here **Nora** is a female person, so **she** is the expected pronoun. |
-| 19 | **We are ready.** | **Nora and I** includes the speaker and another person: **we**. |
-| 20 | **She is** | **Lina** is introduced as a female person; **she + is**. **She's** is a natural contracted alternative if the task permits one written word. |
+    | # | Answer | Why it works |
+    |---:|---|---|
+    | 1 | **am** | **I** always takes **am** in present affirmative *be*. |
+    | 2 | **is** | **He** takes **is**. |
+    | 3 | **are** | **You** takes **are**, for one or more people. |
+    | 4 | **are** | **They** takes **are**. |
+    | 5 | **She is a teacher.** | **She + is**; the singular job needs **a**. |
+    | 6 | **We are ready.** | **We + are**; *ready* is an adjective. |
+    | 7 | **It is Thursday.** | Use **it** for the day; capitalize **Thursday**. |
+    | 8 | **I am a beginner.** | **I + am**; the singular noun takes **a**. |
+    | 9 | **You are in my group.** | **You + are** and a place phrase. |
+    | 10 | **Leo and Sara are classmates.** | Two people form a plural subject, so use **are**. |
+    | 11 | **He is at school.** | **He** needs **is**, not **are**. |
+    | 12 | **I am a student.** | Add the required subject **I**. Other suitable subjects are possible only if more context is provided; here the implied self-introduction is **I**. |
+    | 13 | **They are happy.** | **They** takes **are**; *happy* does not change. |
+    | 14 | **It is Wednesday.** | **It** takes **is**, and the day stays capitalized. |
+    | 15 | **She is an engineer.** | **Engineer** begins with a vowel sound, so **an** is natural. |
+    | 16 | **I'm in class.** | **I am → I'm**; the apostrophe marks the omitted letter. |
+    | 17 | **They're classmates.** | **They are → they're**, not *their*. |
+    | 18 | **She is a student.** | Here **Nora** is a female person, so **she** is the expected pronoun. |
+    | 19 | **We are ready.** | **Nora and I** includes the speaker and another person: **we**. |
+    | 20 | **She is** | **Lina** is introduced as a female person; **she + is**. **She's** is a natural contracted alternative if the task permits one written word. |
 
-**Accepted alternatives:** For items **5–9**, contractions are natural in speech and ordinary writing (*She's a teacher*, *We're ready*, *It's Thursday*, *I'm a beginner*, *You're in my group*). The instructions request full forms only to practise the underlying pattern. For **10**, *Leo and Sara are classmates* is the target; **They're classmates** communicates the idea but does not retain the names requested. For **20**, *She's a student* is equally grammatical but uses the contraction rather than the two blanks.
+    **Accepted alternatives:** For items **5–9**, contractions are natural in speech and ordinary writing (*She's a teacher*, *We're ready*, *It's Thursday*, *I'm a beginner*, *You're in my group*). The instructions request full forms only to practise the underlying pattern. For **10**, *Leo and Sara are classmates* is the target; **They're classmates** communicates the idea but does not retain the names requested. For **20**, *She's a student* is equally grammatical but uses the contraction rather than the two blanks.
 
-**Diagnostic note:** When an answer is wrong, identify whether the problem concerns **the pronoun**, **the form of *be***, or **an article**. Then create a new original sentence rather than memorizing the correction.
+    **Diagnostic note:** When an answer is wrong, identify whether the problem concerns **the pronoun**, **the form of *be***, or **an article**. Then create a new original sentence rather than memorizing the correction.
 
-</details>
 
 ## 8. Vocabulary practice — ungraded
 
@@ -331,14 +329,12 @@ These do **not** count toward the 20 grammar exercises.
 
 **C. Mini-classroom note:** Complete with a suitable day or number: *Our lesson is on ___. Room ___ is ready.* Many combinations are acceptable; choose one you can explain.
 
-<details>
-<summary>Vocabulary answers and accepted alternatives</summary>
+??? note "Vocabulary answers and accepted alternatives"
 
-**A:** Wednesday; Saturday; Monday (the week cycles from Sunday to Monday).  
-**B:** zero; eight; twelve; fifteen; eighteen; twenty.  
-**C:** Example: *Our lesson is on Wednesday. Room seven is ready.* Any correctly spelled day and any number appropriate to the context are valid; use a capital letter for the day.
+    **A:** Wednesday; Saturday; Monday (the week cycles from Sunday to Monday).  
+    **B:** zero; eight; twelve; fifteen; eighteen; twenty.  
+    **C:** Example: *Our lesson is on Wednesday. Room seven is ready.* Any correctly spelled day and any number appropriate to the context are valid; use a capital letter for the day.
 
-</details>
 
 ## 9. Writing — use what you know
 
@@ -392,4 +388,4 @@ These are **prompts for a later interactive session** with English Learning Prog
 
 ---
 
-**Source and editorial note:** Unit 1A topic mapping was verified against the original private Elementary Fourth Edition index (\`elementary_1.png\`, contents page 2; asset SHA-256 recorded in \`curriculum/master_syllabus.yaml\`). All explanatory material, exercises, examples and the SVG diagram are original program content. This page is a **pilot draft awaiting approval**, not an Oxford reproduction or formal CEFR assessment.
+**Source and editorial note:** Unit 1A topic mapping was verified against the original private Elementary Fourth Edition index (`elementary_1.png`, contents page 2; asset SHA-256 recorded in `curriculum/master_syllabus.yaml`). All explanatory material, exercises, examples and the SVG diagram are original program content. This page is a **pilot draft awaiting approval**, not an Oxford reproduction or formal CEFR assessment.
