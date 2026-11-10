@@ -161,6 +161,13 @@
         "approved",
         "published"
       ]
+    },
+    "source_pronunciation": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/topic"
+      }
     }
   },
   "allOf": [
@@ -235,19 +242,48 @@
           }
         }
       }
+    },
+    {
+      "if": {
+        "properties": {
+          "source_verification": {
+            "const": "source_index_confirmed"
+          }
+        },
+        "required": [
+          "source_verification"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source_references": {
+            "contains": {
+              "type": "object",
+              "required": [
+                "type",
+                "asset",
+                "asset_sha256",
+                "verified_against_user_image"
+              ],
+              "properties": {
+                "type": {
+                  "const": "user_supplied_index"
+                },
+                "verified_against_user_image": {
+                  "const": true
+                }
+              }
+            },
+            "minContains": 1
+          }
+        }
+      }
     }
   ],
   "$defs": {
     "sourceReference": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "type",
-        "title",
-        "url",
-        "scope",
-        "verified_against_user_image"
-      ],
       "properties": {
         "type": {
           "enum": [
@@ -260,18 +296,64 @@
           "type": "string",
           "minLength": 8
         },
-        "url": {
-          "type": "string",
-          "pattern": "^https://"
-        },
         "scope": {
           "type": "string",
           "minLength": 4
         },
         "verified_against_user_image": {
           "type": "boolean"
+        },
+        "asset": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_().-]+\\.(png|jpg|jpeg|pdf)$"
+        },
+        "asset_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://"
         }
-      }
+      },
+      "required": [
+        "type",
+        "title",
+        "scope",
+        "verified_against_user_image"
+      ],
+      "oneOf": [
+        {
+          "required": [
+            "asset",
+            "asset_sha256"
+          ],
+          "not": {
+            "required": [
+              "url"
+            ]
+          }
+        },
+        {
+          "required": [
+            "url"
+          ],
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "asset"
+                ]
+              },
+              {
+                "required": [
+                  "asset_sha256"
+                ]
+              }
+            ]
+          }
+        }
+      ]
     },
     "topic": {
       "type": "object",
