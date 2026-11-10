@@ -94,6 +94,14 @@ def validate_curriculum():
                     fail(f"{lid}: source topics cannot be assigned without evidence")
                 if status in {"approved", "published"} and verification == "pending_original_index":
                     fail(f"{lid}: cannot publish unverified source lesson")
+                if verification == "source_index_confirmed":
+                    if not any(src.get("type") == "user_supplied_index"
+                               and src.get("verified_against_user_image") is True
+                               and src.get("asset") and re.fullmatch(r"[a-f0-9]{64}", src.get("asset_sha256", ""))
+                               for src in record.get("source_references", [])):
+                        fail(f"{lid}: direct original-index verification requires a private asset fingerprint")
+                    if not record.get("source_pronunciation"):
+                        fail(f"{lid}: directly verified source lesson must record its pronunciation topics")
                 if verification in {"external_index_confirmed", "source_index_confirmed"}:
                     if not record.get("source_references"):
                         fail(f"{lid}: confirmed source needs provenance")
@@ -120,6 +128,13 @@ def validate_curriculum():
         fail("Elementary must retain three A/B/C lessons per unit")
     pre = next((l for l in levels if l["id"] == "pre_intermediate"), None)
     if pre and pre.get("coverage") == "complete_contents_index_available":
+        indexed_assets = pre.get("index_provenance", {}).get("source_assets", [])
+        if {x.get("source_page") for x in indexed_assets} != {2, 3} or any(
+            not re.fullmatch(r"[a-f0-9]{64}", x.get("asset_sha256", ""))
+            or not x.get("asset") for x in indexed_assets
+        ):
+            fail("Pre-intermediate original index needs two private image fingerprints")
+
         if [u["number"] for u in pre["units"]] != list(range(1, 13)):
             fail("Complete Pre-intermediate index must contain all twelve units")
         if sum(len(u.get("source_lessons", [])) for u in pre["units"]) != 36:
