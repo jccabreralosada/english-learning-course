@@ -299,7 +299,7 @@ These are natural **fixed expressions** for recognition and simple use. Do not t
 
 ## 7. Ungraded grammar practice — 20 original exercises
 
-**Instructions:** Try the tasks **before** reading the answers. Write complete sentences with an initial capital letter and a period. These activities are **self-study**, not formal English Learning Program assessments.
+**Instructions:** Try the tasks **before** opening the answer panel. For 1–4, write only the missing verb. For 5–20, follow the instructions of each stage; use complete sentences, capitals and final punctuation whenever you rewrite a sentence. These activities are **ungraded self-study**, not formal English Learning Program assessments.
 
 ### Stage A — Recognize the form (1–4)
 
@@ -337,7 +337,7 @@ For **16–20**, read each new situation carefully. Each task combines at least 
 
 16. **A new student arrives.** Complete the two-sentence introduction with the correct **subject + full form of *be***: "Hello. ___ ___ Maya. I am a student." (You are Maya.)
 17. **Two classmates are in Room 8.** Replace *Omar and Lina* with a pronoun and **rewrite the whole sentence using a contraction**: "Omar and Lina are in Room eight."
-18. **A calendar notice.** Correct **both** mistakes in this line and write the complete sentence: "*it are monday.*"
+18. **A calendar notice.** Correct **all three** mistakes in this line and write the complete sentence: "*it are monday.*"
 19. **A technology club introduction.** Arrange the words and choose **a/an**: *(engineer / an / is / Sofia)*. Write one complete sentence.
 20. **A small group introduces itself.** Complete **both** statements using the correct form of *be*. Then contract the **second** statement: "I ___ Alex. Maya and I ___ students."
 
@@ -362,11 +362,11 @@ For **16–20**, read each new situation carefully. Each task combines at least 
     | 15 | **She is an engineer.** | **An** comes before the vowel sound at the start of *engineer*. |
     | 16 | **I am Maya.** | The speaker introduces herself, so the subject is **I** and its full form is **am**. |
     | 17 | **They're in Room eight.** | The two named people become **they**; **they are → they're**. |
-    | 18 | **It is Monday.** | **It** takes **is**; the sentence and the day begin with capital letters. |
+    | 18 | **It is Monday.** | Correct the initial lowercase **it**, replace **are** with **is**, and capitalize **Monday**. |
     | 19 | **Sofia is an engineer.** | Name first, then **is**; **an** goes before *engineer*. |
     | 20 | **I am Alex. We're students.** | **I → am**; **Maya and I → we → are → we're**. |
 
-    **Accepted alternatives and task boundaries:** In 5–9, contractions (for example, *She's a teacher*) are natural, but the **full form is requested** for construction practice. In 10, *They're classmates* is grammatically possible but does not follow the instruction to use the given words. In 16, *I'm Maya* is a natural sentence, but the prompt requests the full form. In 17, *They are in Room eight* is correct English but does not satisfy the **contraction** instruction. In 18, *It's Monday* is correct English, but the target is a direct correction without requiring a contraction; both can be accepted if punctuation and capitalization are correct. In 19, *Sofia's an engineer* is natural but the prompt asks you to arrange the **given words**. In 20, *I am Alex. We are students* is correct English, but the second sentence must be contracted.
+    **Accepted alternatives and task boundaries:** In 5–9, contractions (for example, *She's a teacher*) are natural, but the **full form is requested** for construction practice. In 10, *They're classmates* is grammatically possible but does not follow the instruction to use the given words. In 16, *I'm Maya* is a natural sentence, but the prompt requests the full form. In 17, *They are in Room eight* is correct English but does not satisfy the **contraction** instruction. In 18, **It's Monday** is also correct: it fixes the verb agreement and capitalization through a natural contraction. The full form demonstrates the rule more explicitly. In 19, *Sofia's an engineer* is natural but the prompt asks you to arrange the **given words**. In 20, *I am Alex. We are students* is correct English, but the second sentence must be contracted.
 
     **Reflect:** Did your error concern (1) the subject, (2) **am/is/are**, (3) a contraction, (4) word order, (5) **a/an**, or (6) capitalization? Write one fresh example to practise that specific point.
 
