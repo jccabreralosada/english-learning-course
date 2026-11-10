@@ -1,0 +1,34 @@
+name: Validate course structure
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches:
+      - 'chore/**'
+      - 'feature/**'
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  course-quality:
+    name: course-quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Unit-test quality validators
+        run: python -m unittest discover -s tests -v
+      - name: Validate curriculum, links and alt text
+        run: python scripts/validate_course.py
+      - name: Validate MkDocs strict build
+        run: mkdocs build --strict --site-dir site
