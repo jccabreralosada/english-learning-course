@@ -1,6 +1,6 @@
 # English Learning Program — Technical Architecture
 
-**Version:** 1.1.0 (implementation status reviewed 2026-11-09; preparation changes remain unapproved until merged)
+**Version:** 1.2.0 (implementation status reviewed 2026-11-10; changes in PR #1 remain unapproved until merged)
 
 ## 1. System boundary
 
@@ -12,7 +12,7 @@ Two **ChatGPT Projects** share the learning curriculum but perform distinct jobs
 | `English Learning Program` | Tutor modes Learn/Practice/Conversation/Assessment; six-skill evidence and spaced reviews | Private progress repository, with permission and successful commit verification |
 
 **GitHub repo A:** `english-learning-course`, **public**; static learning site deployed with GitHub Pages, using MkDocs/Material for MkDocs as the implemented site stack.  
-**GitHub repo B:** `english-learning-progress`, **private**; results, review schedule, learner preferences and event history.
+**GitHub repo B:** `english-learning-progress`, **private according to the architecture contract (not revalidated here)**; results, review schedule, learner preferences and event history.
 
 The public site is an **instructional resource**, not the official grading engine. Do not publish private grades, learning logs, email/address details or copyrighted textbook scans in the public repo.
 
@@ -22,18 +22,27 @@ The public site is an **instructional resource**, not the official grading engin
 english-learning-course/
   README.md
   mkdocs.yml
+  requirements.txt
+  requirements-dev.txt
+  curriculum/
+    master_syllabus.yaml
+    lesson_metadata.schema.json
+  governance/
+    pedagogical_guidelines.md
+    assessment_framework.md
+    technical_architecture.md
+    lesson_template.md
+  scripts/
+    validate_course.py
   docs/
     index.md
     elementary/
       index.md
-      unit_01/
-        index.md
-        grammar.md
-        vocabulary.md
-        everyday_english.md
-        practice.md
-        writing.md
-        assets/
+      unit_01/            # proposed, not yet created
+        lesson_a.md       # proposed, not yet created
+        lesson_b.md       # proposed, not yet created
+        lesson_c.md       # proposed, not yet created
+        assets/           # proposed, not yet created
     pre_intermediate/
     intermediate/
     intermediate_plus/
@@ -41,32 +50,14 @@ english-learning-course/
     advanced/
     advanced_plus/
     reference/
-      verb_tenses.md
-      irregular_verbs.md
-      modal_verbs.md
-      phrasal_verbs.md
-      collocations.md
-  curriculum/
-    master_syllabus.yaml
-  governance/
-    pedagogical_guidelines.md
-    assessment_framework.md
-    technical_architecture.md
-  curriculum/
-    lesson_metadata.schema.json
-  scripts/
-    validate_course.py
-  governance/
-    lesson_template.md
-  requirements-dev.txt
-  content_meta/
-    units/  # proposed; not yet created
-  .github/workflows/
-    pages.yml
-    quality.yml  # preparation branch proposal
+  .github/
+    workflows/
+      pages.yml
+      quality.yml
+
 ```
 
-**Lesson IDs:** `elementary.unit_01.lesson_a` (stable identity); file slugs may change, IDs should not. Metadata should define `source_lesson`, `origin`, `prerequisites`, `objectives`, `skills`, `review_tags`, `content_version`, `status`. Distinguish observed book topics from program additions.
+**Lesson IDs:** `elementary.unit_01.lesson_a` (stable identity); file slugs may change, IDs should not. Metadata must conform to `curriculum/lesson_metadata.schema.json` and include `source_lesson`, `source_verification`, `source_references`, per-topic `origin`, `prerequisites`, `objectives`, `skills`, `review_tags`, `content_version`, `oral_activities`, `writing_outcome`, `cefr`, and `editorial_status`. Distinguish observed book topics from program additions.
 
 **Build:** approved Markdown → MkDocs static site → GitHub Actions deploy → GitHub Pages. Deploy only when checks and review pass. Mobile-friendly styling, navigation, cross-links, search, visual accessibility, and optional print styles. A downloadable PDF compendium is a **future optional artifact**, not authoritative source.
 
@@ -147,17 +138,24 @@ Voice mode speed and lexical density adapt to comprehension; no assumption that 
 - [ ] One test event saved to private repo and successfully read from a new conversation.
 - [ ] User can identify exactly what content is public vs private.
 
-## 9. Implementation status and remaining decisions
+## 9. Current implementation, controls and pending decisions
 
-- **Verified (2026-11-09):** public repository `jccabreralosada/english-learning-course`, default branch `main`, read and declared push permissions via connected GitHub, MkDocs Material configuration, and a successful GitHub Actions `mkdocs build --strict` + Pages deployment.
-- **Verified:** the public site's configured URL is `https://jccabreralosada.github.io/english-learning-course/` (independent browser/mobile verification remains pending).
-- **Unprotected:** `main` reported `protected: false` and no rulesets; connector branch-protection detail read failed with 403 (integration lacks access). Owner must configure an effective branch rule manually, if available under the repo plan/settings. A draft PR is an editorial convention, not enforcement.
-- **Prepared, not approved:** `chore/course-foundations-v1` adds lesson schema, 1A–1C planning records, quality workflow and lesson template. Source-to-lesson assignments remain unresolved until the original Elementary index is checked. No textbook-specific topic has been guessed.
-- **CI separation:** `quality.yml` checks curriculum, local Markdown links/image alt and `mkdocs build --strict` on PRs; `pages.yml` deploys only after qualifying pushes to `main`. Configure required status check `course-quality` when branch rules are available.
-- **Manual protection recommended:** Settings → Rules → Rulesets or Settings → Branches → Add branch protection rule for `main`; require PRs and `course-quality` after its first successful run, restrict force pushes/deletions and review bypass. Settings may vary for public personal repos; verify actual enforcement, not only saved configuration.
-- **Pending:** confirm source images for Elementary 1A–1C, map actual lesson-level grammar/vocabulary, exact CEFR descriptor citations, visual/site review, and approved lesson content.
-- Whether official assessment question banks live in the private repo or are generated fresh from private test blueprints; avoid exposing answers in public repo.
-- Event JSON Schema details, snapshots regeneration, conflict handling and fallback exports.
-- English voice accent defaults and detailed oral assessment rubrics.
+- **Verified 2026-11-10:** the public repository is `jccabreralosada/english-learning-course`, with default branch `main` and a working GitHub connection.
+- **Branch ruleset:** `Protect main - English Learning Course` (ID `26878741`) reports enforcement `active`, target `refs/heads/main`, pull request required, allowed merge method squash, required check `course-quality`, resolved review threads, deletion and force-push blocked, and no bypass actors. It currently requires zero approving GitHub reviews; user editorial sign-off is a separate mandatory control.
+- **Verified Pages foundation:** MkDocs Material and the `pages.yml` workflow have produced a successful strict build and GitHub Pages deployment. Public URL is `https://jccabreralosada.github.io/english-learning-course/`. Independent visual/mobile inspection remains pending.
+- **Preparation PR:** PR #1 (`chore/course-foundations-v1`) is a draft with no merge. The files in this branch are not yet published via `main`.
+- **Quality checks:** the proposed `.github/workflows/quality.yml` runs automated metadata, source-provenance, navigation, local-link, image-alt, test-suite, and strict MkDocs checks in PRs and permitted branches. The quality workflow **does not deploy**.
+- **Release control:** human editorial approval of the exact head commit and successful required checks precede setting the PR ready for review, squash merging, and verification of the resulting `main` checks. Never commit or merge directly to `main` from editorial automation. Check Pages only on changes to the site publishing workflow's configured paths; curriculum-only changes need not republish.
+- **Source integrity:** Elementary Unit 1 topics have been matched to an externally available Fourth Edition contents sample; original user-provided index image comparison is still pending. Source records include this limitation. A passing build does not settle source provenance or user approval.
+- **CEFR:** introductory objectives are provisionally oriented to A1; individual descriptor mappings and all-level calibration remain unverified.
+- **Private progress repository:** statuses and permissions must be verified separately in the English Learning Program project. No private data is read or published by this PR.
 
-This document distinguishes existing implementation from proposals and does not imply that draft preparation-branch changes have been approved, merged, or deployed.
+## 10. Remaining decisions
+
+- Direct comparison of original user-supplied Elementary index images with the external contents index.
+- Exact CEFR can-do descriptor mapping and piloted writing/speaking rubrics.
+- Final lesson page review and mobile visual accessibility checks after an approved original lesson exists.
+- Choosing official assessment bank/private blueprint storage in the separate learning repository.
+- Event schema, review snapshot workflows and audio evidence policy in the separate learning project.
+
+This file documents current infrastructure and proposed quality controls; it does not authorize merge or publication.
