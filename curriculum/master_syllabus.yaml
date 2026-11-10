@@ -334,98 +334,412 @@ levels:
 - id: pre_intermediate
   name: Pre-intermediate
   sequence: 2
-  source: English File Pre-intermediate 4th edition – partial contents images; Grammar/Vocabulary Bank 14-page scan
-  coverage: partial_visible_index
+  source: "English File Pre-intermediate Fourth Edition, original complete contents images supplied to project; 14-page Grammar/Vocabulary Bank supplementary PDF"
+  coverage: complete_contents_index_available
+  index_provenance:
+    type: user_supplied_index
+    source_assets: ["image.png", "image(1).png"]
+    source_scope: "Original fourth-edition contents pages 2 and 3, units 1–12; uploaded to private ChatGPT project, not public GitHub"
+    source_content_storage: "project_only_not_public_repository"
+    confirmation: direct_visual_review
   units:
   - number: 1
-    grammar:
-    - word order in questions
-    - present simple
-    - present continuous
-    vocabulary:
-    - common verb phrases
-    - describing people
-    - clothes; prepositions of place
     status: source_index_confirmed
-    source_note: ''
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "word order in questions"
+    - "present simple"
+    - "present continuous"
+    vocabulary:
+    - "common verb phrases"
+    - "describing people: appearance and personality"
+    - "clothes, prepositions of place"
+    source_lessons:
+    - source_lesson: "1A"
+      title: "Are you? Can you? Do you? Did you?"
+      grammar: "word order in questions"
+      vocabulary: "common verb phrases"
+      pronunciation: "the alphabet"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "1B"
+      title: "The perfect date?"
+      grammar: "present simple"
+      vocabulary: "describing people: appearance and personality"
+      pronunciation: "final -s and -es"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "1C"
+      title: "The Remake Project"
+      grammar: "present continuous"
+      vocabulary: "clothes, prepositions of place"
+      pronunciation: "/ə/ and /ɜː/"
+      source: user_supplied_index
+      source_page: 2
   - number: 2
-    grammar:
-    - past simple regular and irregular verbs
-    - past continuous
-    - time sequencers and connectors
-    vocabulary:
-    - holidays
-    - time/place prepositions
-    - verb phrases
     status: source_index_confirmed
-    source_note: ''
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "past simple: regular and irregular verbs"
+    - "past continuous"
+    - "time sequencers and connectors"
+    vocabulary:
+    - "holidays"
+    - "prepositions of time and place: at, in, on"
+    - "verb phrases"
+    source_lessons:
+    - source_lesson: "2A"
+      title: "OMG! Where's my passport?"
+      grammar: "past simple: regular and irregular verbs"
+      vocabulary: "holidays"
+      pronunciation: "regular verbs: -ed endings"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "2B"
+      title: "That's me in the picture!"
+      grammar: "past continuous"
+      vocabulary: "prepositions of time and place: at, in, on"
+      pronunciation: "weak forms: was, were"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "2C"
+      title: "One dark October evening"
+      grammar: "time sequencers and connectors"
+      vocabulary: "verb phrases"
+      pronunciation: "word stress"
+      source: user_supplied_index
+      source_page: 2
   - number: 3
-    grammar:
-    - be going to
-    - present continuous for arrangements
-    - defining relative clauses
-    vocabulary:
-    - airports
-    - verb + preposition
-    - paraphrasing
     status: source_index_confirmed
-    source_note: ''
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "be going to (plans and predictions)"
+    - "present continuous (future arrangements)"
+    - "defining relative clauses"
+    vocabulary:
+    - "airports"
+    - "verbs + prepositions, e.g. arrive in"
+    - "paraphrasing"
+    source_lessons:
+    - source_lesson: "3A"
+      title: "TripSide"
+      grammar: "be going to (plans and predictions)"
+      vocabulary: "airports"
+      pronunciation: "the letter g"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "3B"
+      title: "Put it in your calendar!"
+      grammar: "present continuous (future arrangements)"
+      vocabulary: "verbs + prepositions, e.g. arrive in"
+      pronunciation: "linking"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "3C"
+      title: "Word games"
+      grammar: "defining relative clauses"
+      vocabulary: "paraphrasing"
+      pronunciation: "silent e"
+      source: user_supplied_index
+      source_page: 2
   - number: 4
-    grammar: []
-    vocabulary: []
-    status: index_not_visible
-    source_note: Fourth unit not shown in supplied index images.
+    status: source_index_confirmed
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "present perfect + yet, just, already"
+    - "present perfect or past simple? (1)"
+    - "something, anything, nothing, etc."
+    vocabulary:
+    - "housework, make or do?"
+    - "shopping"
+    - "adjectives ending -ed and -ing"
+    source_lessons:
+    - source_lesson: "4A"
+      title: "Who does what?"
+      grammar: "present perfect + yet, just, already"
+      vocabulary: "housework, make or do?"
+      pronunciation: "the letters y and j"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "4B"
+      title: "In your basket"
+      grammar: "present perfect or past simple? (1)"
+      vocabulary: "shopping"
+      pronunciation: "c and ch"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "4C"
+      title: "#greatweekend"
+      grammar: "something, anything, nothing, etc."
+      vocabulary: "adjectives ending -ed and -ing"
+      pronunciation: "vowel sounds (see source image)"
+      source: user_supplied_index
+      source_page: 2
   - number: 5
-    grammar: []
-    vocabulary: []
-    status: index_not_visible
-    source_note: Fifth unit not shown in supplied index images.
+    status: source_index_confirmed
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "comparative adjectives and adverbs, as...as"
+    - "superlatives (+ ever + present perfect)"
+    - "quantifiers, too, (not) enough"
+    vocabulary:
+    - "types of numbers"
+    - "describing a town or city"
+    - "health and the body"
+    source_lessons:
+    - source_lesson: "5A"
+      title: "I want it NOW!"
+      grammar: "comparative adjectives and adverbs, as...as"
+      vocabulary: "types of numbers"
+      pronunciation: "vowel sound (see source image)"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "5B"
+      title: "Twelve lost wallets"
+      grammar: "superlatives (+ ever + present perfect)"
+      vocabulary: "describing a town or city"
+      pronunciation: "sentence stress"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "5C"
+      title: "How much is enough?"
+      grammar: "quantifiers, too, (not) enough"
+      vocabulary: "health and the body"
+      pronunciation: "vowel sound (see source image)"
+      source: user_supplied_index
+      source_page: 2
   - number: 6
-    grammar: []
-    vocabulary: []
-    status: index_not_visible
-    source_note: Sixth unit not shown in supplied index images.
+    status: source_index_confirmed
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "will / won't (predictions)"
+    - "will / won't / shall (other uses)"
+    - "review of verb forms: present, past, and future"
+    vocabulary:
+    - "opposite verbs"
+    - "verb + back"
+    - "modifiers"
+    source_lessons:
+    - source_lesson: "6A"
+      title: "Think positive - or negative?"
+      grammar: "will / won't (predictions)"
+      vocabulary: "opposite verbs"
+      pronunciation: "'ll, won't"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "6B"
+      title: "I'll always love you"
+      grammar: "will / won't / shall (other uses)"
+      vocabulary: "verb + back"
+      pronunciation: "word stress: two-syllable verbs"
+      source: user_supplied_index
+      source_page: 2
+    - source_lesson: "6C"
+      title: "The meaning of dreaming"
+      grammar: "review of verb forms: present, past, and future"
+      vocabulary: "modifiers"
+      pronunciation: "the letters ea"
+      source: user_supplied_index
+      source_page: 2
   - number: 7
-    grammar:
-    - uses of to-infinitive
-    - uses of gerund (-ing)
-    - have to / don’t have to / must / mustn’t
-    vocabulary:
-    - verb + infinitive
-    - verb + gerund
-    - adjective + preposition
     status: source_index_confirmed
-    source_note: ''
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "uses of the infinitive with to"
+    - "uses of the gerund (verb + -ing)"
+    - "have to, don't have to, must, mustn't"
+    vocabulary:
+    - "infinitive: try to, forget to, etc."
+    - "verbs + gerund"
+    - "adjectives + prepositions: afraid of, etc."
+    source_lessons:
+    - source_lesson: "7A"
+      title: "First day nerves"
+      grammar: "uses of the infinitive with to"
+      vocabulary: "infinitive: try to, forget to, etc."
+      pronunciation: "weak form of to, linking"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "7B"
+      title: "Happiness is..."
+      grammar: "uses of the gerund (verb + -ing)"
+      vocabulary: "verbs + gerund"
+      pronunciation: "-ing, the letter o"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "7C"
+      title: "Could you pass the test?"
+      grammar: "have to, don't have to, must, mustn't"
+      vocabulary: "adjectives + prepositions: afraid of, etc."
+      pronunciation: "stress on prepositions"
+      source: user_supplied_index
+      source_page: 3
   - number: 8
-    grammar:
-    - should
-    - first conditional
-    - possessive pronouns
-    vocabulary:
-    - get
-    - confusing verbs
-    - adverbs of manner
     status: source_index_confirmed
-    source_note: ''
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "should"
+    - "if + present, + will + infinitive (first conditional)"
+    - "possessive pronouns"
+    vocabulary:
+    - "get"
+    - "confusing verbs"
+    - "adverbs of manner"
+    source_lessons:
+    - source_lesson: "8A"
+      title: "Should I stay or should I go?"
+      grammar: "should"
+      vocabulary: "get"
+      pronunciation: "/ʊ/ and /uː/"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "8B"
+      title: "Murphy's Law"
+      grammar: "if + present, + will + infinitive (first conditional)"
+      vocabulary: "confusing verbs"
+      pronunciation: "homophones"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "8C"
+      title: "Who is Vivienne?"
+      grammar: "possessive pronouns"
+      vocabulary: "adverbs of manner"
+      pronunciation: "reading aloud"
+      source: user_supplied_index
+      source_page: 3
   - number: 9
-    grammar:
-    - second conditional
-    - present perfect with for/since
-    - present perfect vs past simple (review)
-    vocabulary:
-    - animals and insects
-    - fear expressions
-    - biographies
     status: source_index_confirmed
-    source_note: ''
-  - number: 10
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
     grammar:
-    - expressing movement
+    - "if + past, would + infinitive (second conditional)"
+    - "present perfect + for and since"
+    - "present perfect or past simple? (2)"
     vocabulary:
-    - sports and movement
-    status: partial_index_visible
-    source_note: Only first lesson shown.
-  notes: Visible TOC jumps from unit 3 to unit 7 and cuts unit 10; do not infer the remaining units.
+    - "animals and insects"
+    - "words related to fear, phrases with for and since"
+    - "biographies"
+    source_lessons:
+    - source_lesson: "9A"
+      title: "Beware of the dog"
+      grammar: "if + past, would + infinitive (second conditional)"
+      vocabulary: "animals and insects"
+      pronunciation: "word stress"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "9B"
+      title: "Fearof.net"
+      grammar: "present perfect + for and since"
+      vocabulary: "words related to fear, phrases with for and since"
+      pronunciation: "sentence stress"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "9C"
+      title: "Scream queens"
+      grammar: "present perfect or past simple? (2)"
+      vocabulary: "biographies"
+      pronunciation: "word stress; vowel sound (see source image)"
+      source: user_supplied_index
+      source_page: 3
+  - number: 10
+    status: source_index_confirmed
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "expressing movement"
+    - "word order of phrasal verbs"
+    - "the passive"
+    vocabulary:
+    - "sports, expressing movement"
+    - "phrasal verbs"
+    - "people from different countries"
+    source_lessons:
+    - source_lesson: "10A"
+      title: "Into the net"
+      grammar: "expressing movement"
+      vocabulary: "sports, expressing movement"
+      pronunciation: "word stress"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "10B"
+      title: "Early birds"
+      grammar: "word order of phrasal verbs"
+      vocabulary: "phrasal verbs"
+      pronunciation: "linking"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "10C"
+      title: "International inventions"
+      grammar: "the passive"
+      vocabulary: "people from different countries"
+      pronunciation: "/ʃ/, /tʃ/, and /dʒ/"
+      source: user_supplied_index
+      source_page: 3
+  - number: 11
+    status: source_index_confirmed
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "used to"
+    - "might"
+    - "so, neither + auxiliaries"
+    vocabulary:
+    - "school subjects"
+    - "word building: noun formation"
+    - "similarities and differences"
+    source_lessons:
+    - source_lesson: "11A"
+      title: "Ask the teacher"
+      grammar: "used to"
+      vocabulary: "school subjects"
+      pronunciation: "used to / didn't use to"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "11B"
+      title: "Help! I can't decide!"
+      grammar: "might"
+      vocabulary: "word building: noun formation"
+      pronunciation: "diphthongs"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "11C"
+      title: "Twinstrangers.net"
+      grammar: "so, neither + auxiliaries"
+      vocabulary: "similarities and differences"
+      pronunciation: "/ð/ and /θ/"
+      source: user_supplied_index
+      source_page: 3
+  - number: 12
+    status: source_index_confirmed
+    source_note: "Unit and 1A/1B/1C themes transcribed from original user-supplied complete contents images; section-specific lesson design not yet authored."
+    grammar:
+    - "past perfect"
+    - "reported speech"
+    - "questions without auxiliaries"
+    vocabulary:
+    - "time expressions"
+    - "say or tell?"
+    - "revision of question words"
+    source_lessons:
+    - source_lesson: "12A"
+      title: "Unbelievable!"
+      grammar: "past perfect"
+      vocabulary: "time expressions"
+      pronunciation: "the letter i"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "12B"
+      title: "Think before you speak"
+      grammar: "reported speech"
+      vocabulary: "say or tell?"
+      pronunciation: "double consonants"
+      source: user_supplied_index
+      source_page: 3
+    - source_lesson: "12C"
+      title: "The English File quiz"
+      grammar: "questions without auxiliaries"
+      vocabulary: "revision of question words"
+      pronunciation: "question words"
+      source: user_supplied_index
+      source_page: 3
+  notes: "The supplied original Fourth Edition contents images now cover all twelve units. Some small pronunciation symbols are recorded as pending exact transcription rather than guessed. Indexed topics only; original Oxford pages are not stored in the public repository."
   lessons_per_unit:
   - A
   - B
