@@ -36,6 +36,30 @@ class TestCourseValidation(unittest.TestCase):
         candidate = {**self.record, "source_verification": "pending_original_index"}
         self.assertTrue(list(VALIDATOR.iter_errors(candidate)))
 
+    def test_original_index_provenance_has_private_fingerprint(self):
+        references = self.record["source_references"]
+        self.assertEqual(self.record["source_verification"], "source_index_confirmed")
+        self.assertTrue(any(x.get("type") == "user_supplied_index" and
+                            x.get("verified_against_user_image") and
+                            len(x.get("asset_sha256", "")) == 64 for x in references))
+        self.assertFalse(list(VALIDATOR.iter_errors(self.record)))
+
+    def test_original_index_without_private_reference_is_rejected(self):
+        candidate = {**self.record, "source_references": [{
+            "type": "published_sample_index",
+            "title": "External backup index",
+            "url": "https://example.org/reference",
+            "scope": "Contents 1A",
+            "verified_against_user_image": False
+        }]}
+        self.assertTrue(list(VALIDATOR.iter_errors(candidate)))
+
+    def test_original_index_requires_source_pronunciation(self):
+        candidate = {**self.record, "source_pronunciation": [
+            {"name": "word stress", "origin": "source_index_confirmed"}
+        ]}
+        self.assertFalse(list(VALIDATOR.iter_errors(candidate)))
+
     def test_invalid_editorial_status_is_rejected(self):
         candidate = {**self.record, "editorial_status": "mastered"}
         self.assertTrue(list(VALIDATOR.iter_errors(candidate)))
