@@ -39,126 +39,187 @@ By the end, you should be able to:
 
 **Before you begin:** you only need to recognize the Latin alphabet and a few familiar English words. No earlier grammar lesson is required. **Next:** 1B develops negatives and questions with *be*; these are deliberately **not** the main grammar of 1A.
 
-## 2. Core concepts / Conceptos clave
+## 2. Grammar learning path
 
-### Affirmative *be* / Verbo *be* afirmativo
+Work through these four steps in order. Each step has a **short example** and a **check** before you continue. The longer ungraded practice is in section 6.
 
-**English:** We use *be* to identify a person or thing, say where someone is, or describe a state. In the **present affirmative**, its form changes with the subject: **I am**, **he/she/it is**, **you/we/they are**.
+### Step 1 — Understand the subject
 
-**Español:** *Be* puede significar **ser** o **estar**, según el contexto. En afirmativo, cambia con el sujeto: **I am**, **he/she/it is**, **you/we/they are**. No se traduce palabra por palabra de manera automática.
+#### Core idea / Concepto clave: subject pronouns
 
-### Subject pronouns / Pronombres sujeto
+**English:** The **subject** tells us who or what a sentence is about. A **subject pronoun** can replace a name or group of names. In a normal English statement, the subject comes before the verb.
 
-**English:** A subject pronoun tells us **who or what** a sentence is about. It usually appears **before the verb** in an affirmative statement.
+**Español:** El **sujeto** indica de quién o de qué hablamos. Un **pronombre sujeto** puede reemplazar un nombre y normalmente aparece antes del verbo. En inglés no solemos omitirlo, aunque en español sí: *Soy estudiante* → **I am a student**.
 
-**Español:** El pronombre sujeto indica **de quién o de qué hablamos**. En inglés normalmente se expresa antes del verbo; en español a menudo puede omitirse.
+#### Examples — seven pronouns in context
 
-## 3. Grammar — subject pronouns and affirmative *be*
-
-### 3.1 The seven subject pronouns
-
-| Subject | Basic meaning in Spanish | Original example |
+| Pronoun | Spanish guide | Short affirmative example |
 |---|---|---|
-| **I** | yo | **I** am Nora. |
-| **you** | tú / usted / vosotros / ustedes | **You** are in my class. |
-| **he** | él | **He** is Leo. |
-| **she** | ella | **She** is Marta. |
-| **it** | ello / eso; for a thing or situation | **It** is a laptop. |
-| **we** | nosotros / nosotras | **We** are students. |
-| **they** | ellos / ellas | **They** are teachers. |
+| **I** | yo | **I** am Ana. |
+| **you** | tú / usted / ustedes / vosotros | **You** are here. |
+| **he** | él | **He** is a student. |
+| **she** | ella | **She** is ready. |
+| **it** | eso / ello; a thing or a situation | **It** is Monday. |
+| **we** | nosotros / nosotras | **We** are classmates. |
+| **they** | ellos / ellas; sometimes one person | **They** are in class. |
 
-**Important:**
-- **I** is **always capitalized**, even in the middle of a sentence: *Marta and I are students.*
-- **You** can refer to **one person or several people**. It always takes **are** in the present tense.
-- Use **it** for a thing or an impersonal situation: *It is a phone.* / *It is Monday.* Do not use *it* for a person when you know the appropriate personal pronoun.
-- Use **he**, **she** or **they** for people as appropriate. **They** can also refer to **one person** whose gender is unknown or who uses *they*; the verb is still **are**: *Alex is here. They are ready.*
-- A person’s name can also be the subject: *Nora is a student.* Replace **Nora** with **she** if appropriate. *Nora and Leo are students* → **They are students**.
+Read the subject, then ask: **Who or what is the sentence about?** For example, *Leo is a student* → *He is a student* when **he** is the appropriate pronoun. *Leo and Ana are here* → *They are here*. *Leo and I are here* → *We are here* because **I** is part of the group.
 
-### 3.2 Choose *am*, *is*, or *are*
+!!! tip "Three details worth knowing"
+    - **I** is always capitalized: *Ana and I are here.*
+    - **You** can mean one person or several; it will take **are** in this lesson.
+    - **It** normally refers to things and impersonal situations (*It's Monday*). Use a person's appropriate pronoun. **They** can also refer to one person of unknown gender or a person who uses *they*; its verb is still **are**.
 
-![Three accessible cards: I takes am; he, she, and it take is; you, we, and they take are, with two short original examples per group.](assets/be_subject_map.svg)
+#### Check your understanding
 
-*Teaching note:* Read **from the subject on the left** to the verb form on the right. The subject determines the form, not the noun or adjective after the verb.
+**A.** Replace *Marta and I* with one pronoun.  
+**B.** Which pronoun fits *the notebook*?  
+**C.** What is the subject in *They are classmates*?
 
-| Subject | Full form | Contraction | Example |
-|---|---|---|---|
-| I | I **am** | **I'm** | I'm a student. |
-| you | you **are** | **you're** | You're ready. |
-| he | he **is** | **he's** | He's Daniel. |
-| she | she **is** | **she's** | She's in class. |
-| it | it **is** | **it's** | It's Friday. |
-| we | we **are** | **we're** | We're classmates. |
-| they | they **are** | **they're** | They're here. |
+??? note "Check — Step 1"
+
+    **A. We** — the speaker is included.  
+    **B. It** — a notebook is a thing.  
+    **C. They** — the subject is before *are*.
+
+**Continue when:** you can name all seven pronouns and identify the subject in an example.
+
+### Step 2 — Understand how *be* works
+
+#### Core idea / Concepto clave: affirmative *be*
+
+**English:** We use **be** to identify someone or something, describe a state or say where someone is. In the present affirmative, **be changes with the subject**: *am*, *is* or *are*.
+
+**Español:** **Be** puede expresar **ser** o **estar**. Su forma depende del sujeto, no de la palabra que viene después: **I am**, **he/she/it is**, **you/we/they are**.
+
+#### Examples — choose the form
+
+![Vertical three-card diagram: I takes am; he, she, it take is; you, we, they take are. Each card gives an original example.](assets/be_subject_map.svg)
+
+*Teaching note:* First find the subject. Then select its matching form of *be*. The diagram and the following table convey the same rule.
+
+| Subject | Form of *be* | Complete example |
+|---|---|---|
+| I | **am** | I am in class. |
+| he / she / it | **is** | She is a teacher. |
+| you / we / they | **are** | We are ready. |
+
+**Why three forms?** *Be* is **irregular**. You do not create its form by adding a normal ending to one basic word. Learn the three meaningful groups: **I → am**, **he/she/it → is**, **you/we/they → are**.
+
+Compare: **He is ready.** / **They are ready.** The word *ready* is unchanged; the **subject** controls the verb. The same happens with **You are ready** whether *you* refers to one person or a group.
+
+#### How to build an affirmative sentence
 
 **Pattern:** **subject + am/is/are + information + .**
 
-`I + am + in class.` → **I am in class.**
+- **I + am + a student.** → *I am a student.*
+- **She + is + in Room 2.** → *She is in Room 2.*
+- **We + are + happy.** → *We are happy.*
 
-`She + is + a teacher.` → **She is a teacher.**
+Put **the subject first**, add **its form of be**, then add the information. This is not the usual pattern for a question; questions are taught in **1B**.
 
-`We + are + ready.` → **We are ready.**
+#### Check your understanding
 
-**Why these forms?** *Be* is irregular: we do **not** add *-s* to a regular form for *he* and *she*. We select one of the three forms from the table. Learning the subject–verb pair as a chunk makes everyday sentences easier.
+Choose the correct form and explain your choice.
 
-### 3.3 What can come after *be*?
+**A.** *She ___ happy.*  
+**B.** *You ___ a student.* (one person)  
+**C.** *The notebooks ___ here.*
 
-| Use | Structure | Original example | Meaning |
+??? note "Check — Step 2"
+
+    **A. is** — *she* belongs to the **is** group.  
+    **B. are** — *you* always takes **are**, even for one person.  
+    **C. are** — *the notebooks* means several things, like *they*.
+
+**Continue when:** you can explain **why** the subject selects *am*, *is* or *are* without looking at the table.
+
+### Step 3 — Add useful information after *be*
+
+An affirmative statement becomes meaningful when we add information after the verb. These patterns introduce different meanings **without changing the subject–verb rule**.
+
+| Purpose | Pattern | Example | Spanish |
 |---|---|---|---|
-| Identity/name | subject + *be* + name | I am Elena. | Soy Elena. |
-| Role or occupation | subject + *be* + a/an + singular job | He is **an** engineer. | Él es ingeniero. |
-| Description/state | subject + *be* + adjective | We are happy. | Estamos felices. |
-| Location | subject + *be* + place phrase | They are in the library. | Están en la biblioteca. |
-| Day/time reference | it + *be* + day | It is Tuesday. | Es martes. |
+| Name / identity | subject + *be* + name | I'm Sofia. | Soy Sofía. |
+| Job / role | subject + *be* + **a/an** + job | He is an engineer. | Él es ingeniero. |
+| State / description | subject + *be* + adjective | They are tired. | Están cansados. |
+| Place | subject + *be* + place phrase | We are in class. | Estamos en clase. |
+| Day | *it* + *be* + day | It is Thursday. | Es jueves. |
 
-**Job articles:** Before a **singular countable job**, use **a** or **an**: *She is **a** teacher.* / *He is **an** engineer.* Use **an** before a vowel **sound**, not simply a vowel letter. In this lesson, memorize *an engineer* as a useful phrase; full article rules come later.
+#### Understand two small details
 
-**Descriptions:** An adjective does **not** change for a plural subject: *She is happy.* / *They are happy.* Not *happies*.
+**1. Jobs and *a/an*.** An English singular job normally needs an article: **She is a teacher**, not *She is teacher*. Use **an** before a vowel **sound**: *He is an engineer*. This is a useful introductory pattern; the full lesson on articles comes later.
 
-**Location:** *I am at home* and *I am in the classroom* are both natural. The place phrase changes the meaning; the **am** form does not change.
+**2. Descriptions don't agree in number.** **She is happy** and **They are happy** use the same adjective. Don't add *-s* to *happy* for the plural.
 
-**Technology in context (program extension):** *I am a data engineer.* / *It is a laptop.* / *We are in a video call.* These are illustrations of the same beginner structure, **not** extra grammar to master.
+**Technology in context — optional program extension:** *I am a data engineer.* / *It is a laptop.* / *We are in a video call.* These illustrate the same everyday grammar and do not require technical knowledge.
 
-### 3.4 Full forms and contractions
+#### Check your understanding
 
-In everyday conversation, **contractions are very common**. An apostrophe (') shows that letters have been left out.
+**A.** Choose the correct sentence: *She is teacher* / *She is a teacher*.  
+**B.** Explain what changes: *He is happy* → *They are happy*.  
+**C.** Complete: *It ___ Friday.*
 
-| Full form | Natural contraction | Original example |
+??? note "Check — Step 3"
+
+    **A. She is a teacher** — a singular job needs **a** here.  
+    **B. is → are** — the subject changes from *he* to *they*, but *happy* stays the same.  
+    **C. is** — a day is expressed with *it is*.
+
+**Continue when:** you can make one sentence about a person and one about a place.
+
+### Step 4 — Make English natural: contractions
+
+#### Core idea / Concepto clave: contractions
+
+**English:** A **contraction** is a shorter written and spoken form. The apostrophe (') shows that letters have been omitted. In everyday introductions, contractions often sound more natural.
+
+**Español:** Una **contracción** une palabras y reemplaza letras por un apóstrofo: **I am → I'm**. No cambia el significado de la afirmación.
+
+#### Examples — full and short forms
+
+| Full form | Contraction | Original context |
 |---|---|---|
-| I am | I'm | I'm at school. |
-| You are | You're | You're early. |
-| He is | He's | He's my classmate. |
-| She is | She's | She's ready. |
-| It is | It's | It's a new notebook. |
-| We are | We're | We're in Room 4. |
-| They are | They're | They're here today. |
+| I am | **I'm** | I'm Elena. |
+| You are | **You're** | You're early. |
+| He is | **He's** | He's a student. |
+| She is | **She's** | She's here. |
+| It is | **It's** | It's Tuesday. |
+| We are | **We're** | We're classmates. |
+| They are | **They're** | They're ready. |
 
-Use the **full form** for emphasis or when you want to speak carefully: *I **am** ready.* In typical introductions, the contraction sounds natural: *I'm Sofia.*
+**I am ready** and **I'm ready** express the same basic idea. The full form can sound deliberate or emphatic; the contraction is common in conversation and informal writing.
 
-!!! tip "Don't confuse these words"
-    **it's** = *it is*: *It's Wednesday.*  
-    **its** = possessive word (no apostrophe): *The laptop is in its bag.* This second meaning is included **only as a recognition note**; possessive adjectives are formally introduced in **1C**.
+!!! note "Avoid a common Spanish-speaker confusion"
+    **You're** means *you are*. **Your** is a different word, introduced formally in **1C**.  
+    **It's** means *it is*. **Its** is also a different word; do not confuse the apostrophe with possession.
 
-Contractions are not arbitrary shortcuts: **you are → you're**, not *your*. *Your* has a different grammatical function and is developed later.
+#### The five common traps
 
-### 3.5 Natural word order
-
-In a positive English statement, place the subject **before** the verb.
-
-| English ✓ | Common mistake ✗ | Why |
+| Not this | Say this | Reason |
 |---|---|---|
-| **I am** a student. | *Am a student.* | A subject is normally required. |
-| **She is** in class. | *She in class.* | Affirmative statements with *be* need the verb. |
-| **They are** happy. | *They is happy.* | **They** takes **are**. |
-| **You are** welcome. | *You is welcome.* | Singular and plural **you** take **are**. |
-| **It's** Monday. | *Is Monday.* | Use **it** for the day in this structure. |
+| *Am a student.* | **I am a student.** | Normal statements need a subject. |
+| *He are ready.* | **He is ready.** | **He** selects **is**. |
+| *You is early.* | **You are early.** | **You** selects **are** even for one person. |
+| *She is teacher.* | **She is a teacher.** | The singular job needs **a**. |
+| *Is Monday.* | **It is Monday.** | The day needs **it** here. |
 
-Unlike Spanish, English normally does not omit a subject pronoun in an ordinary statement. Spanish *Soy estudiante* corresponds to **I am a student**, not *Am student*.
+#### Check your understanding
 
-### 3.6 Boundaries: what comes later?
+**A.** Expand *We're here* into its full form.  
+**B.** Shorten *She is ready*.  
+**C.** Correct *You is in class*.
 
-This is an **affirmative** lesson. You may recognize phrases like *Are you ready?* or *I am not ready*, but we **do not teach question inversion or negatives yet**. These are central in **Elementary 1B**.
+??? note "Check — Step 4"
 
-Similarly, possessives (*my, your, his*) are developed in **1C**. Mentioning *my classmate* or *your name* as familiar chunks does not replace that lesson.
+    **A. We are here.**  
+    **B. She's ready.**  
+    **C. You are in class.** In each case the subject still determines the verb.
+
+**Continue when:** you can use the full form and contraction without confusing *you're* with *your*.
+
+!!! info "What comes next?"
+    **1B:** negatives and questions with *be*. **1C:** possessive adjectives. You can recognize fixed expressions that contain later structures, but you do **not** need to produce those grammar patterns in 1A.
 
 ## 4. Vocabulary — days of the week
 
