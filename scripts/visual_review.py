@@ -114,6 +114,32 @@ def main():
                 panels.first.locator("summary").click()
                 if panels.first.evaluate("(node)=>node.open"):
                     failures.append(f"{label}: answers did not collapse")
+            for i, table in enumerate(report["tables"]):
+                if table["widerThanViewport"]:
+                    can_scroll=page.locator("article table").nth(i).evaluate("""(table) => {
+                        let node=table.parentElement;
+                        while(node && node!==document.body){
+                            const style=getComputedStyle(node);
+                            if(node.scrollWidth>node.clientWidth+2 && ['auto','scroll'].includes(style.overflowX)){
+                                node.scrollLeft=120;
+                                const moved=node.scrollLeft>0;
+                                node.scrollLeft=0;
+                                return moved;
+                            }
+                            node=node.parentElement;
+                        }
+                        return false;
+                    }""")
+                    if not can_scroll:
+                        failures.append(f"{label}: table {i+1} cannot be scrolled horizontally")
+            # Verify a deep heading anchor resolves and the browser can reach it.
+            heading=page.locator("article h2[id]").first
+            if heading.count():
+                anchor_id=heading.get_attribute("id")
+                page.evaluate("(id) => { window.location.hash=id }", anchor_id)
+                if page.evaluate("decodeURIComponent(window.location.hash.slice(1))") != anchor_id:
+                    failures.append(f"{label}: section anchor cannot be navigated")
+                page.evaluate("window.history.replaceState(null,'',window.location.pathname)")
             for link in page.locator("article a[href^='#']").all():
                 href=link.get_attribute("href")
                 if href and len(href)>1 and page.locator(f'[id="{href[1:]}"]').count()==0:
