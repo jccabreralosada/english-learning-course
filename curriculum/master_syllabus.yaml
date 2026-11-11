@@ -235,7 +235,7 @@ levels:
       writing_outcome: "Write a short original classroom dialogue using possessive adjectives."
       review_tags: ["possessive_adjectives","classroom_language","spelling"]
       content_version: "0.1.0"
-      editorial_status: in_review
+      editorial_status: published
   - number: 2
     grammar:
     - singular/plural nouns
