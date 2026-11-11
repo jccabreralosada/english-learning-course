@@ -1,8 +1,30 @@
 # Unit 1 — Tutor interaction protocol
 
-**Internal teaching guidance.** The public lesson pages show learning outcomes and suggested speaking, listening and pronunciation practice. These operational instructions guide the separate English Learning Program tutor. No individual grades, recordings, transcripts or profiles belong in this public repository.
+**Internal teaching guidance.** The public lesson pages show learning outcomes and suggested speaking, listening and pronunciation practice. This file contains the operational instructions for the separate English Learning Program tutor. Do not store grades, recordings, transcripts or personal profiles here.
 
-## 1A — Welcome to the class
+## Lookup by lesson ID / Consulta por identificador
+
+The **exact** `lesson_id` from `curriculum/master_syllabus.yaml` or a published lesson's front matter identifies which section to load.
+
+| Lesson ID | Protocol section |
+|---|---|
+| `elementary.unit_01.lesson_a` | `## elementary.unit_01.lesson_a` — 1A, Welcome to the class |
+| `elementary.unit_01.lesson_b` | `## elementary.unit_01.lesson_b` — 1B, One world |
+| `elementary.unit_01.lesson_c` | `## elementary.unit_01.lesson_c` — 1C, What's your email? |
+
+**Tutor retrieval procedure (read-only):**
+
+1. Confirm the requested lesson's **exact `lesson_id`** from the current published curriculum or lesson front matter. Do not infer IDs from display titles.
+2. Read the **approved `main` revision** of this file through the available GitHub connector or a repository-file fetch: [unit_01_tutor_protocol.md](https://github.com/jccabreralosada/english-learning-course/blob/main/governance/unit_01_tutor_protocol.md). A draft PR is not an approved teaching source.
+3. Find the second-level heading whose text matches the lesson ID **exactly**. Use only the content **from that heading up to (but not including) the next second-level lesson-ID heading**. The heading after it is the start of a different lesson.
+4. Apply that section's Listening, Speaking and Pronunciation outcomes, progressive prompts, adaptive speaking rate and feedback rules. Pair it with the learner-facing page, prerequisites and general [pedagogical guidelines](pedagogical_guidelines.md). Formal assessment criteria and private learner state remain exclusively in English Learning Program.
+5. If the repository cannot be accessed, the ID is unknown, or no matching section exists, **report that the protocol could not be verified** and use only already confirmed public learner-facing objectives. Do not claim to have loaded the protocol or invent a lesson-specific assessment.
+
+**Integration boundary:** This mapping documents a deterministic lookup convention; it does **not** automatically configure the separate ChatGPT project, install GitHub access there, or synchronize its instructions. English Learning Program must be configured to read this public file (or explicitly supplied its current contents) at lesson start. Do not copy private learner records into this repository.
+
+## elementary.unit_01.lesson_a
+
+**1A — Welcome to the class**
 
 
 This section is a **handoff for English Learning Program**, not a recorded or graded activity on this public page. Each activity has a concrete outcome, an accessible first step and a next step if comprehension improves.
@@ -43,7 +65,9 @@ This section is a **handoff for English Learning Program**, not a recorded or gr
 **Across all three skills:** Use new utterances, not official test prompts. Give targeted feedback during **practice**; do not generate scores or pretend a formal assessment was completed. Private progress and assessment evidence belong only in English Learning Program.
 
 
-## 1B — One world
+## elementary.unit_01.lesson_b
+
+**1B — One world**
 
 
 These are **original instructions for the separate English Learning Program interactive tutor**, not official test items or private progress data. Begin **slowly and clearly** and adjust pace only after comprehension is demonstrated.
@@ -69,7 +93,9 @@ These are **original instructions for the separate English Learning Program inte
 **Feedback and privacy:** During practice, highlight two or three high-value corrections after a substantial response. If ASR transcription is uncertain, verify by listening instead of treating the transcript as proof. Formal evaluation, grades and learning progress stay in the private English Learning Program project.
 
 
-## 1C — What's your email?
+## elementary.unit_01.lesson_c
+
+**1C — What's your email?**
 
 
 These are clear practice prompts for the **English Learning Program interactive tutor**, not tests or scores. Begin slowly and clearly; increase speed only after the learner demonstrates comprehension. Use repeat → slower → rephrase → brief Spanish support if needed.
