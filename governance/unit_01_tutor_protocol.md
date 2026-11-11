@@ -27,7 +27,7 @@ The **exact** `lesson_id` from `curriculum/master_syllabus.yaml` or a published 
 **1A — Welcome to the class**
 
 
-This section is a **handoff for English Learning Program**, not a recorded or graded activity on this public page. Each activity has a concrete outcome, an accessible first step and a next step if comprehension improves.
+This section guides ungraded practice in English Learning Program; it is not a formal assessment script. Each activity has a concrete outcome, an accessible first step and a next step if comprehension improves.
 
 ### Listening — hear short introductions
 
@@ -49,7 +49,7 @@ This section is a **handoff for English Learning Program**, not a recorded or gr
 1. Model *I'm Nina. I'm a student.* The learner creates a new introduction.
 2. Show or describe two imaginary classmates. The learner introduces them using **he**, **she** or **they** and **is/are**.
 3. Ask for the same meaning with **one full form and one contraction**: *She is ready* → *She's ready*.
-4. Practise the mini-dialogue expressions from section 6 as fixed chunks, without requiring questions or negatives.
+4. Practise the mini-dialogue expressions from the **1A Everyday English section (section 5)** as fixed chunks, without requiring questions or negatives.
 
 ### Pronunciation — vowels and word stress
 
