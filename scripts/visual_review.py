@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Browser QA for the *built* Elementary 1A MkDocs Material page.
+"""Browser QA for built Elementary Unit 1 lessons in MkDocs Material.
 
 Requires: pip install playwright; python -m playwright install chromium
-Usage: python scripts/visual_review.py --site-dir site --output-dir visual-review
+Usage: python scripts/visual_review.py --lesson b --site-dir site --output-dir visual-review
 This never publishes or modifies the public Pages site.
 """
 import argparse
@@ -12,7 +12,7 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-RELATIVE_PAGE = "elementary/unit_01/lesson_a/"
+RELATIVE_PAGE_TEMPLATE = "elementary/unit_01/lesson_{letter}/"
 
 
 def inspect(page, theme):
@@ -64,9 +64,11 @@ def inspect(page, theme):
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--site-dir", type=Path, default=Path("site"))
+    p.add_argument("--lesson", choices=["a", "b"], default="a", help="Lesson within Elementary Unit 1")
     p.add_argument("--output-dir", type=Path, default=Path("visual-review"))
     args=p.parse_args()
     out=args.output_dir.resolve()
+    relative_page = RELATIVE_PAGE_TEMPLATE.format(letter=args.lesson)
     out.mkdir(parents=True,exist_ok=True)
     failures=[]
     reports=[]
@@ -86,9 +88,9 @@ def main():
             ctx=browser.new_context(viewport={"width":width,"height":height},device_scale_factor=1,
                                     is_mobile=("mobile" in label),has_touch=("mobile" in label))
             page=ctx.new_page()
-            url=(args.site_dir.resolve() / RELATIVE_PAGE / "index.html").as_uri()
+            url=(args.site_dir.resolve() / relative_page / "index.html").as_uri()
             # file:// cannot reliably load MkDocs root assets (/assets/...) => use HTTP server instead.
-            url=f"http://127.0.0.1:8765/{RELATIVE_PAGE}"
+            url=f"http://127.0.0.1:8765/{relative_page}"
             errors=[]
             page.on("pageerror", lambda ex: errors.append(str(ex)))
             response=page.goto(url,wait_until="networkidle",timeout=30000)
@@ -159,7 +161,7 @@ def main():
     for r in reports:
         print(f"VISUAL {r['name']}: viewport={r['viewport']} document={r['documentWidth']} overflow={r['overflowPx']}; headings={len(r['headings'])}; tables={len(r['tables'])}; images={len(r['images'])}; expandable={r['detailsCount']}; palette={r['theme']}")
     for f in failures: print("VISUAL ERROR:",f,file=sys.stderr)
-    print(f"Screenshot artifacts: {out}")
+    print(f"Reviewed lesson: {args.lesson.upper()} | Screenshot artifacts: {out}")
     sys.exit(1 if failures else 0)
 
 
