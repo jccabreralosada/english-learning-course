@@ -1,12 +1,14 @@
 # Elementary
 
-**Starting level.** We will study basic English thoroughly, using a diagnostic approach to identify gaps while allowing faster progress through material already mastered.
+Build a strong foundation in English with detailed explanations, original examples, guided exercises, writing practice, and activities for all six language skills.
 
-The source contents outline **12 units**, **36 A/B/C lessons**, Practical English episodes and periodic Revise and Check sections.
+## Unit 1 — Start here
 
-!!! warning "Pilot lesson awaiting editorial approval"
-    [Elementary 1A — Welcome to the class](unit_01/lesson_a.md) is a complete **draft pilot** on the development branch. It is not approved or publicly deployed. Further lessons will be published only after review.
+1. **[1A — Welcome to the class](unit_01/lesson_a.md)** — affirmative *be*, subject pronouns, days of the week, and numbers 0–20.
+2. **[1B — One world](unit_01/lesson_b.md)** — negatives and questions with *be*, countries, and numbers 21–100.
 
-**Elementary 1B — One world:** [Open the original draft lesson](unit_01/lesson_b.md) (development branch only, not yet approved or deployed). This builds on the published 1A material and introduces *be* negatives, questions, countries and numbers 21–100.
+**Suggested order:** Study 1A before 1B. You can return to the examples, explanation panels, and answer keys at any time.
 
-The learner will practise **all six skills** from the beginning. Listening and Speaking are handled through the separate interactive tutor, with a gradual, comprehensible speaking pace.
+The Elementary curriculum includes 12 units with A/B/C lessons, everyday communication, and regular reviews. Additional lessons will become available as they are completed.
+
+Listening, Speaking, and Pronunciation are practised interactively with the English Learning Program tutor. The exercises on this site are for independent study, not formal graded assessments.
