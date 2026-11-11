@@ -1,4 +1,4 @@
-name: Visual pilot review
+name: Visual Elementary Unit 1 review
 
 on:
   pull_request:
@@ -37,7 +37,7 @@ jobs:
           import time, urllib.request
           for attempt in range(30):
               try:
-                  with urllib.request.urlopen("http://127.0.0.1:8765/elementary/unit_01/lesson_a/") as r:
+                  with urllib.request.urlopen("http://127.0.0.1:8765/elementary/unit_01/lesson_b/") as r:
                       assert r.status == 200
                   break
               except Exception:
@@ -46,11 +46,11 @@ jobs:
               raise SystemExit("Preview server not ready")
           PY
       - name: Browser screenshot and interaction checks
-        run: python scripts/visual_review.py --site-dir site --output-dir visual-review
+        run: python scripts/visual_review.py --lesson b --site-dir site --output-dir visual-review
       - name: Save screenshots and report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: elementary-1a-visual-review
+          name: elementary-1b-visual-review
           path: visual-review/
           retention-days: 14
