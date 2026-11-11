@@ -223,9 +223,9 @@ An affirmative statement becomes meaningful when we add information after the ve
 !!! success "Study pause 1 — check before moving on"
     You have finished four short grammar steps. Without looking, say the seven subject pronouns, match each one to **am**, **is** or **are**, and make two new affirmative sentences. If this feels difficult, revisit **one step**, not the whole lesson. Take a break before Vocabulary if useful.
 
-## 4. Vocabulary — days of the week
+## 3. Vocabulary — days of the week
 
-### 4.1 All seven days
+### 3.1 All seven days
 
 | Day | Spanish | Beginner example |
 |---|---|---|
@@ -485,44 +485,17 @@ Write **four original affirmative sentences** about an imaginary class or a fami
 
     **Many different answers are correct.** One possible set: *I'm Sam. He is a student. We are in class. It's Thursday.* Names, days and numbers can vary. These are self-check examples, not official assessment answers.
 
-## 10. Tutor handoff — Listening, Speaking and Pronunciation
+## 10. Practise with your tutor — Listening, Speaking and Pronunciation
 
-This section is a **handoff for English Learning Program**, not a recorded or graded activity on this public page. Each activity has a concrete outcome, an accessible first step and a next step if comprehension improves.
+Your interactive English Learning Program tutor can guide you through these optional activities. Start with slow, clear speech and ask for a repetition whenever needed.
 
-### Listening — hear short introductions
+| Skill | Your learning goal | Try this |
+|---|---|---|
+| Listening | Identify names, days and numbers in short introductions. | Listen to a fictional class introduction, then say the name and day you heard. |
+| Speaking | Introduce yourself and a classmate in short affirmative sentences. | Say *I'm…*, then introduce a classmate using *he*, *she* or *they*. |
+| Pronunciation | Notice vowel differences and stressed syllables. | Listen and repeat familiar words such as *Monday* and *student*, paying attention to stress. |
 
-**Outcome:** Identify a **name**, an affirmative *be* statement and a familiar **day or number** in a short spoken message.
-
-**Tutor sequence:**
-
-1. Read an original two-sentence message slowly, such as: *I'm Nina. It's Friday.* Do **not** display the transcript initially.
-2. Ask the learner to say the name and day. Accept the information before correcting minor spelling.
-3. Read two additional messages featuring **he/she/they** and numbers **0–20**. Use a little more natural speed only when meaning is clear.
-4. If the learner struggles, **repeat → slow down → rephrase with familiar vocabulary → offer concise Spanish support**, then retry a new message.
-
-### Speaking — introduce people
-
-**Outcome:** Produce at least **three intelligible affirmative turns** with the correct subject–verb pairing.
-
-**Tutor sequence:**
-
-1. Model *I'm Nina. I'm a student.* The learner creates a new introduction.
-2. Show or describe two imaginary classmates. The learner introduces them using **he**, **she** or **they** and **is/are**.
-3. Ask for the same meaning with **one full form and one contraction**: *She is ready* → *She's ready*.
-4. Practise the mini-dialogue expressions from section 6 as fixed chunks, without requiring questions or negatives.
-
-### Pronunciation — vowels and word stress
-
-**Outcome:** Make familiar short phrases understandable and notice **vowel contrasts** and **stressed syllables** without IPA memorization.
-
-**Tutor sequence:**
-
-1. Model two or three familiar words with simple contrasting vowels (for example, *sit* and *seat* as **listening-only** examples). Check whether the learner hears a difference; do not require technical phonetic labels.
-2. Model the stress in *MONday*, *TUESday* and *STUdent*. Ask the learner to repeat naturally and identify which syllable sounds stronger.
-3. Practise short affirmative sentences, such as *I'm READY* and *She's a STUdent*, paying attention to intelligibility, not accent imitation.
-4. Start slow, then approach natural rhythm gradually. If speech recognition reports uncertainty, do not treat that alone as evidence of a pronunciation error.
-
-**Across all three skills:** Use new utterances, not official test prompts. Give targeted feedback during **practice**; do not generate scores or pretend a formal assessment was completed. Private progress and assessment evidence belong only in English Learning Program.
+You can ask the tutor to slow down, repeat or rephrase. The exercises here are for self-study; formal feedback and assessments take place with the separate tutor.
 
 ## 11. Quick reference
 
