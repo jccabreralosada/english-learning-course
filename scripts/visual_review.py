@@ -56,7 +56,14 @@ def inspect(page, theme):
               naturalWidth:x.naturalWidth})),
           collapsedPanels: details.filter(x=>!x.open).length,
           detailsCount: details.length,
-          articleHeight: Math.round(document.querySelector('article')?.getBoundingClientRect().height||0)
+          articleHeight: Math.round(document.querySelector('article')?.getBoundingClientRect().height||0),
+          visibleEditorialLeaks: (document.querySelector('article')?.innerText || '').match(
+            /editorial draft|draft pilot|not approved|not yet published|development branch|lesson\\s+id\\s*:|asset_sha256|elementary_[12]\\.png/ig
+          ) || [],
+          editorialMenuLabels: [...document.querySelectorAll('nav .md-nav__link')]
+            .map(x => x.textContent.trim())
+            .filter(x => /\\(draft\\)|not approved|in.review/i.test(x))
+
         };
     }""", theme)
 
@@ -99,6 +106,10 @@ def main():
             page.evaluate("(scheme) => document.body.setAttribute('data-md-color-scheme', scheme)",scheme)
             page.wait_for_timeout(300)
             report=inspect(page,scheme)
+            if report["visibleEditorialLeaks"]:
+                failures.append(f"{label}: editorial terms rendered in learner article: {report['visibleEditorialLeaks']}")
+            if report["editorialMenuLabels"]:
+                failures.append(f"{label}: editorial labels rendered in course navigation: {report['editorialMenuLabels']}")
             if report["overflowPx"] > 3: failures.append(f"{label}: horizontal overflow {report['overflowPx']}px")
             for table in report["tables"]:
                 if table["widerThanViewport"] and not table["hasScrollableAncestor"]:
