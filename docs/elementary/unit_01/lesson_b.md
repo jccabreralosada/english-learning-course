@@ -22,7 +22,7 @@ review_tags:
 
 # Elementary 1B — One world
 
-**Lesson ID:** \`elementary.unit_01.lesson_b\` · **A1 orientation (provisional)** · **Editorial draft — not approved**
+**Lesson ID:** `elementary.unit_01.lesson_b` · **A1 orientation (provisional)** · **Editorial draft — not approved**
 
 This is an **original self-study lesson** based on the *topics* of English File Elementary, Fourth Edition, Unit 1B: **negative statements and questions with be**, **countries**, **numbers 21–100**, and **consonant sounds / word stress**. All explanations, dialogues, examples, answers, and visuals here are original program materials, not copies of the textbook.
 
@@ -548,4 +548,4 @@ These are **original instructions for the separate English Learning Program inte
 
 ---
 
-**Source integrity:** The curriculum topics for 1B were checked against the private original *English File Elementary Fourth Edition* contents image \`elementary_1.png\` (contents page 2, Unit 1B; SHA-256 recorded in \`curriculum/master_syllabus.yaml\`). The choice of country examples, explanatory structure, exercises, SVG, Writing and tutor activities are **original program extensions**. No source scans, copyrighted textbook exercises, test banks or learner data appear here. A1 is a provisional instructional orientation, not a CEFR certification.
+**Source integrity:** The curriculum topics for 1B were checked against the private original *English File Elementary Fourth Edition* contents image `elementary_1.png` (contents page 2, Unit 1B; SHA-256 recorded in `curriculum/master_syllabus.yaml`). The choice of country examples, explanatory structure, exercises, SVG, Writing and tutor activities are **original program extensions**. No source scans, copyrighted textbook exercises, test banks or learner data appear here. A1 is a provisional instructional orientation, not a CEFR certification.
