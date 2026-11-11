@@ -11,6 +11,7 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.top
+    - navigation.tracking
     - search.suggest
     - content.code.copy
   palette:
@@ -48,5 +49,13 @@ nav:
       - Upper-intermediate: upper_intermediate/index.md
       - Advanced: advanced/index.md
       - Advanced Plus: advanced_plus/index.md
-  - Reference:
+  - English Quick Reference:
       - Overview: reference/index.md
+      - Verb Forms: reference/verb-forms.md
+      - Everyday Vocabulary: reference/everyday-vocabulary.md
+      - Grammar Rules: reference/grammar-rules.md
+      - Phrasal Verbs: reference/phrasal-verbs.md
+      - Collocations: reference/collocations.md
+      - Useful Expressions: reference/useful-expressions.md
+      - Confusing Words: reference/confusing-words.md
+      - Numbers & Dates: reference/numbers-dates.md
