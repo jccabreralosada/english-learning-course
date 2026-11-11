@@ -50,7 +50,7 @@ After this lesson, you should be able to:
 
 #### Understand / Comprender
 
-**English:** A positive sentence says something **is true**. A negative sentence says it **is not true**. With present-tense *be*, put **not directly after am/is/are**.
+**English:** An affirmative sentence **states something**; a negative sentence **says it is not the case**. With present-tense *be*, put **not directly after am/is/are**. Both types can describe real or imagined situations.
 
 **Español:** Para negar una oración con *be*, añadimos **not después del verbo**. La forma de *be* sigue dependiendo del sujeto: *I am not*, *she is not*, *we are not*.
 
@@ -89,7 +89,7 @@ Compare *She is from Brazil* with *She is not from Brazil*. The country and subj
 
 #### Understand / Comprender
 
-**English:** In conversation, a negative statement often uses a contraction. Two common options are **isn't / aren't** or a contracted **subject + be** followed by *not*.
+**English:** In conversation, a negative statement often uses a contraction. You can shorten **be + not** (*she isn't*, *they aren't*) or shorten **subject + be**, leaving *not* separate (*she's not*, *they're not*). The meaning stays the same in these examples; the choice is usually about natural speech rather than a change in grammar.
 
 **Español:** Las contracciones negativas son naturales al hablar. *She isn't* y *She's not* significan lo mismo en estos ejemplos. Con *I*, usamos **I'm not**, no *I amn't* en el inglés estándar que estudiamos aquí.
 
@@ -381,11 +381,11 @@ Each sentence contains **one main grammar error** (capitalization and punctuatio
 
 ### Stage E — Apply the grammar in context (17–20)
 
-17. **A first meeting:** You are Cam. Complete both lines using correct question order and a natural short answer:  
+17. **A first meeting:** Imagine your name is Cam and you are from Peru. Complete both lines using correct question order and a natural negative short answer (write **two words** after *No*):  
     **A:** "___ you from Mexico?"  
     **B (Cam):** "No, ___ ___. I'm from Peru."
 18. **A classroom register:** Join these ideas into **two complete sentences**. First make a negative statement, then ask a question: *(Lara / not / from Germany)*; *(she / from France?)*.
-19. **Country and number:** Correct **every error** in this short notice: *"are they from colombia? yes, they're. They are in room fourty-two."*
+19. **Country and number:** Correct **every error** in this short notice. Treat **Room forty-two** as an official classroom label (like *Room 42*): *"are they from colombia? yes, they're. They are in room fourty-two."*
 20. **A technology club:** Write a **two-line original dialogue** in which one person asks whether a fictional device is from Japan and another answers negatively, then gives a different country of origin. Use *it*, and one natural negative contraction.
 
 ??? note "Grammar answers — explain before memorizing"
@@ -408,12 +408,12 @@ Each sentence contains **one main grammar error** (capitalization and punctuatio
     | 14 | **Where are you from?** | In a direct question, *are* comes before *you*. |
     | 15 | **Are they from Chile?** | The plural subject *they* needs *are*. |
     | 16 | **Yes, she is.** | Do not end a complete positive short answer with *she's*. |
-    | 17 | **Are; I'm not.** | Question order is *Are you…?*; the respondent answers with *I*. |
+    | 17 | **Are; I'm not.** | The question begins **Are you…?**; Cam answers about himself using **I** and the two-word negative contraction **I'm not**. |
     | 18 | **Lara isn't from Germany. Is she from France?** | Negative: *isn't*. Question: *is* before *she*. |
-    | 19 | **Are they from Colombia? Yes, they are. They are in Room forty-two.** | Capitalize sentence start, country and room label; positive short answer uses *they are*; **forty**, not *fourty*, and hyphenate *forty-two*. |
+    | 19 | **Are they from Colombia? Yes, they are. They are in Room forty-two.** | Fix **are → Are** and **colombia → Colombia**. Replace **Yes, they're** with **Yes, they are** because positive short answers do not end with a contraction. Capitalize the named **Room** label and correct **fourty-two → forty-two** (spelling plus hyphen). |
     | 20 | **A: Is it from Japan? B: No, it isn't. It's from Canada.** | Use *Is it…?*, a contracted negative answer and an affirmative statement. |
 
-    **Valid alternatives:** 10 may be **No, she's not** in natural English, although the prompt specifically requests **isn't**. In 12 **No, it isn't** is grammatical but does not follow the requested *it's not* pattern. In 13 **I am not from Brazil** is also correct. In 18 **Lara is not from Germany** / **Lara's not from Germany** work; using *Is Lara from France?* instead of *Is she…?* also expresses the intended question. In 19 **They're in Room forty-two** is acceptable for the last sentence if the meaning is retained. In 20 any other country name is acceptable, and **No, it's not** is a valid negative answer. A complete answer with *No, it is not* is grammatical but does not meet the contraction instruction.
+    **Valid alternatives:** 10 may be **No, she's not** in natural English, although the prompt specifically requests **isn't**. In 12 **No, it isn't** is grammatical but does not follow the requested *it's not* pattern. In 13 **I am not from Brazil** is also correct. In 18 **Lara is not from Germany** / **Lara's not from Germany** work. *Is Lara from France?* is correct English and expresses the same idea, but the supplied cue **she / from France?** asks you to practise the pronoun **she**. In 19 **They're in Room forty-two** is acceptable for the last sentence if the meaning is retained. In 20 any different country is acceptable, and **No, it's not** is a valid negative answer. A complete answer with *No, it is not* is grammatical but does not meet the contraction instruction.
 
     **Self-diagnosis:** When you make a mistake, label it *agreement*, *not position*, *question order*, *speaker change*, *short-answer form*, *country capitalization*, or *number spelling*. Rewrite one new sentence to correct the pattern.
 
