@@ -234,8 +234,8 @@ levels:
         origin: program_extension
       writing_outcome: "Write a short original classroom dialogue using possessive adjectives."
       review_tags: ["possessive_adjectives","classroom_language","spelling"]
-      content_version: "0.0.0"
-      editorial_status: planning_pending_source
+      content_version: "0.1.0"
+      editorial_status: in_review
   - number: 2
     grammar:
     - singular/plural nouns
