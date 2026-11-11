@@ -182,7 +182,7 @@ EDITORIAL_LEAKS = [
      "internal editorial metadata"),
     (re.compile(r"\b(?:elementary_[12]\.png|curriculum/master_syllabus\.yaml|feature/elementary-unit)\b", re.I),
      "private source or development-path disclosure"),
-    (re.compile(r"\b(?:lesson\s+id\s*:|sha[- ]?256\b)\b", re.I),
+    (re.compile(r"\blesson\s+id\s*:|\bsha[- ]?256\b", re.I),
      "technical identifiers"),
 ]
 
