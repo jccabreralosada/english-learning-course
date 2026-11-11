@@ -37,6 +37,14 @@ Write three to six learner-observable outcomes, each beginning with an action ve
 - Explain accepted alternatives; do not publish official assessment banks.
 - Do not display source scans, textbook graphics, learner grades, chats or recordings.
 
+## Separation of student-facing content and internal editorial metadata
+
+- Keep `lesson_id`, `editorial_status`, `content_version`, source provenance and private asset references in the Markdown **front matter** and in `curriculum/master_syllabus.yaml`. Do not display them as a metadata banner or editorial footnote in the learner's article.
+- Use the original lesson code in navigation: `1A — Welcome to the class`. Never append `(Draft)` or describe an already-published page as unapproved or unavailable.
+- Learner-facing references may credit *English File Fourth Edition* by title and explain that our material is original, without listing private image filenames, SHA-256 values, branch names or PR numbers.
+- Draft lessons can retain `in_review` in metadata while the PR is **Draft**; before changing the PR to **Ready for review**, synchronize curriculum and page front matter to `published` and remove obsolete notices. `course-quality` enforces this release gate on ready-for-review PRs and on `main`.
+- Never put unapproved lesson pages on the publicly deployed `main` branch. Academic words such as *review*, *practice*, and *assessment* remain legitimate student prose.
+
 ## Gate before publication
 - [ ] Source lesson mapping checked against accessible cited index; record if original user-provided image remains pending, and never misrepresent the evidence.
 - [ ] Lesson metadata passes schema and links follow the stable IDs.
