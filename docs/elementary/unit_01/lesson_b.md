@@ -5,7 +5,7 @@ level: elementary
 unit: 1
 source_lesson: 1B
 content_version: 0.1.0
-editorial_status: in_review
+editorial_status: published
 cefr_orientation: A1
 cefr_alignment: provisional_program_orientation
 source_origin: source_index_confirmed
