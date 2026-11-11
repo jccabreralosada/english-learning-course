@@ -4,8 +4,8 @@ The program preserves seven editorial stages, from **Elementary** to **Advanced 
 
 | Stage | Status |
 | --- | --- |
-| Elementary | Curriculum indexed; lesson pilot pending |
-| Pre-intermediate | Partial source index; missing sections flagged |
+| Elementary | 1A and 1B available; subsequent lessons in development |
+| Pre-intermediate | Complete 12-unit contents index available; original lessons forthcoming |
 | Intermediate | Full source book available for methodological analysis |
 | Intermediate Plus | Contents indexed |
 | Upper-intermediate | Contents indexed |
@@ -14,4 +14,4 @@ The program preserves seven editorial stages, from **Elementary** to **Advanced 
 
 Our course uses **six equally important skills**: Grammar, Vocabulary, Writing, Listening, Speaking and Pronunciation. The static website hosts original self-study resources; the interactive tutor maintains graded assessments in a separate private repository.
 
-The [master syllabus in GitHub](https://github.com/jccabreralosada/english-learning-course/blob/main/curriculum/master_syllabus.yaml) records the source-derived content and its review status.
+The curriculum is based on the supplied English File Fourth Edition contents, supplemented by original program activities. Begin with [Elementary 1A](../elementary/unit_01/lesson_a.md) or continue to [Elementary 1B](../elementary/unit_01/lesson_b.md).
