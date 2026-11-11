@@ -120,8 +120,8 @@ levels:
         origin: program_extension
       writing_outcome: "Write three original affirmative sentences introducing people."
       review_tags: ["be_affirmative","subject_pronouns","days_of_week","numbers_0_20"]
-      content_version: "0.0.0"
-      editorial_status: planning_pending_source
+      content_version: "0.1.0"
+      editorial_status: in_review
     - id: elementary.unit_01.lesson_b
       source_lesson: "1B"
       title: "One world"
