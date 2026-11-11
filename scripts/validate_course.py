@@ -171,6 +171,99 @@ def local_target(md_path, raw):
     return (DOCS / relative.lstrip("/")) if relative.startswith("/") else (md_path.parent / relative)
 
 
+# Publication guard: check only built/public Markdown, not governance files.
+# Match editorial phrases, not normal educational terms (review, practice, assessment).
+EDITORIAL_LEAKS = [
+    (re.compile(r"\b(?:editorial\s+draft|draft\s+pilot|draft\s+lesson|not\s+(?:yet\s+)?approved)\b", re.I),
+     "obsolete draft/approval notice"),
+    (re.compile(r"\b(?:development\s+branch|branch[- ]only|not\s+(?:yet\s+)?(?:publicly\s+)?deployed|not\s+(?:yet\s+)?published)\b", re.I),
+     "obsolete development or publication notice"),
+    (re.compile(r"\b(?:pull\s+request|PR\s*#\d+|squash\s+and\s+merge|editorial_status|asset_sha256)\b", re.I),
+     "internal editorial metadata"),
+    (re.compile(r"\b(?:elementary_[12]\.png|curriculum/master_syllabus\.yaml|feature/elementary-unit)\b", re.I),
+     "private source or development-path disclosure"),
+    (re.compile(r"\b(?:lesson\s+id\s*:|sha[- ]?256\b)\b", re.I),
+     "technical identifiers"),
+]
+
+
+def frontmatter_and_body(content):
+    """Return YAML front matter and learner-visible Markdown separately."""
+    if not content.startswith("---\n"):
+        return {}, content
+    close = content.find("\n---\n", 4)
+    if close < 0:
+        fail("Unclosed lesson front matter")
+        return {}, content
+    return yaml.safe_load(content[4:close]) or {}, content[close + 5:]
+
+
+def check_publication_consistency(syllabus, config):
+    """Ensure every navigated lesson is published and learner-facing copy is clean."""
+    records = {
+        record["id"]: record
+        for level in syllabus["levels"]
+        for unit in level.get("units", [])
+        for record in unit.get("lessons", [])
+    }
+    def gather(value):
+        if isinstance(value, list):
+            for item in value: yield from gather(item)
+        elif isinstance(value, dict):
+            for label, item in value.items():
+                if isinstance(item, str):
+                    yield label, item
+                else:
+                    yield from gather(item)
+    navigated = dict(gather(config.get("nav", [])))
+    visible_pages = {}
+    for page in DOCS.rglob("lesson_*.md"):
+        relative = page.relative_to(DOCS).as_posix()
+        metadata, body = frontmatter_and_body(page.read_text(encoding="utf-8"))
+        lesson_id = metadata.get("lesson_id")
+        if not lesson_id or lesson_id not in records:
+            fail(f"{relative}: unknown or missing lesson_id")
+            continue
+        record = records[lesson_id]
+        if record["editorial_status"] != "published":
+            fail(f"{relative}: present in public docs but curriculum status is {record['editorial_status']}")
+        if metadata.get("editorial_status") != record["editorial_status"]:
+            fail(f"{relative}: frontmatter and curriculum editorial_status differ")
+        if metadata.get("content_version") != record.get("content_version"):
+            fail(f"{relative}: frontmatter content_version differs from curriculum")
+        if metadata.get("source_lesson") != record.get("source_lesson"):
+            fail(f"{relative}: source_lesson differs from curriculum")
+        if relative not in navigated.values():
+            fail(f"{relative}: public lesson missing from navigation")
+        for regex, reason in EDITORIAL_LEAKS:
+            match = regex.search(body)
+            if match:
+                fail(f"{relative}: {reason}: {match.group(0)!r}")
+        visible_pages[relative] = record
+    for label, relative in gather(config.get("nav", [])):
+        if re.search(r"\b(?:draft|in.review|not approved|pending publication)\b", label, re.I):
+            fail(f"Navigation has an editorial label: {label}")
+        if re.search(r"\blesson_[a-z]\.md$", relative) and relative not in visible_pages:
+            fail(f"Navigation references unpublished/missing lesson: {relative}")
+        if relative in visible_pages:
+            expected = visible_pages[relative]["source_lesson"]
+            if not label.startswith(expected + " — "):
+                fail(f"Navigation label must start with original lesson code {expected}: {label}")
+    # Audit all public prose, including indexes/home, for unequivocal stale publication notices.
+    for page in DOCS.rglob("*.md"):
+        if page.name.startswith("lesson_"):
+            continue
+        relative = page.relative_to(DOCS).as_posix()
+        _, body = frontmatter_and_body(page.read_text(encoding="utf-8"))
+        for regex, reason in EDITORIAL_LEAKS:
+            match = regex.search(body)
+            if match:
+                fail(f"{relative}: {reason}: {match.group(0)!r}")
+        if re.search(r"\b(?:full lessons.{0,80}not yet published|lesson pilot pending|partial source index)\b", body, re.I):
+            fail(f"{relative}: stale public course-coverage statement")
+    print(f"Checked {len(visible_pages)} published lesson metadata records and learner-visible pages")
+
+
 def check_docs():
     config = load_yaml(ROOT / "mkdocs.yml")
     if config.get("docs_dir") != "docs":
@@ -205,6 +298,7 @@ def check_docs():
         for match in HTML_IMAGES.finditer(content):
             if not HTML_ALT.search(match.group(0)):
                 fail(f"{page.relative_to(ROOT)}: HTML image missing descriptive alt")
+    check_publication_consistency(load_yaml(ROOT / "curriculum/master_syllabus.yaml"), config)
     print(f"Checked navigation and {len(pages)} Markdown documents")
 
 
