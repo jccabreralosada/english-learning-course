@@ -521,7 +521,7 @@ These are **original instructions for the separate English Learning Program inte
 
 **Observable outcome:** Distinguish familiar consonants at the beginnings of selected country names and produce intelligible word stress in names such as **CANada**, **BRAzil** and **JaPAN**.
 
-**Tutor progression:** (1) Model familiar consonants in *Canada*, *Brazil* and *Japan*; focus on hearing and producing the initial consonants, not IPA symbols. (2) Contrast stressed syllables in country names and familiar numbers. (3) Practise *THIRteen* versus *THIRty* with careful tutor modeling (stress and ending differ by accent and context). (4) Reinforce intelligibility through listening, repetition and a short dialogue; do not grade accent imitation.
+**Tutor progression:** (1) Model familiar consonants in *Canada*, *Brazil* and *Japan*; focus on hearing and producing the initial consonants, not IPA symbols. (2) Contrast stressed syllables in country names and familiar numbers. (3) Practise *thirTEEN* versus *THIRty* with careful tutor modeling (stress and ending differ by accent and context). (4) Reinforce intelligibility through listening, repetition and a short dialogue; do not grade accent imitation.
 
 **Feedback and privacy:** During practice, highlight two or three high-value corrections after a substantial response. If ASR transcription is uncertain, verify by listening instead of treating the transcript as proof. Formal evaluation, grades and learning progress stay in the private English Learning Program project.
 
