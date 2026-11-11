@@ -41,7 +41,7 @@ By the end, you should be able to:
 
 ## 2. Grammar learning path
 
-Work through these four steps in order. Each step has a **short example** and a **check** before you continue. The longer ungraded practice is in section 6.
+Work through these four steps in order. Each step has a **short example** and a **check** before you continue. The longer ungraded grammar practice is in section 7.
 
 ### Step 1 — Understand the subject
 
@@ -221,6 +221,9 @@ An affirmative statement becomes meaningful when we add information after the ve
 !!! info "What comes next?"
     **1B:** negatives and questions with *be*. **1C:** possessive adjectives. You can recognize fixed expressions that contain later structures, but you do **not** need to produce those grammar patterns in 1A.
 
+!!! success "Study pause 1 — check before moving on"
+    You have finished four short grammar steps. Without looking, say the seven subject pronouns, match each one to **am**, **is** or **are**, and make two new affirmative sentences. If this feels difficult, revisit **one step**, not the whole lesson. Take a break before Vocabulary if useful.
+
 ## 4. Vocabulary — days of the week
 
 ### 4.1 All seven days
@@ -308,6 +311,9 @@ These are natural **fixed expressions** for recognition and simple use. Do not t
 > **B:** Welcome to the class, Ana.
 
 *This is ...* is introduced as a useful **chunk**, not as a full lesson about demonstratives. Complex modal and phrasal-verb structures are deliberately deferred; familiar phrases are more useful at this stage.
+
+!!! success "Study pause 2 — vocabulary checkpoint"
+    Before the longer practice, name all seven days in order and write **zero, five, twelve, fifteen and twenty** correctly. Continue now or return in a separate study session.
 
 ## 7. Ungraded grammar practice — 20 original exercises
 
@@ -410,6 +416,9 @@ These do **not** count toward the 20 grammar exercises.
     **C:** Example: *Our lesson is on Wednesday. Room seven is ready.* Any correctly spelled day and any number appropriate to the context are valid; use a capital letter for the day.
 
 
+!!! success "Study pause 3 — from practice to production"
+    The 20 grammar items are complete. Review **only the errors you made**, then start Writing in a new session if you prefer. You do not need to finish the entire page in one sitting.
+
 ## 9. Writing — from support to independence
 
 Writing is a **separate skill** and these tasks are **not graded assessments**. Follow the three stages in order: first complete, then adapt, then create. You only need the vocabulary and affirmative grammar already introduced.
@@ -436,17 +445,17 @@ Complete each line with **am**, **is** or **are**.
 
 **Understand:** Change information in a model, keeping the pattern correct.
 
-**Example:** *He is a student.* → change *he* to *they* → **They are students.** The subject, verb and plural noun change together.
+**Example:** *He is ready.* → change *he* to *they* → **They are ready.** The subject and verb change together; *ready* stays the same.
 
 Now rewrite the entire sentence as requested:
 
-- **A.** *She is a student.* → change **she** to **we**, and change the singular noun to a plural.
+- **A.** *She is ready.* → change **she** to **we**. Keep the adjective unchanged.
 - **B.** *It is Monday.* → change the day to **Friday** and use a contraction.
 - **C.** *They are ready.* → use the full form after changing **they** to **I**.
 
 ??? note "Check Stage 2"
 
-    **A. We are students.** The subject is plural, so **are** and **students** fit.  
+    **A. We are ready.** The subject changes to **we**, so the verb changes to **are**; the adjective stays the same.  
     **B. It's Friday.** **It is** becomes **it's**; capitalize the day.  
     **C. I am ready.** Changing the subject to **I** changes the verb to **am**.
 
