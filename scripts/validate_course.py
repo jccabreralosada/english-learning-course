@@ -5,6 +5,7 @@ Structural guardrail only: a passing run is NOT publisher-source review,
 CEFR accreditation, accessibility audit, or user approval.
 """
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -198,7 +199,7 @@ def frontmatter_and_body(content):
     return yaml.safe_load(content[4:close]) or {}, content[close + 5:]
 
 
-def check_publication_consistency(syllabus, config):
+def check_publication_consistency(syllabus, config, require_published=False):
     """Ensure every navigated lesson is published and learner-facing copy is clean."""
     records = {
         record["id"]: record
@@ -225,8 +226,10 @@ def check_publication_consistency(syllabus, config):
             fail(f"{relative}: unknown or missing lesson_id")
             continue
         record = records[lesson_id]
-        if record["editorial_status"] != "published":
-            fail(f"{relative}: present in public docs but curriculum status is {record['editorial_status']}")
+        if require_published and record["editorial_status"] != "published":
+            fail(f"{relative}: release page requires published status, found {record['editorial_status']}")
+        if not require_published and record["editorial_status"] not in {"in_review", "approved", "published"}:
+            fail(f"{relative}: public-facing lesson has invalid draft/release status {record['editorial_status']}")
         if metadata.get("editorial_status") != record["editorial_status"]:
             fail(f"{relative}: frontmatter and curriculum editorial_status differ")
         if metadata.get("content_version") != record.get("content_version"):
@@ -298,7 +301,9 @@ def check_docs():
         for match in HTML_IMAGES.finditer(content):
             if not HTML_ALT.search(match.group(0)):
                 fail(f"{page.relative_to(ROOT)}: HTML image missing descriptive alt")
-    check_publication_consistency(load_yaml(ROOT / "curriculum/master_syllabus.yaml"), config)
+    require_published = os.environ.get("COURSE_RELEASE_GATE", "").lower() == "true"
+    check_publication_consistency(load_yaml(ROOT / "curriculum/master_syllabus.yaml"), config,
+                                  require_published=require_published)
     print(f"Checked navigation and {len(pages)} Markdown documents")
 
 
