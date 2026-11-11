@@ -40,7 +40,7 @@ By the end, you should be able to:
 
 ## 2. Grammar learning path
 
-Work through these four steps in order. Each step has a **short example** and a **check** before you continue. The longer ungraded grammar practice is in section 7.
+Work through these four steps in order. Each step has a **short example** and a **check** before you continue. The longer ungraded grammar practice is in section 6.
 
 ### Step 1 — Understand the subject
 
@@ -254,7 +254,7 @@ An affirmative statement becomes meaningful when we add information after the ve
 
     **Thursday** follows Wednesday. **Friday** starts with a capital letter because every day name is capitalized in English.
 
-## 5. Vocabulary — numbers 0–20
+## 4. Vocabulary — numbers 0–20
 
 | Number | Word | Number | Word | Number | Word |
 |---:|---|---:|---|---:|---|
@@ -286,7 +286,7 @@ An affirmative statement becomes meaningful when we add information after the ve
 
     **Twelve**, **eighteen**, **fifteen**. Memorize the irregular spellings; numbers 21–100 are introduced later in 1B.
 
-## 6. Everyday English — a first meeting
+## 5. Everyday English — a first meeting
 
 These are natural **fixed expressions** for recognition and simple use. Do not try to analyze every word with grammar you haven't studied yet.
 
@@ -314,7 +314,7 @@ These are natural **fixed expressions** for recognition and simple use. Do not t
 !!! success "Study pause 2 — vocabulary checkpoint"
     Before the longer practice, name all seven days in order and write **zero, five, twelve, fifteen and twenty** correctly. Continue now or return in a separate study session.
 
-## 7. Ungraded grammar practice — 20 original exercises
+## 6. Ungraded grammar practice — 20 original exercises
 
 **Instructions:** Try the tasks **before** opening the answer panel. For 1–4, write only the missing verb. For 5–20, follow the instructions of each stage; use complete sentences, capitals and final punctuation whenever you rewrite a sentence. These activities are **ungraded self-study**, not formal English Learning Program assessments.
 
@@ -387,7 +387,7 @@ For **16–20**, read each new situation carefully. Each task combines at least 
 
     **Reflect:** Did your error concern (1) the subject, (2) **am/is/are**, (3) a contraction, (4) word order, (5) **a/an**, or (6) capitalization? Write one fresh example to practise that specific point.
 
-## 8. Vocabulary practice — ungraded
+## 7. Vocabulary practice — ungraded
 
 These do **not** count toward the 20 grammar exercises.
 
@@ -418,7 +418,7 @@ These do **not** count toward the 20 grammar exercises.
 !!! success "Study pause 3 — from practice to production"
     The 20 grammar items are complete. Review **only the errors you made**, then start Writing in a new session if you prefer. You do not need to finish the entire page in one sitting.
 
-## 9. Writing — from support to independence
+## 8. Writing — from support to independence
 
 Writing is a **separate skill** and these tasks are **not graded assessments**. Follow the three stages in order: first complete, then adapt, then create. You only need the vocabulary and affirmative grammar already introduced.
 
@@ -485,7 +485,7 @@ Write **four original affirmative sentences** about an imaginary class or a fami
 
     **Many different answers are correct.** One possible set: *I'm Sam. He is a student. We are in class. It's Thursday.* Names, days and numbers can vary. These are self-check examples, not official assessment answers.
 
-## 10. Practise with your tutor — Listening, Speaking and Pronunciation
+## 9. Practise with your tutor — Listening, Speaking and Pronunciation
 
 Your interactive English Learning Program tutor can guide you through these optional activities. Start with slow, clear speech and ask for a repetition whenever needed.
 
@@ -497,7 +497,7 @@ Your interactive English Learning Program tutor can guide you through these opti
 
 You can ask the tutor to slow down, repeat or rephrase. The exercises here are for self-study; formal feedback and assessments take place with the separate tutor.
 
-## 11. Quick reference
+## 10. Quick reference
 
 | Remember | Pattern / examples |
 |---|---|
