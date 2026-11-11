@@ -21,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        lesson: [a, b]
+        lesson: [a, b, c]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
