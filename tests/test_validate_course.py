@@ -75,6 +75,32 @@ class TestCourseValidation(unittest.TestCase):
             self.assertFalse(any(regex.search(body) for regex, _ in course.EDITORIAL_LEAKS))
         self.assertEqual(records["elementary.unit_01.lesson_c"]["editorial_status"], "planning_pending_source")
 
+    def test_release_gate_rejects_review_status_before_merge(self):
+        syllabus = course.load_yaml(ROOT / "curriculum/master_syllabus.yaml")
+        config = course.load_yaml(ROOT / "mkdocs.yml")
+        lesson = syllabus["levels"][0]["units"][0]["lessons"][0]
+        saved = lesson["editorial_status"]
+        old_errors = list(course.ERRORS)
+        try:
+            lesson["editorial_status"] = "in_review"
+            course.ERRORS.clear()
+            course.check_publication_consistency(syllabus, config, require_published=True)
+            self.assertTrue(any("requires published status" in msg for msg in course.ERRORS))
+        finally:
+            lesson["editorial_status"] = saved
+            course.ERRORS[:] = old_errors
+
+    def test_release_gate_passes_current_published_lessons(self):
+        syllabus = course.load_yaml(ROOT / "curriculum/master_syllabus.yaml")
+        config = course.load_yaml(ROOT / "mkdocs.yml")
+        old_errors = list(course.ERRORS)
+        try:
+            course.ERRORS.clear()
+            course.check_publication_consistency(syllabus, config, require_published=True)
+            self.assertEqual(course.ERRORS, [])
+        finally:
+            course.ERRORS[:] = old_errors
+
     def test_editorial_leak_patterns_are_precise(self):
         disallowed = [
             "Editorial draft — not approved", "Available on development branch",
