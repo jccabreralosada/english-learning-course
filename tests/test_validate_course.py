@@ -139,6 +139,24 @@ class TestCourseValidation(unittest.TestCase):
         self.assertNotIn("editorial_status", body)
         self.assertIn("Review the examples.", body)
 
+    def test_unit_01_tutor_protocol_resolves_by_exact_lesson_id(self):
+        """Every published Unit 1 lesson has exactly one nonempty tutor section."""
+        syllabus = course.load_yaml(ROOT / "curriculum/master_syllabus.yaml")
+        lessons = syllabus["levels"][0]["units"][0]["lessons"]
+        text = (ROOT / "governance/unit_01_tutor_protocol.md").read_text(encoding="utf-8")
+        import re
+        headings = re.findall(r"^## (elementary\\.unit_01\\.lesson_[a-c])$", text, re.M)
+        expected = [lesson["id"] for lesson in lessons if lesson["editorial_status"] == "published"]
+        self.assertEqual(headings, expected)
+        for index, lesson_id in enumerate(headings):
+            heading = "## " + lesson_id
+            start = text.index(heading) + len(heading)
+            end = text.find("\\n## elementary.unit_01.lesson_", start)
+            section = text[start:end if end >= 0 else None]
+            for skill in ("### Listening", "### Speaking", "### Pronunciation"):
+                self.assertIn(skill, section, f"{lesson_id} missing {skill}")
+            self.assertTrue(len(section.strip()) > 350)
+
     def test_external_link_is_not_local(self):
         self.assertIsNone(course.local_target(ROOT / "docs/index.md", "https://example.org/external"))
 
