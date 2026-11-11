@@ -9,7 +9,6 @@ editorial_status: in_review
 cefr_orientation: A1
 cefr_alignment: provisional_program_orientation
 source_origin: source_index_confirmed
-source_reference: "Private project source elementary_1.png, fourth-edition contents page 2, Unit 1A"
 review_tags:
   - be_affirmative
   - subject_pronouns
@@ -19,7 +18,7 @@ review_tags:
 
 # Elementary 1A — Welcome to the class
 
-**Lesson ID:** `elementary.unit_01.lesson_a` · **A1 orientation (provisional)** · **Editorial draft — not approved**
+**Elementary · Unit 1A** · **A1 learning orientation**
 
 This is an **original self-study lesson**, aligned with the topic sequence of *English File Elementary, Fourth Edition*. The book's index identifies **affirmative _be_ + subject pronouns**, **days of the week**, **numbers 0–20**, and **vowel sounds / word stress** for 1A. The explanations, contexts, practice and diagram below are created for our program; they are **not** reproduced from the book.
 
@@ -541,8 +540,8 @@ This section is a **handoff for English Learning Program**, not a recorded or gr
 
 **Review tomorrow:** Without looking at the table, say all seven subject pronouns, pair them with the right verb, name the days in order and count from zero to twenty. Revisit after a few days if recall is uncertain.
 
-**Course navigation:** Return to the [Elementary overview](../index.md). **Next planned lesson:** Elementary 1B — *One world* (not published yet).
+**Keep learning:** [Elementary overview](../index.md) · [Next: 1B — One world](lesson_b.md).
 
 ---
 
-**Source and editorial note:** Unit 1A topic mapping was verified against the original private Elementary Fourth Edition index (`elementary_1.png`, contents page 2; asset SHA-256 recorded in `curriculum/master_syllabus.yaml`). All explanatory material, exercises, examples and the SVG diagram are original program content. This page is a **pilot draft awaiting approval**, not an Oxford reproduction or formal CEFR assessment.
+**About this lesson:** The topic sequence follows *English File Elementary, Fourth Edition*. The explanations, exercises, examples, and diagram are original to this learning program. The A1 label describes the intended study level; it is not a formal CEFR certification.
