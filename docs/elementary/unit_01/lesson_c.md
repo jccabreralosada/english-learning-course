@@ -425,29 +425,17 @@ Include a greeting, one classroom object with a possessive adjective, a classroo
 !!! success "Study pause 3 — from practice to speaking"
     Check your own Writing against the list and revisit one difficult grammar step. Listening, Speaking and Pronunciation take place with your tutor, so you can return for that practice in another session.
 
-## 8. Tutor handoff — Listening, Speaking and Pronunciation
+## 8. Practise with your tutor — Listening, Speaking and Pronunciation
 
-These are clear practice prompts for the **English Learning Program interactive tutor**, not tests or scores. Begin slowly and clearly; increase speed only after the learner demonstrates comprehension. Use repeat → slower → rephrase → brief Spanish support if needed.
+Use these suggestions for a guided session with your interactive English Learning Program tutor. Use **fictional names and email addresses** for spelling activities.
 
-### Listening — classroom instructions and spelling
+| Skill | Your learning goal | Try this |
+|---|---|---|
+| Listening | Understand common classroom instructions and spelled information. | Listen to *Open your book* or a fictional spelled name; explain what you heard. |
+| Speaking | Identify belongings and ask for classroom help. | Describe a fictional student's notebook with *his/her/their*, then request a repetition. |
+| Pronunciation | Practise the alphabet, vowel sounds and sentence stress. | Spell a fictional name and compare emphasis in *MY book* and *my BOOK*. |
 
-**Observable outcome:** Identify at least three familiar classroom instructions and recover a fictional spelled name or email detail.
-
-**Tutor sequence:** (1) Give one simple instruction such as *Open your book*; check meaning without displaying the transcript. (2) Give two different instructions. (3) Spell a fictional first name slowly; learner repeats the letters. (4) Read a short fictional email address with *at* and *dot*; learner identifies the structure. Rephrase and slow down when necessary.
-
-### Speaking — identifying belongings and asking for help
-
-**Observable outcome:** Produce three short sentences with different possessive adjectives and make at least one appropriate classroom request.
-
-**Tutor sequence:** (1) Introduce fictional owners and objects; learner says *This is her notebook* or *Their bags are here*. (2) Ask who an object belongs to; learner chooses *my/your/his/her/our/their*. (3) Practise a class-help fixed expression, such as *How do you spell that, please?* (4) Learner creates a short classroom dialogue. Focus on meaning and two or three high-value corrections.
-
-### Pronunciation — alphabet, vowel sounds and sentence stress
-
-**Observable outcome:** Spell a fictional name intelligibly, recognize selected vowel differences in letter names or familiar words, and identify the emphasized information word in a short sentence.
-
-**Tutor sequence:** (1) Model the alphabet in short groups rather than a long rapid recital; contrast commonly confused letter names (for example **A/E**, **G/J** and **M/N**) without relying on IPA charts. (2) Practise a fictional name slowly, then in a natural exchange. (3) Contrast familiar vowel sounds in a few beginner-level words and confirm by listening, not only automatic transcription. (4) Model different sentence emphasis: *This is MY book* versus *This is my BOOK*. Ask what information becomes important. Do not treat an accent difference as an error when intelligibility is maintained.
-
-**Privacy and assessment:** Do not ask for real private contact details. Do not save personal grades, audio, transcripts or invented results in the public repository. Formal assessment stays in the private learning project.
+You can ask the tutor to speak more slowly or repeat a word. Formal evaluation is separate from these self-study suggestions.
 
 ## 9. Quick reference — Elementary Unit 1
 
