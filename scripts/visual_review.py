@@ -71,7 +71,7 @@ def inspect(page, theme):
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--site-dir", type=Path, default=Path("site"))
-    p.add_argument("--lesson", choices=["a", "b"], default="a", help="Lesson within Elementary Unit 1")
+    p.add_argument("--lesson", choices=["a", "b", "c"], default="a", help="Lesson within Elementary Unit 1")
     p.add_argument("--output-dir", type=Path, default=Path("visual-review"))
     args=p.parse_args()
     out=args.output_dir.resolve()
