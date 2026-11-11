@@ -177,8 +177,8 @@ levels:
         origin: program_extension
       writing_outcome: "Write three original questions and answers about people's countries."
       review_tags: ["be_negative","be_questions","countries","numbers_21_100"]
-      content_version: "0.0.0"
-      editorial_status: planning_pending_source
+      content_version: "0.1.0"
+      editorial_status: in_review
     - id: elementary.unit_01.lesson_c
       source_lesson: "1C"
       title: "What's your email?"

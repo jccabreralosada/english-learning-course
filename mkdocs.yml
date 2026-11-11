@@ -40,6 +40,7 @@ nav:
       - Elementary:
           - Overview: elementary/index.md
           - Unit 1 — Welcome to the class: elementary/unit_01/lesson_a.md
+          - Unit 1 — One world (Draft): elementary/unit_01/lesson_b.md
       - Pre-intermediate: pre_intermediate/index.md
       - Intermediate: intermediate/index.md
       - Intermediate Plus: intermediate_plus/index.md
