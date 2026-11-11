@@ -94,8 +94,9 @@ class TestCourseValidation(unittest.TestCase):
             self.assertFalse(any(regex.search(value) for regex, _ in course.EDITORIAL_LEAKS), value)
 
     def test_frontmatter_is_separate_from_student_copy(self):
-        text = "---\\neditorial_status: published\\nlesson_id: test.id\\n---\\n# Lesson\\nReview the examples."
-        front, body = course.frontmatter_and_body(text.replace("\\\\n", "\\n"))
+        text = "\n".join(["---", "editorial_status: published", "lesson_id: test.id", "---",
+                           "# Lesson", "Review the examples."])
+        front, body = course.frontmatter_and_body(text)
         self.assertEqual(front["editorial_status"], "published")
         self.assertNotIn("editorial_status", body)
         self.assertIn("Review the examples.", body)
