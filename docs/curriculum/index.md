@@ -1,17 +1,19 @@
-# Curriculum overview
+# Curriculum — seven learning stages
 
-The program preserves seven editorial stages, from **Elementary** to **Advanced Plus**, and adds CEFR-related learning outcomes (A1–C1) as those outcomes are reviewed.
+The program follows a verified topic sequence from **Elementary** to **Advanced Plus**. A1–C1 orientations guide lesson design; they do not certify learner proficiency or imply that every level already has published lessons.
 
-| Stage | Status |
-| --- | --- |
-| Elementary | 1A and 1B available; subsequent lessons in development |
-| Pre-intermediate | Complete 12-unit contents index available; original lessons forthcoming |
-| Intermediate | Full source book available for methodological analysis |
-| Intermediate Plus | Contents indexed |
-| Upper-intermediate | Contents indexed |
-| Advanced | Contents indexed |
-| Advanced Plus | Contents and sample pages indexed |
+| Stage | Explore |
+|---|---|
+| [Elementary](../elementary/index.md) | Begin with subject pronouns, *be* and essential classroom language |
+| [Pre-intermediate](../pre_intermediate/index.md) | Continue building a broader everyday English foundation |
+| [Intermediate](../intermediate/index.md) | Strengthen accuracy and communication across familiar contexts |
+| [Intermediate Plus](../intermediate_plus/index.md) | Broaden grammar and vocabulary for more varied situations |
+| [Upper-intermediate](../upper_intermediate/index.md) | Develop flexibility and precision in longer communication |
+| [Advanced](../advanced/index.md) | Explore more demanding language choices and communication |
+| [Advanced Plus](../advanced_plus/index.md) | Extend nuance, independence and complex communication |
 
-Our course uses **six equally important skills**: Grammar, Vocabulary, Writing, Listening, Speaking and Pronunciation. The static website hosts original self-study resources; the interactive tutor maintains graded assessments in a separate private repository.
+**Available lessons:** [Elementary 1A](../elementary/unit_01/lesson_a.md), [1B](../elementary/unit_01/lesson_b.md) and [1C](../elementary/unit_01/lesson_c.md). The other levels currently offer introductions, not complete study lessons.
 
-The curriculum is based on the supplied English File Fourth Edition contents, supplemented by original program activities. Begin with [Elementary 1A](../elementary/unit_01/lesson_a.md) or continue to [Elementary 1B](../elementary/unit_01/lesson_b.md).
+Grammar, Vocabulary, Writing, Listening, Speaking and Pronunciation matter equally. This site provides self-study material and reference; the interactive tutor handles guided oral practice, assessments and private learning progress.
+
+Need to check a form quickly? Open [English Quick Reference](../reference/index.md).

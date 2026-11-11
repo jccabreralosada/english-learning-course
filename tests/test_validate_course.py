@@ -139,6 +139,25 @@ class TestCourseValidation(unittest.TestCase):
         self.assertNotIn("editorial_status", body)
         self.assertIn("Review the examples.", body)
 
+    def test_unit_01_tutor_protocol_resolves_by_exact_lesson_id(self):
+        """Each published Unit 1 lesson has precisely one isolated tutor section."""
+        import re
+        syllabus = course.load_yaml(ROOT / "curriculum/master_syllabus.yaml")
+        lessons = syllabus["levels"][0]["units"][0]["lessons"]
+        protocol = (ROOT / "governance/unit_01_tutor_protocol.md").read_text(encoding="utf-8")
+        headings = re.findall(r"^## (elementary\.unit_01\.lesson_[a-c])$", protocol, re.M)
+        expected = [lesson["id"] for lesson in lessons if lesson["editorial_status"] == "published"]
+        self.assertEqual(headings, expected)
+        for index, lesson_id in enumerate(headings):
+            heading = "## " + lesson_id
+            start = protocol.index(heading + "\n", protocol.index("## Lookup by lesson ID"))
+            start += len(heading) + 1
+            end = protocol.find("\n## elementary.unit_01.lesson_", start)
+            section = protocol[start:end if end >= 0 else None]
+            for skill in ("### Listening", "### Speaking", "### Pronunciation"):
+                self.assertIn(skill, section, f"{lesson_id} missing {skill}")
+            self.assertGreater(len(section.strip()), 350)
+
     def test_external_link_is_not_local(self):
         self.assertIsNone(course.local_target(ROOT / "docs/index.md", "https://example.org/external"))
 

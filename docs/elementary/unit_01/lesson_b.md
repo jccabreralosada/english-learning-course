@@ -500,29 +500,17 @@ Write an **original four-line dialogue** between two fictional new classmates. I
 
     There is no single correct dialogue. The model is a self-check example, **not** a scored assessment or compulsory script.
 
-## 9. Tutor handoff — Listening, Speaking and Pronunciation
+## 9. Practise with your tutor — Listening, Speaking and Pronunciation
 
-These are **original instructions for the separate English Learning Program interactive tutor**, not official test items or private progress data. Begin **slowly and clearly** and adjust pace only after comprehension is demonstrated.
+Use these activities with your interactive English Learning Program tutor. Begin with short, slow exchanges and move toward more natural speed as you become comfortable.
 
-### Listening — origin, questions and numbers
+| Skill | Your learning goal | Try this |
+|---|---|---|
+| Listening | Recognize a country and a number between 21 and 100. | Listen to a fictional introduction and repeat the country and number. |
+| Speaking | Ask about origins and give short answers with *be*. | Ask *Where are you from?* and *Are you from…?* in an imaginary first meeting. |
+| Pronunciation | Hear initial consonants and notice word stress. | Practise *Canada, Brazil, Japan* and pairs such as *thirteen / thirty*. |
 
-**Observable outcome:** Identify whether a short statement about origin is affirmative or negative; identify the country and a number 21–100 from a spoken exchange.
-
-**Tutor progression:** (1) Read two short statements, one affirmative and one negative, without a transcript. (2) Ask the learner which country is mentioned and whether the statement is negative. (3) Read a short *Are you from…?* exchange plus a number, and ask for the country and number. (4) When the learner succeeds, increase speed modestly; when not, repeat → slow down → rephrase → brief Spanish support → new example.
-
-### Speaking — first meetings
-
-**Observable outcome:** Produce a greeting, a correct *Where are you from?* question, at least one yes/no question and two suitable short answers.
-
-**Tutor progression:** (1) Model a two-turn exchange. (2) Learner asks and answers about fictional classmates and chosen countries. (3) Add a correction from *She is from…* to *She isn't from…* and reformulate the question. (4) Allow a new spontaneous exchange with gentle corrective feedback.
-
-### Pronunciation — consonant sounds and word stress
-
-**Observable outcome:** Distinguish familiar consonants at the beginnings of selected country names and produce intelligible word stress in names such as **CANada**, **BRAzil** and **JaPAN**.
-
-**Tutor progression:** (1) Model familiar consonants in *Canada*, *Brazil* and *Japan*; focus on hearing and producing the initial consonants, not IPA symbols. (2) Contrast stressed syllables in country names and familiar numbers. (3) Practise *thirTEEN* versus *THIRty* with careful tutor modeling (stress and ending differ by accent and context). (4) Reinforce intelligibility through listening, repetition and a short dialogue; do not grade accent imitation.
-
-**Feedback and privacy:** During practice, highlight two or three high-value corrections after a substantial response. If ASR transcription is uncertain, verify by listening instead of treating the transcript as proof. Formal evaluation, grades and learning progress stay in the private English Learning Program project.
+Ask for repetition or simpler examples whenever needed. This page provides practice ideas, not formal test questions or personal results.
 
 ## 10. Quick reference
 

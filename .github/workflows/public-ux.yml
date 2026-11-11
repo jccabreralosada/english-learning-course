@@ -1,0 +1,59 @@
+name: Public site UX audit
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'scripts/public_ux_audit.py'
+      - '.github/workflows/public-ux.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-ux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install site and browser dependencies
+        run: |
+          python -m pip install -r requirements.txt playwright
+          python -m playwright install --with-deps chromium
+      - name: Strict current-branch build
+        run: mkdocs build --strict --site-dir site
+      - name: Build baseline from main
+        run: |
+          git fetch origin main --depth=1
+          git worktree add /tmp/ux-baseline origin/main
+          (cd /tmp/ux-baseline && mkdocs build --strict --site-dir /tmp/ux-baseline-site)
+      - name: Serve builds without publishing
+        run: |
+          python -m http.server 8765 --directory site >/tmp/ux-new.log 2>&1 &
+          python -m http.server 8766 --directory /tmp/ux-baseline-site >/tmp/ux-old.log 2>&1 &
+          python - <<'PY'
+          import time,urllib.request
+          for port in (8765,8766):
+              for i in range(30):
+                  try:
+                      urllib.request.urlopen(f"http://127.0.0.1:{port}/",timeout=3)
+                      break
+                  except Exception:
+                      time.sleep(1)
+              else:
+                  raise RuntimeError(f"Server unavailable: {port}")
+          PY
+      - name: Audit pages and capture before and after
+        run: python scripts/public_ux_audit.py --output ux-audit
+      - name: Upload screenshots and JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-ux-before-after
+          path: ux-audit/
+          retention-days: 14
