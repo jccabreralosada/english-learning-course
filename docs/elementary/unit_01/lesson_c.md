@@ -5,7 +5,7 @@ level: elementary
 unit: 1
 source_lesson: 1C
 content_version: 0.1.0
-editorial_status: in_review
+editorial_status: published
 cefr_orientation: A1
 cefr_alignment: provisional_program_orientation
 source_origin: source_index_confirmed
@@ -327,7 +327,7 @@ Each line has **one main error**. Rewrite the whole sentence correctly.
 17. **Email information:** Correct both errors in this sentence: *You're email address are on the form.*
 18. **An English class:** Write **two connected sentences** using *we* and *our*: First say that you and another learner are students; then say that the classroom is ready.
 19. **A fictional student:** Complete a short introduction, using *she* or *her* in each blank: **This is Mia. ___ is a student. ___ book is new.**
-20. **Classroom help:** Write a **two-line original exchange** using a polite classroom expression and a possessive adjective. Include one question with *be* learned in 1B or a fixed classroom question from section 3. Use fictional names.
+20. **Classroom help:** Write a **two-turn original exchange** between classmates with fictional names. Include a polite classroom expression, a possessive adjective and either one *be* question from 1B or a fixed classroom question from section 3.
 
 ??? note "Grammar answer key — reasons and alternatives"
 
@@ -352,9 +352,9 @@ Each line has **one main error**. Rewrite the whole sentence correctly.
     | 17 | **Your email address is on the form.** | *You're → Your* because the word modifies a noun; singular *email address* takes **is**, not *are*. |
     | 18 | **We are students. Our classroom is ready.** | *We* names the group; *our* modifies *classroom*. |
     | 19 | **She; Her** | *She* is the subject of the first sentence; *her* modifies *book*. |
-    | 20 | **A: Is this your pencil? B: Yes, it is. Thank you.** | *Your* comes before *pencil*. *Is this…?* uses *be* before the subject. |
+    | 20 | **Mia: Is this your pencil, Leo? Leo: Yes, it is. Thank you.** | *Your* modifies *pencil* and points to the listener, Leo. The question places *is* before *this*; *Yes, it is* is the positive short answer. *Thank you* is a polite classroom expression. |
 
-    **Alternatives:** In **6**, a person who uses *they* would have *their bag*, but the prompt explicitly asks you to use *she*. In **7**, *Their classroom is ready* is the required form, while *Leo and Nina's classroom is ready* can express the same relationship using a different construction. In **9**, *Your email address is on the form* is the intended order. In **18**, *We're students. Our classroom is ready* is equally natural. In **20**, many short dialogues are valid: *A: Is this your notebook? B: Yes, it is.* is acceptable. Avoid requiring new tenses.
+    **Alternatives:** In **6**, a person who uses *they* would have *their bag*, but the prompt explicitly asks you to use *she*. In **7**, *Their classroom is ready* is the required form, while *Leo and Nina's classroom is ready* can express the same relationship using a different construction. In **9**, *Your email address is on the form* is the intended order. In **18**, *We're students. Our classroom is ready* is equally natural. In **20**, many two-turn dialogues are valid when they include names, a possessive and a polite expression. For example: *Nina: Is this your notebook, Omar? Omar: Yes, it is. Thanks.* A fixed question such as *How do you spell your name?* is also acceptable, even though its *do* pattern is not being taught as new grammar. Avoid requiring new tenses.
 
     **Error diagnosis:** Was the problem **owner selection**, **subject vs possessive**, **word order**, **apostrophe**, **article**, or **be agreement**? Make one new sentence to practise your error.
 
@@ -390,16 +390,16 @@ Complete the short sentences. The owner appears in parentheses.
 
 ### Stage 2 — Controlled writing
 
-Change the owner but keep the meaning and sentence structure.
+Adapt each sentence to the **new owner's perspective**. The person speaking or being addressed can change, so keep the situation consistent rather than replacing words mechanically.
 
 - **A.** *His notebook is new.* → the owner is **Mia** (she).
-- **B.** *My name is Sam.* → the owner is **you**.
+- **B.** *My name is Sam.* → imagine **Sam is now the person you are speaking to**. Tell Sam their name using **your**.
 - **C.** *Their classroom is ready.* → the owner is **we**.
 
 ??? note "Controlled writing — answers"
 
     **A. Her notebook is new.**  
-    **B. Your name is Sam.** The fictional name *Sam* stays the same; only the owner changes.  
+    **B. Your name is Sam.** In the original, Sam says **My name is Sam** about themself. In the new situation, **you speak to Sam**, so the same person is addressed as **you** and the possessive changes to **your**. This is a change of speaker perspective, not just a word swap.  
     **C. Our classroom is ready.** The object does not control the adjective.
 
 ### Stage 3 — Independent writing
