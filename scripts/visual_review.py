@@ -30,11 +30,24 @@ def inspect(page, theme):
           bodyBackground: getComputedStyle(document.body).backgroundColor,
           headings: headings.map(x => ({tag: x.tagName, text: x.textContent.trim().slice(0, 90)})),
           tables: tables.map((x,i) => {
-            const p=x.parentElement;
+            let parent=x.parentElement;
+            let scroller=null;
+            while(parent && parent !== document.body){
+              const style=getComputedStyle(parent);
+              const overflow=style.overflowX;
+              if(parent.scrollWidth>parent.clientWidth+2 &&
+                 ['auto','scroll'].includes(overflow)){
+                scroller=parent;
+                break;
+              }
+              parent=parent.parentElement;
+            }
             return {number:i+1, columns:x.rows[0]?.cells.length||0,
               width:Math.round(x.getBoundingClientRect().width),
-              containerWidth:Math.round(p.getBoundingClientRect().width),
-              scrollableContainer:p.scrollWidth>p.clientWidth+1,
+              containerWidth:Math.round(x.parentElement.getBoundingClientRect().width),
+              widerThanViewport:x.getBoundingClientRect().width > innerWidth + 2,
+              hasScrollableAncestor:Boolean(scroller),
+              scrollingWidth:scroller ? scroller.scrollWidth : null,
               firstHeader:x.rows[0]?.textContent.trim().slice(0,65) || ""};
           }),
           images: imgs.map(x => ({src:x.getAttribute('src'), alt:x.getAttribute('alt'),
@@ -85,6 +98,9 @@ def main():
             page.wait_for_timeout(300)
             report=inspect(page,scheme)
             if report["overflowPx"] > 3: failures.append(f"{label}: horizontal overflow {report['overflowPx']}px")
+            for table in report["tables"]:
+                if table["widerThanViewport"] and not table["hasScrollableAncestor"]:
+                    failures.append(f"{label}: table {table['number']} exceeds viewport without accessible horizontal scrolling")
             if not report["images"]: failures.append(f"{label}: missing illustration")
             for img in report["images"]:
                 if not img["loaded"]: failures.append(f"{label}: broken image {img['src']}")
@@ -103,6 +119,10 @@ def main():
                 if href and len(href)>1 and page.locator(f'[id="{href[1:]}"]').count()==0:
                     failures.append(f"{label}: unresolved local heading anchor {href}")
             if errors: failures.append(f"{label}: JS errors {errors[:3]}")
+            # Reset scroll after opening solution details so the sticky header
+            # appears at the top of the full-page screenshot, not mid-capture.
+            page.evaluate("window.scrollTo(0,0)")
+            page.wait_for_timeout(150)
             page.screenshot(path=str(out/f"{label}.png"),full_page=True,animations="disabled")
             report["name"]=label
             report["panelsToggleTest"]="passed" if not any(label in x and "answers" in x for x in failures) else "failed"
