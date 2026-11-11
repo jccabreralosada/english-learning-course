@@ -2,8 +2,8 @@
 
 Welcome to an original learning program designed to develop **Grammar, Vocabulary, Writing, Listening, Speaking and Pronunciation** together.
 
-!!! info "Pilot stage"
-    The curriculum framework is available. **Full lessons, exercises and illustrations are not yet published.** This is the initial site deployment.
+!!! info "Start learning"
+    **Elementary 1A** and **Elementary 1B** are available with original explanations, guided practice, answer keys, and activities for the interactive tutor.
 
 ## How the program works
 

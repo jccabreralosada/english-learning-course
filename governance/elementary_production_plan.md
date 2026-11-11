@@ -1,16 +1,16 @@
 # Elementary editorial production plan — proposal
 
-**Status:** Editorial proposal for review with the 1B Draft PR. Not authorization to approve or publish other lessons.
+**Status:** Editorial production proposal, updated after 1A/1B publication. Not authorization to approve or publish other lessons.
 
 ## Current coverage
 
-- **Published:** Elementary 1A. Its structure is a provisional benchmark.
-- **In review:** Elementary 1B on an independent feature branch.
+- **Published:** Elementary 1A and 1B, both merged and deployed. Their structure is a provisional benchmark.
+- **In review:** No Elementary lesson at the time of this update.
 - **Pending:** Elementary 1C and later Elementary lessons, including future Practical English and Revise and Check sections.
 
 ## Production stages
 
-1. **Calibrate 1B individually:** verify indexed scope, explanations, exercises, beginner writing scaffolding, oral tutor handoff, desktop/mobile/dark rendering, and user sign-off before merge.
+1. **1B calibration (completed):** indexed scope, exercises, writing scaffolding, oral handoff, browser verification and user approval preceded the published merge.
 2. **Calibrate 1C individually:** check its possessive-adjective, classroom-language and pronunciation scope, respecting 1A–1B prerequisites; request independent user approval.
 3. **After Unit 1:** plan the full next unit (source map, prerequisites, objectives, vocabulary, pronunciation, review) but still author and approve lessons one by one. No bulk publication.
 4. **Later Elementary:** proceed through the 12 source-indexed units A/B/C. Do not fill gaps with textbook claims without the original source.

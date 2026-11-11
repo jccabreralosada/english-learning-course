@@ -64,6 +64,69 @@ class TestCourseValidation(unittest.TestCase):
         candidate = {**self.record, "editorial_status": "mastered"}
         self.assertTrue(list(VALIDATOR.iter_errors(candidate)))
 
+    def test_published_1a_and_1b_metadata_match_curriculum(self):
+        syllabus = course.load_yaml(ROOT / "curriculum/master_syllabus.yaml")
+        records = {x["id"]: x for x in syllabus["levels"][0]["units"][0]["lessons"]}
+        for code in "ab":
+            page = ROOT / f"docs/elementary/unit_01/lesson_{code}.md"
+            front, body = course.frontmatter_and_body(page.read_text(encoding="utf-8"))
+            self.assertEqual(front["editorial_status"], "published")
+            self.assertEqual(front["editorial_status"], records[front["lesson_id"]]["editorial_status"])
+            self.assertFalse(any(regex.search(body) for regex, _ in course.EDITORIAL_LEAKS))
+        self.assertEqual(records["elementary.unit_01.lesson_c"]["editorial_status"], "planning_pending_source")
+
+    def test_release_gate_rejects_review_status_before_merge(self):
+        syllabus = course.load_yaml(ROOT / "curriculum/master_syllabus.yaml")
+        config = course.load_yaml(ROOT / "mkdocs.yml")
+        lesson = syllabus["levels"][0]["units"][0]["lessons"][0]
+        saved = lesson["editorial_status"]
+        old_errors = list(course.ERRORS)
+        try:
+            lesson["editorial_status"] = "in_review"
+            course.ERRORS.clear()
+            course.check_publication_consistency(syllabus, config, require_published=True)
+            self.assertTrue(any("requires published status" in msg for msg in course.ERRORS))
+        finally:
+            lesson["editorial_status"] = saved
+            course.ERRORS[:] = old_errors
+
+    def test_release_gate_passes_current_published_lessons(self):
+        syllabus = course.load_yaml(ROOT / "curriculum/master_syllabus.yaml")
+        config = course.load_yaml(ROOT / "mkdocs.yml")
+        old_errors = list(course.ERRORS)
+        try:
+            course.ERRORS.clear()
+            course.check_publication_consistency(syllabus, config, require_published=True)
+            self.assertEqual(course.ERRORS, [])
+        finally:
+            course.ERRORS[:] = old_errors
+
+    def test_editorial_leak_patterns_are_precise(self):
+        disallowed = [
+            "Editorial draft — not approved", "Available on development branch",
+            "This lesson is not yet published", "See Pull Request #17",
+            "source copy: elementary_1.png", "Lesson ID: elementary.unit_01.lesson_a"
+        ]
+        allowed = [
+            "Review the grammar and practise the questions.",
+            "This is an ungraded assessment practice activity.",
+            "Check the review section after completing the exercises.",
+            "You can repeat the pronunciation exercise.",
+            "An original learning program based on published research."
+        ]
+        for value in disallowed:
+            self.assertTrue(any(regex.search(value) for regex, _ in course.EDITORIAL_LEAKS), value)
+        for value in allowed:
+            self.assertFalse(any(regex.search(value) for regex, _ in course.EDITORIAL_LEAKS), value)
+
+    def test_frontmatter_is_separate_from_student_copy(self):
+        text = "\n".join(["---", "editorial_status: published", "lesson_id: test.id", "---",
+                           "# Lesson", "Review the examples."])
+        front, body = course.frontmatter_and_body(text)
+        self.assertEqual(front["editorial_status"], "published")
+        self.assertNotIn("editorial_status", body)
+        self.assertIn("Review the examples.", body)
+
     def test_external_link_is_not_local(self):
         self.assertIsNone(course.local_target(ROOT / "docs/index.md", "https://example.org/external"))
 

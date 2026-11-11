@@ -121,7 +121,7 @@ levels:
       writing_outcome: "Write three original affirmative sentences introducing people."
       review_tags: ["be_affirmative","subject_pronouns","days_of_week","numbers_0_20"]
       content_version: "0.1.0"
-      editorial_status: in_review
+      editorial_status: published
     - id: elementary.unit_01.lesson_b
       source_lesson: "1B"
       title: "One world"
@@ -178,7 +178,7 @@ levels:
       writing_outcome: "Write three original questions and answers about people's countries."
       review_tags: ["be_negative","be_questions","countries","numbers_21_100"]
       content_version: "0.1.0"
-      editorial_status: in_review
+      editorial_status: published
     - id: elementary.unit_01.lesson_c
       source_lesson: "1C"
       title: "What's your email?"

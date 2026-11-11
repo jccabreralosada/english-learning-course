@@ -5,11 +5,10 @@ level: elementary
 unit: 1
 source_lesson: 1B
 content_version: 0.1.0
-editorial_status: in_review
+editorial_status: published
 cefr_orientation: A1
 cefr_alignment: provisional_program_orientation
 source_origin: source_index_confirmed
-source_reference: "Private project source elementary_1.png, Fourth Edition contents page 2, Unit 1B"
 prerequisites:
   - elementary.unit_01.lesson_a
 review_tags:
@@ -22,7 +21,7 @@ review_tags:
 
 # Elementary 1B — One world
 
-**Lesson ID:** `elementary.unit_01.lesson_b` · **A1 orientation (provisional)** · **Editorial draft — not approved**
+**Elementary · Unit 1B** · **A1 learning orientation**
 
 This is an **original self-study lesson** based on the *topics* of English File Elementary, Fourth Edition, Unit 1B: **negative statements and questions with be**, **countries**, **numbers 21–100**, and **consonant sounds / word stress**. All explanations, dialogues, examples, answers, and visuals here are original program materials, not copies of the textbook.
 
@@ -544,8 +543,8 @@ These are **original instructions for the separate English Learning Program inte
 
 **Cumulative recall:** Briefly revisit 1A's **subject pronouns** and **affirmative be**. Then practice making the same message affirmative, negative and interrogative: *She is here.* → *She isn't here.* → *Is she here?*
 
-**Navigation:** [Elementary overview](../index.md) · [Previous lesson: Elementary 1A](lesson_a.md). **1C** is planned but not yet published.
+**Keep learning:** [Elementary overview](../index.md) · [Previous: 1A — Welcome to the class](lesson_a.md).
 
 ---
 
-**Source integrity:** The curriculum topics for 1B were checked against the private original *English File Elementary Fourth Edition* contents image `elementary_1.png` (contents page 2, Unit 1B; SHA-256 recorded in `curriculum/master_syllabus.yaml`). The choice of country examples, explanatory structure, exercises, SVG, Writing and tutor activities are **original program extensions**. No source scans, copyrighted textbook exercises, test banks or learner data appear here. A1 is a provisional instructional orientation, not a CEFR certification.
+**About this lesson:** The topic sequence follows *English File Elementary, Fourth Edition*. The examples, explanations, activities and diagram are original to this learning program. The A1 label describes the intended study level; it is not a formal CEFR certification.
