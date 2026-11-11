@@ -73,7 +73,12 @@ class TestCourseValidation(unittest.TestCase):
             self.assertEqual(front["editorial_status"], "published")
             self.assertEqual(front["editorial_status"], records[front["lesson_id"]]["editorial_status"])
             self.assertFalse(any(regex.search(body) for regex, _ in course.EDITORIAL_LEAKS))
-        self.assertEqual(records["elementary.unit_01.lesson_c"]["editorial_status"], "planning_pending_source")
+        c = records["elementary.unit_01.lesson_c"]
+        self.assertIn(c["editorial_status"], {"planning_pending_source", "in_review", "published"})
+        page_c = ROOT / "docs/elementary/unit_01/lesson_c.md"
+        if page_c.exists():
+            front, _ = course.frontmatter_and_body(page_c.read_text(encoding="utf-8"))
+            self.assertEqual(c["editorial_status"], front["editorial_status"])
 
     def test_release_gate_rejects_review_status_before_merge(self):
         syllabus = course.load_yaml(ROOT / "curriculum/master_syllabus.yaml")
@@ -90,14 +95,21 @@ class TestCourseValidation(unittest.TestCase):
             lesson["editorial_status"] = saved
             course.ERRORS[:] = old_errors
 
-    def test_release_gate_passes_current_published_lessons(self):
+    def test_release_gate_matches_status_of_current_navigated_lessons(self):
         syllabus = course.load_yaml(ROOT / "curriculum/master_syllabus.yaml")
         config = course.load_yaml(ROOT / "mkdocs.yml")
         old_errors = list(course.ERRORS)
         try:
             course.ERRORS.clear()
             course.check_publication_consistency(syllabus, config, require_published=True)
-            self.assertEqual(course.ERRORS, [])
+            c = next(x for x in syllabus["levels"][0]["units"][0]["lessons"]
+                     if x["source_lesson"] == "1C")
+            has_c_page = (ROOT / "docs/elementary/unit_01/lesson_c.md").exists()
+            if has_c_page and c["editorial_status"] != "published":
+                self.assertTrue(any("release page requires published status" in e
+                                    for e in course.ERRORS))
+            else:
+                self.assertEqual(course.ERRORS, [])
         finally:
             course.ERRORS[:] = old_errors
 

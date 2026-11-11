@@ -41,6 +41,7 @@ nav:
           - Overview: elementary/index.md
           - 1A — Welcome to the class: elementary/unit_01/lesson_a.md
           - 1B — One world: elementary/unit_01/lesson_b.md
+          - 1C — What's your email?: elementary/unit_01/lesson_c.md
       - Pre-intermediate: pre_intermediate/index.md
       - Intermediate: intermediate/index.md
       - Intermediate Plus: intermediate_plus/index.md
