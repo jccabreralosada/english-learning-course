@@ -62,6 +62,16 @@ This section guides ungraded practice in English Learning Program; it is not a f
 3. Practise short affirmative sentences, such as *I'm READY* and *She's a STUdent*, paying attention to intelligibility, not accent imitation.
 4. Start slow, then approach natural rhythm gradually. If speech recognition reports uncertainty, do not treat that alone as evidence of a pronunciation error.
 
+### Connected oral consolidation — sustained dialogue
+
+**Session approach:** Keep the same 1A outcomes, but connect the short listening messages, speaking introductions and pronunciation focus into one classroom or first-meeting scenario. From Elementary, **aim for at least five minutes of effective spoken interaction** as a flexible, ungraded target; extend naturally when the learner is comfortable, and stop whenever the learner requests. Do **not** automatically end after three messages, four or five questions, or one successful repetition.
+
+1. **Listening in context:** Offer a brief new spoken introduction without displaying the transcript first. Check a name, weekday or number from 0–20; follow with another related message about classmates or their classroom. Repeat, slow down and rephrase when needed.
+2. **Speaking through follow-ups:** Let the learner respond freely, ask one relevant follow-up at a time and invite fuller introductions of self and fictional classmates. Check *am/is/are*, pronouns, jobs and contractions inside any longer response; never require exact model wording or an arbitrary sentence count when the linguistic target is present. Use controlled form constraints only if essential to isolate a specific 1A structure.
+3. **Pronunciation in the exchange:** Draw attention to vowel contrasts and stress in familiar 1A words (*Monday, Tuesday, student*) and short affirmative phrases. Reuse these naturally in the conversation rather than isolating pronunciation at the very end. Avoid IPA requirements or accent imitation; uncertain speech-to-text is not reliable acoustic evidence.
+4. **Feedback loop:** After several substantial turns, select two to four important linguistic issues from both target and extra language, distinguish optional style changes, invite a meaningful reformulation, then continue discussing the same situation. Increase speed and contribution length only when comprehension allows.
+5. **Evidence and closure:** Duration is not an assessment criterion; claim a duration only if reliably measured. Finish only when the learner wants to stop or the activity has a natural agreed conclusion. Preserve unfinished oral objectives as pending instead of treating them as completed.
+
 **Across all three skills:** Use new utterances, not official test prompts. Give targeted feedback during **practice**; do not generate scores or pretend a formal assessment was completed. Private progress and assessment evidence belong only in English Learning Program.
 
 
