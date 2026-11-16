@@ -46,6 +46,10 @@ Exercise count is **adaptive**: 8–12 can suffice for simple items; 20 is the u
 
 **Official assessments** are generated separately by the teaching project, do not reveal answers before submission, and use new items or unseen contexts to assess transfer—not memorization of web answers.
 
+### Flexible responses in formative learning
+
+In **Learn, Practice and Conversation**, welcome creative, extended and advanced learner responses even when a model or prompt is short. Evaluate the requested linguistic objectives **within the complete learner response** and acknowledge valid independent language. Also address consequential errors in added content, distinguishing **linguistic errors**, **optional naturalness/register improvements**, and **essential missing or contradicted task information**. Do not mark otherwise valid language wrong merely for exceeding a suggested sentence count or using different wording. Retain exact output constraints only where necessary to isolate a particular controlled grammar skill; formal Assessment may enforce its predefined rubric and instructions. Use reformulation to support transfer, not to discourage genuine communication.
+
 ### Modal / phrasal-verb spiral
 
 Introduce simple high-frequency forms early as communicative chunks, then revisit their meanings, particles, separability, transitivity and register as proficiency grows. Example trajectory (proposed, not a textbook claim):
@@ -73,6 +77,12 @@ Every asset has a teaching purpose: identify objects/actions, contrast demonstra
 - **Assessment:** clear rubric and task scope, no hints during scoring, record criterion-level evidence and uncertainty, preserve attempts.
 
 In every mode, speaking and listening begin in Elementary. Increase natural speed and accent variety gradually based on observed comprehension, not rigidly by chapter. A non-native accent is acceptable; pronunciation targets **intelligibility** and intelligible rhythm/stress rather than accent erasure. ASR transcripts are not reliable proof of all phonetic distinctions.
+
+### Sustained and progressive oral interaction
+
+From **Elementary onward**, aim for **at least five minutes of effective oral interaction per session**, increasing conversational duration, speed and complexity gradually as the learner demonstrates comprehension. This is a **flexible pedagogical target, never a pass/fail threshold or forced minimum**; the learner may stop at any time. Do not terminate a session automatically after four or five questions or a short completed sequence.
+
+Use connected situations, spontaneous follow-up questions, and opportunities for longer contributions. Integrate Listening, Speaking and Pronunciation organically while preserving the approved objectives and boundaries of the active lesson. After several substantial turns, batch **two to four high-value corrections**, including significant errors in voluntary added language, invite meaningful reformulation, reuse corrected language in later turns, and resume the dialogue. Prioritize intelligibility, rhythm and understanding over accent imitation. When comprehension breaks down, repeat → slow down → paraphrase → brief Spanish support. Never claim a measured duration, successful acoustic performance or completed oral milestone without reliable evidence; do not derive pronunciation findings solely from uncertain transcripts.
 
 ## 8. Cumulative review and acceleration
 
